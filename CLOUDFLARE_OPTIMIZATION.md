@@ -157,41 +157,37 @@ wrangler deploy
 - ✅ Permissions-Policy
 - ✅ DNS Prefetch Control
 
-### 3. Image Optimizer Worker (+ Cloudflare Images)
+### 3. Cloudflare Images (current practice — Aug 2026)
 
-**Location:** `workers/image-optimizer.ts` · loader: `lib/cloudflare-image-loader.ts` · helpers: `lib/cf-images.ts`
+**Sources checked:** Cloudflare integrate-with-frameworks, Transformation Flows (May 2026), Next.js `images.loader` Cloudflare example, Images binding docs.
 
-Per Cloudflare Images docs (2026): prefer the URL interface (`/cdn-cgi/image/…`), Workers `cf.image`, or the Images binding — not ad-hoc Content-Type rewriting.
+**Recommended order for Vercel + DNS-only apex:**
 
-**Features:**
-- ✅ `/cdn-cgi/image/width=…,format=auto/…` via Next.js custom loader (opt-in)
-- ✅ Worker `cf.image` transforms with Accept negotiation (AVIF/WebP)
-- ✅ Images binding (`[images] binding = "IMAGES"` in `wrangler.toml`)
-- ✅ `width=auto`-ready responsive sizes from Next `deviceSizes`
-- ✅ Long-lived cache (`max-age=31536000`) + `Vary: Accept`
+| Priority | Approach | When |
+|----------|----------|------|
+| 1 | **Transformation Flows** (dashboard) | Zero-code `format=auto` / `width=auto` on `/images/*` via an orange-cloud image host |
+| 2 | **Official Next.js loader** → `/cdn-cgi/image/…` | Responsive widths from `<Image />` (`lib/cloudflare-image-loader.ts`) |
+| 3 | **Vercel Image Optimization** (default) | Flags unset — keep this while apex stays gray-cloud |
+| 4 | **Images binding / Workers** | Paid; overlays, auth, or byte pipelines only |
 
-**Enable (pick one path):**
+**Files:** `lib/cloudflare-image-loader.ts` · `lib/cf-images.ts` · `workers/image-optimizer.ts`
+
+**Enable loader (production):**
 
 ```bash
-# A) Zone URL interface — use a dedicated orange-cloud image host if apex is gray-cloud/Vercel
 NEXT_PUBLIC_CF_IMAGE_RESIZING=true
-NEXT_PUBLIC_CF_IMAGE_ZONE=https://img.heyberkshire.com
-
-# B) Worker query-string optimizer on image routes
-NEXT_PUBLIC_CF_IMAGE_WORKER=true
-
-# C) Hosted Images (imagedelivery.net)
-NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true
-NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH=your_account_hash
+NEXT_PUBLIC_CF_IMAGE_ZONE=https://img.heyberkshire.com   # orange-cloud this host only
 ```
+
+**Dashboard flow (preferred zero-code):** Images → Transformations → Automation → Custom flow  
+Conditions: path `/images/*` · Actions: `format=auto`, quality ~75, optional `width=auto`
 
 **Usage:**
 
 ```tsx
 import Image from "next/image";
-import { cfImageUrl, cfOgImageUrl } from "@/lib/cf-images";
+import { cfOgImageUrl } from "@/lib/cf-images";
 
-// Next/Image — loader builds /cdn-cgi/image/… when env flags are on
 <Image
   src="/images/hero/iron-mountain-ranch.jpg"
   alt="Iron Mountain Ranch"
@@ -199,18 +195,9 @@ import { cfImageUrl, cfOgImageUrl } from "@/lib/cf-images";
   height={1080}
   priority
 />
-
-// Manual / OG
-const og = cfOgImageUrl("/images/og/default.jpg");
-<img src={cfImageUrl("/images/neighborhoods/summerlin.jpg", { width: 800, quality: 85 })} alt="Summerlin" />
 ```
 
-**URL Parameters (Worker mode):**
-- `w` / `width` - Width in pixels
-- `h` / `height` - Height in pixels
-- `q` / `quality` - Quality (1-100, default: 85)
-- `f` / `format` - Format (auto, webp, avif, jpeg, png)
-- `fit` - Fit mode (scale-down, contain, cover, crop, pad, aspect-crop, scale-up)
+Do **not** orange-cloud the Vercel apex (SSL conflicts). Orange-cloud the image host only.
 
 ### 4. Analytics Worker
 

@@ -1,77 +1,76 @@
 /**
- * Helpers for Cloudflare Images URL interface and Open Graph assets.
- * @see https://developers.cloudflare.com/images/optimization/features/
+ * Cloudflare Images URL helpers (OG, JSON-LD, non-next/image contexts).
+ *
+ * Current practice (Aug 2026):
+ * 1. Prefer URL interface `/cdn-cgi/image/<OPTIONS>/<SOURCE>`
+ * 2. Prefer dashboard Transformation Flows for zero-code `/images/*` optimization
+ * 3. Reserve Images binding / Workers for overlays, auth, or byte pipelines (paid)
+ *
+ * @see https://developers.cloudflare.com/images/optimization/transformations/integrate-with-frameworks/
+ * @see https://developers.cloudflare.com/images/optimization/transformations/flows/
  */
 
 export type CfImageOptions = {
   width?: number;
   height?: number;
   quality?: number;
+  /** Omit unless you need a specific crop; URL interface default is safer for photos */
   fit?: "scale-down" | "contain" | "cover" | "crop" | "pad" | "aspect-crop" | "scale-up";
   format?: "auto" | "avif" | "webp" | "jpeg" | "baseline-jpeg" | "json";
 };
 
-function isCfResizingEnabled(): boolean {
+function normalizeSrc(src: string): string {
+  return src.startsWith("/") ? src.slice(1) : src;
+}
+
+function isProductionCfEnabled(): boolean {
+  if (process.env.NODE_ENV === "development") return false;
   return (
     process.env.NEXT_PUBLIC_CF_IMAGE_RESIZING === "true" ||
-    process.env.NEXT_PUBLIC_CF_IMAGE_WORKER === "true" ||
     process.env.NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED === "true"
   );
 }
 
 /**
- * Build a Cloudflare-optimized image URL for a site-relative or absolute path.
- * Returns the original path when Cloudflare image features are disabled.
+ * Build a Cloudflare-optimized image URL.
+ * Returns the original path in development or when CF resizing is disabled
+ * (Vercel Image Optimization / Transformation Flows can still help).
  */
 export function cfImageUrl(src: string, options: CfImageOptions = {}): string {
-  if (!isCfResizingEnabled()) {
+  if (!isProductionCfEnabled()) {
     return src;
   }
 
   const {
     width,
     height,
-    quality = 85,
-    fit = "cover",
+    quality = 75,
+    fit,
     format = "auto",
   } = options;
 
-  // Worker query-string mode
-  if (
-    process.env.NEXT_PUBLIC_CF_IMAGE_WORKER === "true" &&
-    process.env.NEXT_PUBLIC_CF_IMAGE_RESIZING !== "true" &&
-    process.env.NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED !== "true"
-  ) {
-    const path = src.startsWith("http") || src.startsWith("/") ? src : `/${src}`;
-    const params = new URLSearchParams({ f: format, fit, q: String(quality) });
-    if (width) params.set("w", String(width));
-    if (height) params.set("h", String(height));
-    return `${path}?${params.toString()}`;
-  }
-
-  // Hosted Images
+  // Hosted Images delivery
   if (process.env.NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED === "true") {
     const hash = process.env.NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH;
     if (hash) {
-      const id = src.replace(/^\/+/, "").replace(/^images\//, "");
+      const id = normalizeSrc(src).replace(/^images\//, "");
       const parts = [
         width ? `width=${width}` : null,
         height ? `height=${height}` : null,
         `quality=${quality}`,
-        `fit=${fit}`,
+        fit ? `fit=${fit}` : null,
         `format=${format}`,
       ].filter(Boolean);
       return `https://imagedelivery.net/${hash}/${id}/${parts.join(",")}`;
     }
   }
 
-  // /cdn-cgi/image/ URL interface
   const zone = (process.env.NEXT_PUBLIC_CF_IMAGE_ZONE || "").replace(/\/$/, "");
   const parts = [
     width ? `width=${width}` : null,
     height ? `height=${height}` : null,
     `quality=${quality}`,
-    `fit=${fit}`,
+    fit ? `fit=${fit}` : null,
     `format=${format}`,
   ].filter(Boolean);
   const optionsPath = parts.join(",");
@@ -80,8 +79,7 @@ export function cfImageUrl(src: string, options: CfImageOptions = {}): string {
     return `${zone}/cdn-cgi/image/${optionsPath}/${src}`;
   }
 
-  const path = src.startsWith("/") ? src : `/${src}`;
-  return `${zone}/cdn-cgi/image/${optionsPath}${path}`;
+  return `${zone}/cdn-cgi/image/${optionsPath}/${normalizeSrc(src)}`;
 }
 
 /** Open Graph / social share size (1200×630). */

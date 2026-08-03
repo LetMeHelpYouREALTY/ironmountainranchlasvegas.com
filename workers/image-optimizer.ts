@@ -1,24 +1,22 @@
 /**
- * Cloudflare Worker — Image Optimization
+ * Cloudflare Worker — Image Optimization (URL interface / cf.image)
  *
- * Uses Cloudflare Images features (2025–2026):
- * 1. Images binding (`env.IMAGES`) for byte-level transforms when available
- * 2. `cf.image` fetch options (URL interface equivalent) as primary path
- * 3. Long-lived cache + Accept-based format negotiation (avif/webp)
+ * Current practice (Aug 2026):
+ * - Prefer dashboard Transformation Flows for `/images/*` (format=auto, width=auto)
+ *   when the zone is proxied — no Worker required.
+ * - Use this Worker when you need Accept negotiation or query-param control.
+ * - Images binding (`env.IMAGES`) is paid — only used when the binding exists.
  *
  * @see https://developers.cloudflare.com/images/optimization/transformations/transform-via-workers/
- * @see https://developers.cloudflare.com/images/optimization/binding/
+ * @see https://developers.cloudflare.com/images/optimization/transformations/flows/
  */
 
 export interface Env {
-  CF_IMAGES_URL?: string;
-  /** Images binding from wrangler.toml `[images] binding = "IMAGES"` */
+  /** Optional paid Images binding — see wrangler.toml */
   IMAGES?: ImagesBinding;
 }
 
-/** Minimal typing for the Images binding chain API */
 type ImagesBinding = {
-  info: (stream: ReadableStream) => Promise<{ width: number; height: number }>;
   input: (stream: ReadableStream) => ImagesPipeline;
 };
 
@@ -50,7 +48,7 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
-    // Native /cdn-cgi/image/ is handled by the Cloudflare zone — pass through
+    // Native /cdn-cgi/image/ is handled by the zone — pass through
     if (url.pathname.startsWith("/cdn-cgi/image/")) {
       return fetch(request);
     }
@@ -60,17 +58,30 @@ export default {
     }
 
     const params = parseImageParams(url);
+    const hasTransformHint =
+      Boolean(params.width) ||
+      Boolean(params.height) ||
+      url.searchParams.has("f") ||
+      url.searchParams.has("format") ||
+      url.searchParams.has("q") ||
+      url.searchParams.has("quality");
+
+    // No explicit transform → let Transformation Flows / origin handle it
+    if (!hasTransformHint) {
+      const passthrough = await fetch(request);
+      return withImageHeaders(passthrough, "passthrough");
+    }
+
     const accept = request.headers.get("Accept") || "";
     const negotiatedFormat = negotiateFormat(accept, params.format);
 
-    // Origin image URL without transform query params
     const originUrl = new URL(url.toString());
     ["w", "h", "q", "f", "fit", "width", "height", "quality", "format"].forEach(
       (key) => originUrl.searchParams.delete(key)
     );
 
     try {
-      // Prefer Images binding when configured (byte pipeline)
+      // Paid Images binding (optional)
       if (env.IMAGES && (params.width || params.height)) {
         const bound = await transformWithBinding(
           originUrl.toString(),
@@ -78,10 +89,10 @@ export default {
           negotiatedFormat,
           env.IMAGES
         );
-        if (bound) return withImageHeaders(bound);
+        if (bound) return withImageHeaders(bound, "binding");
       }
 
-      // Standard Worker transform via cf.image
+      // URL-interface equivalent via cf.image (works on transform-enabled zones)
       const cfImage: Record<string, unknown> = {
         fit: params.fit,
         quality: params.quality,
@@ -104,7 +115,7 @@ export default {
         return fetch(request);
       }
 
-      return withImageHeaders(transformed);
+      return withImageHeaders(transformed, "cf.image");
     } catch (error) {
       console.error("Image optimization error:", error);
       return fetch(request);
@@ -132,7 +143,7 @@ function parseImageParams(url: URL): ImageParams {
   return {
     width: widthRaw ? Number.parseInt(widthRaw, 10) : undefined,
     height: heightRaw ? Number.parseInt(heightRaw, 10) : undefined,
-    quality: qualityRaw ? Number.parseInt(qualityRaw, 10) : 85,
+    quality: qualityRaw ? Number.parseInt(qualityRaw, 10) : 75,
     format: formatRaw,
     fit: fitRaw,
   };
@@ -145,7 +156,7 @@ function negotiateFormat(
   if (requested === "avif" || requested === "webp" || requested === "jpeg") {
     return requested;
   }
-  // format=auto → content negotiate (required for Workers; URL interface does this natively)
+  // format=auto on Workers requires Accept negotiation
   if (/image\/avif/i.test(accept)) return "avif";
   if (/image\/webp/i.test(accept)) return "webp";
   return undefined;
@@ -181,11 +192,11 @@ async function transformWithBinding(
   return result.response();
 }
 
-function withImageHeaders(response: Response): Response {
+function withImageHeaders(response: Response, mode: string): Response {
   const headers = new Headers(response.headers);
   headers.set("Cache-Control", "public, max-age=31536000, immutable");
   headers.set("Vary", "Accept");
-  headers.set("X-CF-Image-Optimized", "1");
+  headers.set("X-CF-Image-Optimized", mode);
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,

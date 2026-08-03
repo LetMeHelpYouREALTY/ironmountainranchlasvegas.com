@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-// Cloudflare Images /cdn-cgi/image or imagedelivery.net (opt-in).
-// Keep Next.js default optimizer when unset so Vercel/local still work.
-// Prefer a dedicated image zone (NEXT_PUBLIC_CF_IMAGE_ZONE) when the
-// apex is DNS-only (gray cloud) in front of Vercel.
+// Cloudflare Images custom loader (opt-in).
+// Official pattern: https://developers.cloudflare.com/images/optimization/transformations/integrate-with-frameworks/
+// Keep Next/Vercel default optimizer when unset (best for gray-cloud DNS + Vercel).
+// When enabling, prefer NEXT_PUBLIC_CF_IMAGE_ZONE (orange-cloud image host) so
+// /cdn-cgi/image works without proxying the Vercel apex.
 const useCloudflareImages =
   process.env.NEXT_PUBLIC_CF_IMAGE_RESIZING === 'true' ||
-  process.env.NEXT_PUBLIC_CF_IMAGE_WORKER === 'true' ||
   process.env.NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED === 'true';
 
 const nextConfig = {

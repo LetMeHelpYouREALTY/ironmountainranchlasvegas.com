@@ -1,82 +1,64 @@
 /**
  * Cloudflare Images loader for Next.js `<Image />`.
  *
- * Per Cloudflare Images docs (URL interface, 2026):
- *   https://<ZONE>/cdn-cgi/image/<OPTIONS>/<SOURCE-IMAGE>
+ * Aligned to current docs (checked Aug 2026):
+ * - Cloudflare: integrate-with-frameworks (global loaderFile + normalizeSrc + dev passthrough)
+ * - Next.js: images.loader Cloudflare example (`format=auto`)
+ * - Prefer URL interface `/cdn-cgi/image/…` over Images binding (binding is paid)
  *
- * Enable with NEXT_PUBLIC_CF_IMAGE_RESIZING=true.
- * Optional NEXT_PUBLIC_CF_IMAGE_ZONE for a dedicated image host
- * (recommended when the site is on Vercel with DNS-only / gray-cloud).
+ * @see https://developers.cloudflare.com/images/optimization/transformations/integrate-with-frameworks/
+ * @see https://nextjs.org/docs/app/api-reference/config/next-config-js/images
  *
- * Hosted Images (imagedelivery.net) are supported when
- * NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true and an account hash is set.
+ * Vercel + DNS-only (gray cloud) apex: set NEXT_PUBLIC_CF_IMAGE_ZONE to an
+ * orange-clouded image host so /cdn-cgi/image hits Cloudflare.
  */
 
-type LoaderProps = {
-  src: string;
-  width: number;
-  quality?: number;
-};
+import type { ImageLoaderProps } from "next/image";
 
-function buildCdnCgiUrl(src: string, width: number, quality: number): string {
-  const zone = (process.env.NEXT_PUBLIC_CF_IMAGE_ZONE || "").replace(/\/$/, "");
-  const options = [
-    `width=${width}`,
-    `quality=${quality}`,
-    "fit=cover",
-    "format=auto",
-  ].join(",");
+const normalizeSrc = (src: string): string =>
+  src.startsWith("/") ? src.slice(1) : src;
 
-  // Absolute remote sources: pass full URL after options
-  if (src.startsWith("http://") || src.startsWith("https://")) {
-    return `${zone}/cdn-cgi/image/${options}/${src}`;
-  }
-
-  const path = src.startsWith("/") ? src : `/${src}`;
-  return `${zone}/cdn-cgi/image/${options}${path}`;
-}
-
-function buildHostedDeliveryUrl(src: string, width: number, quality: number): string | null {
-  const accountHash = process.env.NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH;
-  if (!accountHash) return null;
-
-  // Hosted Images IDs are typically not filesystem paths.
-  // Support either a bare image id or "id/variant" style src.
-  const id = src.replace(/^\/+/, "").replace(/^images\//, "");
-  const flexible = `width=${width},quality=${quality},fit=cover,format=auto`;
-  return `https://imagedelivery.net/${accountHash}/${id}/${flexible}`;
+/**
+ * Build Cloudflare URL-interface options.
+ * Official CF loader uses width + optional quality; Next.js Cloudflare example
+ * adds format=auto for AVIF/WebP negotiation without separate URLs.
+ */
+function buildParams(width: number, quality?: number): string {
+  const params = [`width=${width}`, `quality=${quality || 75}`, "format=auto"];
+  return params.join(",");
 }
 
 export default function cloudflareImageLoader({
   src,
   width,
   quality,
-}: LoaderProps): string {
-  const q = quality ?? 75;
+}: ImageLoaderProps): string {
+  // Official CF pattern: skip /cdn-cgi in local next dev
+  if (process.env.NODE_ENV === "development") {
+    const params = [`width=${width}`];
+    if (quality) params.push(`quality=${quality}`);
+    const joiner = src.includes("?") ? "&" : "?";
+    return `${src}${joiner}${params.join("&")}`;
+  }
 
-  // 1) Cloudflare Hosted Images delivery
+  // Hosted Images (imagedelivery.net) — only when explicitly enabled
   if (process.env.NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED === "true") {
-    const hosted = buildHostedDeliveryUrl(src, width, q);
-    if (hosted) return hosted;
+    const hash = process.env.NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH;
+    if (hash) {
+      const id = normalizeSrc(src).replace(/^images\//, "");
+      return `https://imagedelivery.net/${hash}/${id}/${buildParams(width, quality)}`;
+    }
   }
 
-  // 2) Zone / Worker URL interface (/cdn-cgi/image/...)
-  if (process.env.NEXT_PUBLIC_CF_IMAGE_RESIZING === "true") {
-    return buildCdnCgiUrl(src, width, q);
+  const options = buildParams(width, quality);
+  const zone = (process.env.NEXT_PUBLIC_CF_IMAGE_ZONE || "").replace(/\/$/, "");
+
+  // Absolute remote sources (allowed origin must be enabled in CF dashboard)
+  if (src.startsWith("http://") || src.startsWith("https://")) {
+    return `${zone}/cdn-cgi/image/${options}/${src}`;
   }
 
-  // 3) Worker query-string fallback (workers/image-optimizer.ts)
-  if (process.env.NEXT_PUBLIC_CF_IMAGE_WORKER === "true") {
-    const path = src.startsWith("http") ? src : src.startsWith("/") ? src : `/${src}`;
-    const params = new URLSearchParams({
-      w: String(width),
-      q: String(q),
-      f: "auto",
-      fit: "cover",
-    });
-    return `${path}?${params.toString()}`;
-  }
-
-  // Safe default when loader is registered but flags are off
-  return src.startsWith("/") || src.startsWith("http") ? src : `/${src}`;
+  // Same-origin relative path (official CF + Next.js shape)
+  // zone empty → `/cdn-cgi/image/...` on the request host (needs CF proxy)
+  return `${zone}/cdn-cgi/image/${options}/${normalizeSrc(src)}`;
 }
