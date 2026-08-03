@@ -35,7 +35,7 @@ export default function PageHeroImage({
             fill
             priority={priority}
             sizes="100vw"
-            className="object-cover object-center brightness-110 contrast-105"
+            className="object-cover object-center"
           />
         </div>
       </div>

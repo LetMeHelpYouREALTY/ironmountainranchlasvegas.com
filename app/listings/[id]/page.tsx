@@ -148,7 +148,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               src={property.image}
               alt={property.imageAlt}
               fill
-              className="object-cover brightness-110"
+              className="object-cover"
               priority
               sizes="(max-width: 768px) 100vw, 1200px"
             />
