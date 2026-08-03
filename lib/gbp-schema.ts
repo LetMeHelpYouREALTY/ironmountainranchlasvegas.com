@@ -16,7 +16,7 @@ export const businessInfo = {
     tel: "+17025001942",
   },
   email: "homes@heyberkshire.com",
-  url: "https://heyberkshire.com",
+  url: "https://www.ironmountainranchlasvegas.com",
 
   // Business Details
   license: "S.0197614.LLC",

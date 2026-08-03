@@ -10,7 +10,7 @@ export const siteConfig = {
     "Berkshire Hathaway HomeServices Nevada Properties | Iron Mountain Ranch Real Estate",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
-  url: "https://heyberkshire.com",
+  url: "https://www.ironmountainranchlasvegas.com",
   description:
     "Iron Mountain Ranch real estate expert in northwest Las Vegas (89131 & 89143). Buy, sell, or invest in Iron Mountain Ranch with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
   /** Primary hyperlocal service area */

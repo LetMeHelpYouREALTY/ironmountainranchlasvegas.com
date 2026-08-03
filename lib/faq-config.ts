@@ -130,6 +130,7 @@ export const FAQ_DOMAIN_OVERRIDES: Record<string, FAQ[]> = {
 
   // Hyperlocal Iron Mountain Ranch domains + default config
   "default": IRON_MOUNTAIN_RANCH_FAQS,
+  "ironmountainranchlasvegas.com": IRON_MOUNTAIN_RANCH_FAQS,
   "heyberkshire.com": IRON_MOUNTAIN_RANCH_FAQS,
   "ironmountainranchhomes.com": IRON_MOUNTAIN_RANCH_FAQS,
 

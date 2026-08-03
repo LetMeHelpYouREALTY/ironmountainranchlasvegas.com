@@ -80,7 +80,7 @@ const agentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   name: "Dr. Jan Duffy - Iron Mountain Ranch Real Estate",
-  url: "https://heyberkshire.com/neighborhoods/iron-mountain-ranch",
+  url: "https://www.ironmountainranchlasvegas.com/neighborhoods/iron-mountain-ranch",
   telephone: "+17025001942",
   address: {
     "@type": "PostalAddress",

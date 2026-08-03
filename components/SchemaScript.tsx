@@ -64,7 +64,7 @@ export function BreadcrumbSchema({
       name: item.name,
       item: item.url.startsWith("http")
         ? item.url
-        : `https://heyberkshire.com${item.url}`,
+        : `https://www.ironmountainranchlasvegas.com${item.url}`,
     })),
   };
 
@@ -118,7 +118,7 @@ export function ReviewSchema({
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://heyberkshire.com#organization",
+    "@id": "https://www.ironmountainranchlasvegas.com#organization",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
   };
 
@@ -174,7 +174,7 @@ export function NeighborhoodSchema({
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Place",
-    "@id": `https://heyberkshire.com/neighborhoods/${slug}#place`,
+    "@id": `https://www.ironmountainranchlasvegas.com/neighborhoods/${slug}#place`,
     name: `${name}, Las Vegas`,
     description,
     address: {

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     description:
       "Trusted Las Vegas REALTOR® serving since 2008. Hyperlocal to Iron Mountain Ranch and northwest Las Vegas.",
-    url: "https://heyberkshire.com/google-business",
+    url: "https://www.ironmountainranchlasvegas.com/google-business",
     type: "profile",
   },
 };
