@@ -174,6 +174,9 @@ export default async function Home() {
           </div>
         </section>
 
+        {/* RealScout MLS carousel — directly below hero on every page */}
+        <RealScoutListings compact />
+
         {/* Value Proposition */}
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -244,7 +247,6 @@ export default async function Home() {
           </div>
         </section>
 
-        <RealScoutListings />
         <WhyChooseUs />
         <ReviewsSection />
 

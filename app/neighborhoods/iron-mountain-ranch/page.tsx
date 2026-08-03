@@ -1,6 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import SchemaScript from "@/components/SchemaScript";
 import Link from "next/link";
 import { Phone, Mountain, Shield, Home as HomeIcon, TrendingUp, Calculator, Search } from "lucide-react";
@@ -489,7 +488,6 @@ export default function IronMountainRanchPage() {
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

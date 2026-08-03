@@ -15,6 +15,7 @@ import {
 import { siteConfig, agentInfo } from "@/lib/site-config";
 import { DEFAULT_OG_IMAGE } from "@/lib/page-images";
 import { cfOgImageUrl } from "@/lib/cf-images";
+import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout-config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
+        <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
         {/* WidgetTracker */}
         <Script id="widget-tracker" strategy="afterInteractive">{`
           (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()
@@ -80,6 +82,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <SchemaScript schema={sitewideSchema} id="sitewide-entity-schema" />
+        {/* RealScout web components — load once for all page widgets */}
+        <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="afterInteractive" />
         {children}
         <Analytics />
       </body>

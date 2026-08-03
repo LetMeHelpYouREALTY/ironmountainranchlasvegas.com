@@ -5,6 +5,7 @@ import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { FEATURED_PROPERTY_IMAGES } from "@/lib/page-images";
 
 export const metadata: Metadata = {
@@ -147,12 +148,17 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               src={property.image}
               alt={property.imageAlt}
               fill
-              className="object-cover"
+              className="object-cover brightness-110"
               priority
               sizes="(max-width: 768px) 100vw, 1200px"
             />
           </div>
+        </div>
 
+        {/* RealScout MLS carousel — below hero on every page */}
+        <RealScoutListings compact />
+
+        <div className="container mx-auto px-4">
           {/* Property Details Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Main Content */}

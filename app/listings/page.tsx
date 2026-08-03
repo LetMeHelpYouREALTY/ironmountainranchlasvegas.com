@@ -139,23 +139,8 @@ export default function ListingsPage() {
             </div>
           </div>
 
+          {/* PageHeroImage includes RealScout MLS carousel below the hero */}
           <PageHeroImage pathname="/listings" />
-
-          {/* RealScout Widget - Live MLS Listings */}
-          <section className="mb-16">
-            <div className="max-w-7xl mx-auto">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `<realscout-office-listings 
-                    agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                    sort-order="NEWEST" 
-                    listing-status="For Sale" 
-                    property-types=",SFR,MF,TC"
-                  ></realscout-office-listings>`,
-                }}
-              />
-            </div>
-          </section>
 
           {/* Popular Searches Section */}
           <section className="mb-16 max-w-6xl mx-auto">

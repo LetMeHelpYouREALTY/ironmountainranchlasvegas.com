@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ImrHyperlocalBand from '@/components/sections/ImrHyperlocalBand'
+import RealScoutListings from '@/components/realscout/RealScoutListings'
 
 export const metadata: Metadata = {
   title: 'Security Policy',
@@ -17,6 +18,11 @@ export default function SecurityPolicyPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           Security Policy
         </h1>
+      </div>
+
+      <RealScoutListings compact />
+
+      <div className="container mx-auto max-w-4xl px-4">
 
         <div className="prose prose-lg max-w-none">
           {/* Overview */}
