@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
+import { agentInfo } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Contact Your Iron Mountain Ranch REALTOR® | Dr. Jan Duffy | Las Vegas",
@@ -28,7 +29,7 @@ const contactSchema = {
     "@type": "RealEstateAgent",
     name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     telephone: "+17025001942",
-    email: "homes@heyberkshire.com",
+    email: "DrDuffy@IronMountainRanchLasVegas.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "7960 N Decatur Blvd, Suite B",
@@ -108,12 +109,20 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
                     <a
-                      href="mailto:homes@heyberkshire.com"
-                      className="text-blue-600 hover:text-blue-700 font-medium"
+                      href={`mailto:${agentInfo.email}`}
+                      className="block text-blue-600 hover:text-blue-700 font-medium break-all"
                     >
-                      Homes@HeyBerkshire.com
+                      {agentInfo.email}
                     </a>
-                    <p className="text-sm text-slate-500 mt-1">
+                    <p className="text-xs text-slate-500 mt-1 mb-2">General inquiries</p>
+                    <a
+                      href={`mailto:${agentInfo.emailSales}`}
+                      className="block text-blue-600 hover:text-blue-700 font-medium break-all"
+                    >
+                      {agentInfo.emailSales}
+                    </a>
+                    <p className="text-xs text-slate-500 mt-1">Selling / listing inquiries</p>
+                    <p className="text-sm text-slate-500 mt-2">
                       Typically respond within 2 hours
                     </p>
                   </div>
@@ -283,13 +292,13 @@ export default function ContactPage() {
                 </div>
               </a>
               <a
-                href="mailto:homes@heyberkshire.com"
+                href={`mailto:${agentInfo.email}`}
                 className="flex items-center justify-center bg-slate-700 hover:bg-slate-800 text-white p-6 rounded-xl transition-colors"
               >
-                <Mail className="h-8 w-8 mr-4" />
-                <div className="text-left">
+                <Mail className="h-8 w-8 mr-4 flex-shrink-0" />
+                <div className="text-left min-w-0">
                   <div className="font-bold text-lg">Send Email</div>
-                  <div className="text-slate-300">Homes@HeyBerkshire.com</div>
+                  <div className="text-slate-300 text-sm break-all">{agentInfo.email}</div>
                 </div>
               </a>
             </div>

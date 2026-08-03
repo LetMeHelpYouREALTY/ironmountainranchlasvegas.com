@@ -43,7 +43,7 @@ const personSchema = {
   description:
     "Licensed real estate agent — Homes by Dr. Jan Duffy, specializing in Iron Mountain Ranch and northwest Las Vegas, serving the Las Vegas Valley since 2008.",
   telephone: "+17025001942",
-  email: "homes@heyberkshire.com",
+  email: "DrDuffy@IronMountainRanchLasVegas.com",
   url: "https://www.ironmountainranchlasvegas.com/about",
   worksFor: {
     "@type": "RealEstateAgent",
@@ -201,11 +201,18 @@ export default function AboutPage() {
                       <span className="font-semibold">(702) 500-1942</span>
                     </a>
                     <a
-                      href="mailto:homes@heyberkshire.com"
-                      className="flex items-center text-slate-700 hover:text-blue-600"
+                      href="mailto:DrDuffy@IronMountainRanchLasVegas.com"
+                      className="flex items-start text-slate-700 hover:text-blue-600"
                     >
-                      <Mail className="h-5 w-5 mr-3 text-blue-600" />
-                      Homes@HeyBerkshire.com
+                      <Mail className="h-5 w-5 mr-3 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span className="break-all">DrDuffy@IronMountainRanchLasVegas.com</span>
+                    </a>
+                    <a
+                      href="mailto:DrDuffySells@IronMountainRanchLasVegas.com"
+                      className="flex items-start text-slate-700 hover:text-blue-600"
+                    >
+                      <Mail className="h-5 w-5 mr-3 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span className="break-all">DrDuffySells@IronMountainRanchLasVegas.com</span>
                     </a>
                     <div className="flex items-start text-slate-700">
                       <MapPin className="h-5 w-5 mr-3 text-blue-600 mt-0.5" />

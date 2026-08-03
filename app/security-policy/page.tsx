@@ -54,8 +54,8 @@ export default function SecurityPolicyPage() {
               <ul className="space-y-2 text-blue-800">
                 <li>
                   <strong>Email:</strong>{' '}
-                  <a href="mailto:security@heyberkshire.com" className="underline">
-                    security@heyberkshire.com
+                  <a href="mailto:DrDuffy@IronMountainRanchLasVegas.com" className="underline">
+                    DrDuffy@IronMountainRanchLasVegas.com
                   </a>
                 </li>
                 <li>
@@ -253,8 +253,8 @@ export default function SecurityPolicyPage() {
               </p>
               <p className="mb-2">
                 Email:{' '}
-                <a href="mailto:homes@heyberkshire.com" className="text-blue-600 underline">
-                  homes@heyberkshire.com
+                <a href="mailto:DrDuffy@IronMountainRanchLasVegas.com" className="text-blue-600 underline">
+                  DrDuffy@IronMountainRanchLasVegas.com
                 </a>
               </p>
               <p>

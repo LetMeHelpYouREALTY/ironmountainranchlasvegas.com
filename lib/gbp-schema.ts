@@ -15,7 +15,7 @@ export const businessInfo = {
     display: "(702) 500-1942",
     tel: "+17025001942",
   },
-  email: "homes@heyberkshire.com",
+  email: "DrDuffy@IronMountainRanchLasVegas.com",
   url: "https://www.ironmountainranchlasvegas.com", // Canonical IMR host for GEO / NAP
 
   // Business Details
@@ -208,7 +208,7 @@ export const gbpFAQs = [
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",
-    answer: "Call or text (702) 500-1942 for immediate assistance, or email homes@heyberkshire.com. Office visits available at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
+    answer: "Call or text (702) 500-1942 for immediate assistance, or email DrDuffy@IronMountainRanchLasVegas.com (general) or DrDuffySells@IronMountainRanchLasVegas.com (selling). Office visits available at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
   },
   {
     question: "Does Dr. Jan help with investment properties in Las Vegas?",

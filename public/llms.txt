@@ -5,7 +5,8 @@
 - Name: Dr. Jan Duffy - Homes by Dr. Jan Duffy
 - Address: 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085
 - Phone: (702) 500-1942
-- Email: homes@heyberkshire.com
+- Email: DrDuffy@IronMountainRanchLasVegas.com
+- Email (Selling): DrDuffySells@IronMountainRanchLasVegas.com
 - License: S.0197614.LLC
 - Canonical site: https://www.ironmountainranchlasvegas.com
 

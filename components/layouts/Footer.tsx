@@ -189,14 +189,22 @@ export default function Footer() {
                   (702) 500-1942
                 </Link>
               </li>
-              <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0" />
-                <Link
-                  href="mailto:homes@heyberkshire.com"
-                  className="text-slate-300 hover:text-white transition-colors text-sm"
-                >
-                  Homes@HeyBerkshire.com
-                </Link>
+              <li className="flex items-start">
+                <Mail className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1">
+                  <Link
+                    href={`mailto:${agentInfo.email}`}
+                    className="text-slate-300 hover:text-white transition-colors text-sm break-all"
+                  >
+                    {agentInfo.email}
+                  </Link>
+                  <Link
+                    href={`mailto:${agentInfo.emailSales}`}
+                    className="text-slate-300 hover:text-white transition-colors text-sm break-all"
+                  >
+                    {agentInfo.emailSales}
+                  </Link>
+                </div>
               </li>
             </ul>
           </div>

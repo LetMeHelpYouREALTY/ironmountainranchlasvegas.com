@@ -28,7 +28,10 @@ export const agentInfo = {
   phone: "(702) 500-1942",
   phoneFormatted: "(702) 500-1942",
   phoneTel: "tel:+17025001942",
-  email: "homes@heyberkshire.com",
+  /** Primary contact email */
+  email: "DrDuffy@IronMountainRanchLasVegas.com",
+  /** Seller / listing inquiries */
+  emailSales: "DrDuffySells@IronMountainRanchLasVegas.com",
   /** Legal brokerage — display only in footer attribution */
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
 };

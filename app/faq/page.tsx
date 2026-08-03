@@ -169,7 +169,7 @@ const faqCategories = [
       },
       {
         q: "How do I contact Dr. Jan Duffy?",
-        a: "Call or text (702) 500-1942 or email homes@heyberkshire.com. Office located at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085.",
+        a: "Call or text (702) 500-1942 or email DrDuffy@IronMountainRanchLasVegas.com (general) or DrDuffySells@IronMountainRanchLasVegas.com (selling). Office located at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085.",
       },
       {
         q: "What areas does Dr. Jan cover?",
