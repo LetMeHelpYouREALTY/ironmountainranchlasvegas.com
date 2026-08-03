@@ -5,23 +5,63 @@ import { headers } from "next/headers";
 import { getDomainConfig } from "@/lib/domain-config";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import SchemaScript from "@/components/SchemaScript";
+import {
+  generateRealEstateAgentSchema,
+  generateWebSiteSchema,
+  generatePersonSchema,
+  combineSchemas,
+} from "@/lib/schema";
+import { siteConfig, agentInfo } from "@/lib/site-config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
   const config = getDomainConfig(domain);
+  const canonicalHost =
+    config.domain !== "default" ? `https://www.${config.domain}` : siteConfig.url;
+
   return {
+    metadataBase: new URL(siteConfig.url),
     title: `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`,
     description: config.description,
     keywords: config.keywords,
+    authors: [{ name: agentInfo.name, url: siteConfig.url }],
+    creator: agentInfo.name,
     openGraph: {
       title: config.heroHeadline,
       description: config.description,
       type: "website",
+      url: canonicalHost,
+      siteName: siteConfig.brandLine,
+      locale: "en_US",
+      images: [
+        {
+          url: "/Image/hero_bg_1.jpg",
+          width: 1200,
+          height: 630,
+          alt: `${config.neighborhood} — ${agentInfo.name}, Berkshire Hathaway HomeServices Nevada Properties`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: config.heroHeadline,
+      description: config.description,
+      images: ["/Image/hero_bg_1.jpg"],
+    },
+    alternates: {
+      canonical: canonicalHost,
     },
   };
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const sitewideSchema = combineSchemas(
+    generateWebSiteSchema(),
+    generateRealEstateAgentSchema(),
+    generatePersonSchema()
+  );
+
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
@@ -37,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}</Script>
       </head>
       <body>
+        <SchemaScript schema={sitewideSchema} id="sitewide-entity-schema" />
         {children}
         <Analytics />
       </body>

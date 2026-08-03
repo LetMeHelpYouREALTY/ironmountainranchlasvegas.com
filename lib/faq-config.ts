@@ -110,7 +110,7 @@ export const FAQ_BY_PAGE_TYPE: Record<string, FAQ[]> = {
 
 export const IRON_MOUNTAIN_RANCH_FAQS: FAQ[] = [
   { question: "What is the current median home price in Iron Mountain Ranch?",
-    answer: "As of mid-2026, the median list price in Iron Mountain Ranch is roughly $535,000 at about $235 per square foot, with homes ranging from around $400,000 to over $1M. Call/text Dr. Jan at 702-222-1964 for a live comp pull — she tracks every sale in all 9 villages." },
+    answer: "As of mid-2026, the median list price in Iron Mountain Ranch is roughly $535,000 at about $235 per square foot, with homes ranging from around $400,000 to over $1M. Call/text Dr. Jan at 702-500-1942 for a live comp pull — she tracks every sale in all 9 villages." },
   { question: "Where is Iron Mountain Ranch located?",
     answer: "Iron Mountain Ranch is an 850-acre master-planned community in northwest Las Vegas (ZIP codes 89131 and 89143), inside the Centennial Hills area north of Providence. It sits along Iron Mountain Road with quick access to US-95 and the 215 Beltway, minutes from Floyd Lamb Park and the Tule Springs Fossil Beds National Monument." },
   { question: "Are Iron Mountain Ranch neighborhoods gated?",
@@ -120,7 +120,7 @@ export const IRON_MOUNTAIN_RANCH_FAQS: FAQ[] = [
   { question: "How big are homes in Iron Mountain Ranch?",
     answer: "Mostly 1- and 2-story single-family homes of roughly 2,000 to 4,500 square feet on larger-than-average lots, built primarily between 2001 and 2008 with Mediterranean and Tuscan styling. Most resale activity falls in the $550,000–$725,000 range for 2,200–3,400 sq ft homes." },
   { question: "How fast do Iron Mountain Ranch homes sell?",
-    answer: "Median days on market is currently about 27 days, with only around 28 active listings at any given time — inventory is tight. Sellers benefit from precise pricing; buyers need same-day alerts. Dr. Jan provides both. Call 702-222-1964." },
+    answer: "Median days on market is currently about 27 days, with only around 28 active listings at any given time — inventory is tight. Sellers benefit from precise pricing; buyers need same-day alerts. Dr. Jan provides both. Call 702-500-1942." },
 ];
 
 // ─── DOMAIN-SPECIFIC OVERRIDES ────────────────────────────────────────────

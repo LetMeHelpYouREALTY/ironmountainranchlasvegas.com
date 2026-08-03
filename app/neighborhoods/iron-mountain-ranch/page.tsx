@@ -1,9 +1,19 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import SchemaScript from "@/components/SchemaScript";
 import Link from "next/link";
 import { Phone, Mountain, Shield, Home as HomeIcon, TrendingUp, Calculator, Search } from "lucide-react";
 import type { Metadata } from "next";
+import { agentInfo, officeInfo, marketStats, siteConfig } from "@/lib/site-config";
+import {
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  generateNeighborhoodSchema,
+  generateWebPageSchema,
+  generateHowToSchema,
+  combineSchemas,
+} from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch Homes for Sale | REALTOR® Services | Las Vegas 89131",
@@ -19,92 +29,140 @@ export const metadata: Metadata = {
     "northwest Las Vegas gated community",
     "Centennial Hills master planned community",
   ],
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is the current median home price in Iron Mountain Ranch?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "As of mid-2026, the median list price in Iron Mountain Ranch is approximately $535,000 at about $235 per square foot. Homes range from around $400,000 to over $1 million, with most activity between $550,000 and $725,000 for 2,200–3,400 square foot homes.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Where is Iron Mountain Ranch located?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Iron Mountain Ranch is an 850-acre master-planned community in northwest Las Vegas, ZIP codes 89131 and 89143, within the Centennial Hills area north of Providence. It sits along Iron Mountain Road with quick access to US-95 and the 215 Beltway, minutes from Floyd Lamb Park and Tule Springs Fossil Beds National Monument.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are Iron Mountain Ranch neighborhoods gated?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Iron Mountain Ranch is organized into 9 villages and several of them have gated access. The community totals approximately 1,700 single-family homes and townhomes built primarily between 2001 and 2008 with Mediterranean and Tuscan architectural styling.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does Iron Mountain Ranch have an HOA?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Iron Mountain Ranch operates under a Landscape Maintenance Association (LMA) plus village-level associations. The LMA maintains parks, green belts, and common elements. Typical combined dues run about $95–$185 per month as of 2026 — lower than most Summerlin or Henderson master plans.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How quickly do Iron Mountain Ranch homes sell?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Median days on market is currently about 27 days, with roughly 28 active listings community-wide. Inventory is limited, so buyers benefit from real-time listing alerts and sellers benefit from village-specific pricing.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Why hire an Iron Mountain Ranch specialist REALTOR®?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "With only about 28 active listings across 9 villages, hyperlocal knowledge matters: which villages are gated, what the LMA covers, how lot sizes vary, and what identical floor plans closed for last month. Dr. Jan Duffy tracks every Iron Mountain Ranch sale and provides free village-specific valuations.",
-      },
-    },
-  ],
-};
-
-const agentSchema = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Iron Mountain Ranch Real Estate",
-  url: "https://www.ironmountainranchlasvegas.com/neighborhoods/iron-mountain-ranch",
-  telephone: "+17025001942",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-    addressLocality: "Las Vegas",
-    addressRegion: "NV",
-    postalCode: "89134",
+  openGraph: {
+    title: "Iron Mountain Ranch Homes for Sale | Dr. Jan Duffy",
+    description:
+      "9 gated villages, ~1,700 homes, median list ~$535K (August 2026). Your Iron Mountain Ranch REALTOR®.",
+    url: `${siteConfig.url}/neighborhoods/iron-mountain-ranch`,
+    type: "website",
   },
-  areaServed: [
-    { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89131" },
-    { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89143" },
-    { "@type": "Place", name: "Centennial Hills, Las Vegas, NV" },
-  ],
-  knowsAbout: [
-    "Iron Mountain Ranch homes for sale",
-    "Iron Mountain Ranch home valuations",
-    "Northwest Las Vegas gated communities",
-  ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "200",
+  alternates: {
+    canonical: `${siteConfig.url}/neighborhoods/iron-mountain-ranch`,
   },
 };
+
+const imrFaqs = [
+  {
+    question: "What is the current median home price in Iron Mountain Ranch?",
+    answer:
+      "As of mid-2026, the median list price in Iron Mountain Ranch is approximately $535,000 at about $235 per square foot. Homes range from around $400,000 to over $1 million, with most activity between $550,000 and $725,000 for 2,200–3,400 square foot homes.",
+  },
+  {
+    question: "Where is Iron Mountain Ranch located?",
+    answer:
+      "Iron Mountain Ranch is an 850-acre master-planned community in northwest Las Vegas, ZIP codes 89131 and 89143, within the Centennial Hills area north of Providence. It sits along Iron Mountain Road with quick access to US-95 and the 215 Beltway, minutes from Floyd Lamb Park and Tule Springs Fossil Beds National Monument.",
+  },
+  {
+    question: "Are Iron Mountain Ranch neighborhoods gated?",
+    answer:
+      "Iron Mountain Ranch is organized into 9 villages and several of them have gated access. The community totals approximately 1,700 single-family homes and townhomes built primarily between 2001 and 2008 with Mediterranean and Tuscan architectural styling.",
+  },
+  {
+    question: "Does Iron Mountain Ranch have an HOA?",
+    answer:
+      "Iron Mountain Ranch operates under a Landscape Maintenance Association (LMA) plus village-level associations. The LMA maintains parks, green belts, and common elements. Typical combined dues run about $95–$185 per month as of 2026 — lower than most Summerlin or Henderson master plans.",
+  },
+  {
+    question: "How quickly do Iron Mountain Ranch homes sell?",
+    answer:
+      "Median days on market is currently about 27 days, with roughly 28 active listings community-wide. Inventory is limited, so buyers benefit from real-time listing alerts and sellers benefit from village-specific pricing.",
+  },
+  {
+    question: "Why hire an Iron Mountain Ranch specialist REALTOR®?",
+    answer:
+      "With only about 28 active listings across 9 villages, hyperlocal knowledge matters: which villages are gated, what the LMA covers, how lot sizes vary, and what identical floor plans closed for last month. Dr. Jan Duffy tracks every Iron Mountain Ranch sale and provides free village-specific valuations. Call (702) 500-1942.",
+  },
+];
+
+const pageUrl = `${siteConfig.url}/neighborhoods/iron-mountain-ranch`;
+
+const imrGeoSchema = combineSchemas(
+  generateWebPageSchema({
+    name: "Iron Mountain Ranch Homes for Sale | REALTOR® Services",
+    description:
+      "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Market stats, gated villages, and REALTOR® services from Dr. Jan Duffy.",
+    url: pageUrl,
+    datePublished: "2026-02-01",
+    dateModified: "2026-08-03",
+    speakableCssSelectors: ["#tldr", "#faq"],
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Neighborhoods", url: "/neighborhoods" },
+    { name: "Iron Mountain Ranch", url: "/neighborhoods/iron-mountain-ranch" },
+  ]),
+  generateNeighborhoodSchema({
+    name: "Iron Mountain Ranch",
+    slug: "iron-mountain-ranch",
+    description:
+      "Iron Mountain Ranch is an 850-acre master-planned community in northwest Las Vegas (ZIP 89131 & 89143) with about 9 gated villages and roughly 1,700 homes. Median list price about $535,000 as of August 2026.",
+    medianPrice: marketStats.ironMountainRanch.medianPriceFormatted,
+    latitude: 36.3232125,
+    longitude: -115.2871094,
+    containedIn: "Las Vegas",
+  }),
+  generateFAQSchema(imrFaqs),
+  generateHowToSchema({
+    name: "How to buy a home in Iron Mountain Ranch",
+    description:
+      "Steps to buy in Iron Mountain Ranch, Las Vegas, with a hyperlocal REALTOR® who tracks all 9 villages.",
+    totalTime: "P30D",
+    steps: [
+      {
+        name: "Define village and budget",
+        text: "Decide which Iron Mountain Ranch villages fit your lot, gate, and budget needs. Typical resale activity is $550,000–$725,000 for 2,200–3,400 sq ft homes.",
+      },
+      {
+        name: "Get village-specific comps",
+        text: "Ask Dr. Jan Duffy for a live MLS comp pull by village — not a zip-code average. Call (702) 500-1942.",
+      },
+      {
+        name: "Set listing alerts",
+        text: "With only about 28 active listings community-wide, enable same-day alerts so you can tour before inventory is gone.",
+      },
+      {
+        name: "Tour and verify dues",
+        text: "Confirm LMA and village association dues (typically $95–$185/mo combined) and school zoning for the exact address before offering.",
+      },
+      {
+        name: "Write a competitive offer",
+        text: "Use village closed comps and current days-on-market (~27) to price and negotiate with confidence.",
+      },
+    ],
+  }),
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": `${pageUrl}#agent`,
+    name: "Dr. Jan Duffy - Iron Mountain Ranch Real Estate",
+    url: pageUrl,
+    telephone: "+17025001942",
+    email: agentInfo.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: officeInfo.address.street,
+      addressLocality: officeInfo.address.city,
+      addressRegion: officeInfo.address.state,
+      postalCode: officeInfo.address.zip,
+      addressCountry: "US",
+    },
+    areaServed: [
+      { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89131" },
+      { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89143" },
+      { "@type": "Place", name: "Centennial Hills, Las Vegas, NV" },
+    ],
+    knowsAbout: [
+      "Iron Mountain Ranch homes for sale",
+      "Iron Mountain Ranch home valuations",
+      "Northwest Las Vegas gated communities",
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "200",
+    },
+  }
+);
 
 const realtorServices = [
   {
@@ -136,20 +194,13 @@ const realtorServices = [
 export default function IronMountainRanchPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(agentSchema) }}
-      />
+      <SchemaScript schema={imrGeoSchema} id="imr-geo-schema" />
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
-            <nav className="text-sm text-slate-500">
+            <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
               <Link href="/" className="hover:text-blue-600">Home</Link>
               {" / "}
               <Link href="/neighborhoods" className="hover:text-blue-600">Neighborhoods</Link>
@@ -163,7 +214,7 @@ export default function IronMountainRanchPage() {
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Your Iron Mountain Ranch REALTOR® | Berkshire Hathaway HomeServices
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
+            <h1 id="tldr" className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Iron Mountain Ranch Homes for Sale
             </h1>
             <p className="text-xl text-slate-600">
@@ -366,16 +417,16 @@ export default function IronMountainRanchPage() {
             </div>
           </section>
 
-          {/* FAQ Section */}
-          <section className="mb-16 max-w-4xl mx-auto">
+          {/* FAQ Section — Speakable target #faq */}
+          <section id="faq" className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
               Iron Mountain Ranch FAQ
             </h2>
             <div className="space-y-6">
-              {faqSchema.mainEntity.map((faq) => (
-                <div key={faq.name} className="bg-white border border-slate-200 rounded-lg p-6">
-                  <h3 className="font-bold text-slate-900 mb-2">{faq.name}</h3>
-                  <p className="text-slate-600">{faq.acceptedAnswer.text}</p>
+              {imrFaqs.map((faq) => (
+                <div key={faq.question} className="bg-white border border-slate-200 rounded-lg p-6">
+                  <h3 className="font-bold text-slate-900 mb-2">{faq.question}</h3>
+                  <p className="text-slate-600">{faq.answer}</p>
                 </div>
               ))}
             </div>

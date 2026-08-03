@@ -8,6 +8,8 @@ import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
+import { agentInfo, agentStats, marketStats, officeInfo, siteConfig } from "@/lib/site-config";
+import { generateFAQSchema } from "@/lib/schema";
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -28,7 +30,7 @@ const FAQ_SECTION_COPY: Record<
   },
   search: {
     title: "Las Vegas Home Search FAQ",
-    subtitle: "Straight answers from a 30-year Las Vegas market expert",
+    subtitle: "Straight answers from a Las Vegas market expert since 2008",
   },
   lifestyle: {
     title: "Moving to Las Vegas FAQ",
@@ -43,50 +45,65 @@ const FAQ_SECTION_COPY: Record<
 export default async function Home() {
   const config = await getPageDomainConfig();
 
-  // ── Domain-aware FAQs ────────────────────────────────────────────────────
   const faqs = getFaqsForDomain(config.pageType, config.domain);
   const faqCopy = FAQ_SECTION_COPY[config.pageType] ?? FAQ_SECTION_COPY["search"];
 
-  // Personalise the FAQ title with the neighborhood name for community/55+ pages
   const faqTitle =
     config.pageType === "community" || config.pageType === "55plus"
       ? `${config.neighborhood} FAQ`
       : faqCopy.title;
 
-  // ── Schema: RealEstateAgent ──────────────────────────────────────────────
+  const siteUrl =
+    config.domain !== "default"
+      ? `https://www.${config.domain}`
+      : siteConfig.url;
+
+  const isIMR = config.neighborhood === "Iron Mountain Ranch";
+  const imr = marketStats.ironMountainRanch;
+  const lv = marketStats.lasVegas;
+
+  const marketStatCards = isIMR
+    ? [
+        { value: imr.medianPriceFormatted, label: "Median List Price", sub: marketStats.lastUpdated },
+        { value: String(imr.daysOnMarket), label: "Avg Days on Market", sub: "" },
+        { value: `~${imr.activeListings}`, label: "Active Listings", sub: "Community-wide" },
+        { value: imr.pricePerSqFtFormatted, label: "Price per Sq Ft", sub: "" },
+      ]
+    : [
+        { value: lv.medianPriceFormatted, label: "Median Price", sub: lv.yearOverYearChange },
+        { value: String(lv.daysOnMarket), label: "Avg Days on Market", sub: "" },
+        { value: lv.activeListings.toLocaleString(), label: "Active Listings", sub: "" },
+        { value: String(lv.inventoryMonths), label: "Months Inventory", sub: "" },
+      ];
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
+    "@id": `${siteUrl}#local-agent`,
     name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
-    url: `https://${config.domain !== "default" ? config.domain : "www.ironmountainranchlasvegas.com"}`,
-    telephone: "+17022221964",
+    url: siteUrl,
+    telephone: agentInfo.phoneTel.replace("tel:", ""),
+    email: agentInfo.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-      addressLocality: "Las Vegas",
-      addressRegion: "NV",
-      postalCode: "89134",
+      streetAddress: officeInfo.address.street,
+      addressLocality: officeInfo.address.city,
+      addressRegion: officeInfo.address.state,
+      postalCode: officeInfo.address.zip,
+      addressCountry: "US",
+    },
+    areaServed: {
+      "@type": "Place",
+      name: `${config.neighborhood}, Las Vegas, NV`,
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
+      ratingValue: String(agentStats.averageRating),
+      reviewCount: String(agentStats.reviewCount),
     },
   };
 
-  // ── Schema: FAQPage ──────────────────────────────────────────────────────
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
+  const faqSchema = generateFAQSchema(faqs);
 
   return (
     <>
@@ -112,7 +129,7 @@ export default async function Home() {
                 {config.ctaBadge}
               </span>
             )}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 id="tldr" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {config.heroHeadline}
             </h1>
             <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto">
@@ -128,18 +145,18 @@ export default async function Home() {
               />
             </div>
 
-            {/* Trust Indicators */}
+            {/* Trust Indicators — aligned with agentStats for E-E-A-T */}
             <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">500+</span>
+                <span className="font-semibold text-white">{agentStats.transactionsClosed}+</span>
                 <span>Families Helped</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">30+ Years</span>
+                <span className="font-semibold text-white">Since {agentStats.servingSince}</span>
                 <span>Las Vegas Experience</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">4.9★</span>
+                <span className="font-semibold text-white">{agentStats.averageRating}★</span>
                 <span>Client Rating</span>
               </div>
             </div>
@@ -176,22 +193,21 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* Market Stats */}
+        {/* Market Stats — IMR-accurate when primary area is Iron Mountain Ranch */}
         <section className="py-16 bg-slate-900 text-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold mb-3">
                 {config.neighborhood} Real Estate Market
               </h2>
-              <p className="text-slate-400">Current data — updated regularly</p>
+              <p className="text-slate-400">
+                {isIMR
+                  ? `MLS and public market data — ${marketStats.lastUpdated}`
+                  : "Current data — updated regularly"}
+              </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              {[
-                { value: "$450K", label: "Median Price", sub: "+4.2% YoY" },
-                { value: "28", label: "Avg Days on Market", sub: "" },
-                { value: "4,850", label: "Active Listings", sub: "" },
-                { value: "2.1", label: "Months Inventory", sub: "" },
-              ].map(({ value, label, sub }) => (
+              {marketStatCards.map(({ value, label, sub }) => (
                 <div key={label} className="text-center">
                   <div className="text-4xl font-bold text-blue-400 mb-1">{value}</div>
                   <div className="text-slate-300 text-sm">{label}</div>
@@ -199,6 +215,16 @@ export default async function Home() {
                 </div>
               ))}
             </div>
+            {isIMR && (
+              <p className="text-center text-slate-500 text-xs mt-8 max-w-2xl mx-auto">
+                Source: MLS and public market data for Iron Mountain Ranch (89131 &amp; 89143),
+                verified {marketStats.lastUpdated}. Values vary by village —{" "}
+                <Link href="/neighborhoods/iron-mountain-ranch" className="text-blue-400 hover:underline">
+                  full community guide
+                </Link>
+                .
+              </p>
+            )}
             <div className="text-center mt-8">
               <Link href="/market-report" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors">
                 Full Market Report
@@ -211,14 +237,15 @@ export default async function Home() {
         <WhyChooseUs />
         <ReviewsSection />
 
-        {/* Domain-Aware FAQ with FAQPage schema already injected above */}
-        <FAQSection
-          faqs={faqs}
-          title={faqTitle}
-          subtitle={faqCopy.subtitle}
-        />
+        <div id="faq">
+          <FAQSection
+            faqs={faqs}
+            title={faqTitle}
+            subtitle={faqCopy.subtitle}
+          />
+        </div>
 
-        {/* Domain-Specific CTA */}
+        {/* Domain-Specific CTA — NAP phone from site-config */}
         <section className="py-16 md:py-20 bg-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -229,11 +256,11 @@ export default async function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17022221964"
+                href={agentInfo.phoneTel}
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call 702-222-1964
+                Call {agentInfo.phone}
               </a>
               <Link
                 href="/contact"
@@ -243,7 +270,10 @@ export default async function Home() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | License {agentInfo.license} | Berkshire Hathaway HomeServices Nevada Properties
+            </p>
+            <p className="mt-2 text-blue-200/80 text-xs">
+              {officeInfo.address.full} · {agentInfo.phone}
             </p>
           </div>
         </section>

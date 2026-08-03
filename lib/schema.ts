@@ -139,12 +139,19 @@ export function generateRealEstateAgentSchema() {
         name: "North Las Vegas",
       },
     ],
+    // Hours aligned with GBP (lib/gbp-schema.ts) for GEO entity consistency
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        opens: "08:00",
-        closes: "20:00",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "10:00",
+        closes: "16:00",
       },
     ],
     hasCredential: {
@@ -544,14 +551,16 @@ export function generateWebPageSchema(page: {
   url: string;
   datePublished?: string;
   dateModified?: string;
+  speakableCssSelectors?: string[];
 }) {
+  const url = page.url.startsWith("http") ? page.url : `${BASE_URL}${page.url}`;
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${page.url.startsWith("http") ? page.url : `${BASE_URL}${page.url}`}#webpage`,
+    "@id": `${url}#webpage`,
     name: page.name,
     description: page.description,
-    url: page.url.startsWith("http") ? page.url : `${BASE_URL}${page.url}`,
+    url,
     isPartOf: {
       "@id": `${BASE_URL}#website`,
     },
@@ -560,6 +569,86 @@ export function generateWebPageSchema(page: {
     },
     ...(page.datePublished && { datePublished: page.datePublished }),
     ...(page.dateModified && { dateModified: page.dateModified }),
+    ...(page.speakableCssSelectors?.length
+      ? {
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: page.speakableCssSelectors,
+          },
+        }
+      : {}),
+  };
+}
+
+/**
+ * SpeakableSpecification for AI Overviews / voice / GEO citation lifts
+ */
+export function generateSpeakableSchema(cssSelectors: string[]) {
+  return {
+    "@type": "SpeakableSpecification",
+    cssSelector: cssSelectors,
+  };
+}
+
+/**
+ * Person schema for E-E-A-T / author attribution (Dr. Jan Duffy)
+ */
+export function generatePersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${BASE_URL}#person`,
+    name: agentInfo.name,
+    jobTitle: "REALTOR®",
+    description:
+      "REALTOR® specializing in Iron Mountain Ranch and northwest Las Vegas gated communities. License S.0197614.LLC.",
+    url: BASE_URL,
+    telephone: "+1-702-500-1942",
+    email: agentInfo.email,
+    image: `${BASE_URL}/images/dr-jan-duffy.jpg`,
+    worksFor: {
+      "@type": "Organization",
+      name: agentInfo.brokerage,
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: officeInfo.address.street,
+      addressLocality: officeInfo.address.city,
+      addressRegion: officeInfo.address.state,
+      postalCode: officeInfo.address.zip,
+      addressCountry: "US",
+    },
+    sameAs: Object.values(socialProfiles),
+    knowsAbout: [
+      "Iron Mountain Ranch real estate",
+      "Northwest Las Vegas gated communities",
+      "Las Vegas home buying",
+      "Las Vegas home selling",
+    ],
+  };
+}
+
+/**
+ * HowTo schema for procedural GEO answers (e.g. buying in a community)
+ */
+export function generateHowToSchema(howto: {
+  name: string;
+  description: string;
+  steps: Array<{ name: string; text: string }>;
+  totalTime?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howto.name,
+    description: howto.description,
+    ...(howto.totalTime && { totalTime: howto.totalTime }),
+    step: howto.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+    })),
   };
 }
 

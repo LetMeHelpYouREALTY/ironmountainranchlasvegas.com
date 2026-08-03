@@ -1,60 +1,63 @@
-# robots.txt for heyberkshire.com
-# Real estate site for Dr. Jan Duffy
+# robots.txt — ironmountainranchlasvegas.com
+# Generative Engine Optimization (GEO): allow major AI crawlers
 
-# Allow all search engines
 User-agent: *
 Allow: /
-
-# Disallow admin and internal pages
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_next/
 Disallow: /monitoring/
 
-# Allow critical pages for SEO
-Allow: /neighborhoods/
-Allow: /buyers/
-Allow: /sellers/
-Allow: /about/
-Allow: /contact/
-Allow: /blog/
+# Primary sitemap
+Sitemap: https://www.ironmountainranchlasvegas.com/sitemap.xml
 
-# Sitemap location
-Sitemap: https://heyberkshire.com/sitemap.xml
+# ── AI / generative search crawlers (GEO / LLMO / AIO) ──────────────────────
+User-agent: GPTBot
+Allow: /
 
-# Crawl-delay for aggressive bots (optional)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ── SEO tooling (rate-limited) ──────────────────────────────────────────────
 User-agent: AhrefsBot
 Crawl-delay: 10
 
 User-agent: SemrushBot
 Crawl-delay: 10
 
-# Block known bad bots
-User-agent: GPTBot
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-# Allow Google's AI bot (for SGE - Search Generative Experience)
-User-agent: Google-Extended
-Allow: /
-
-# Special handling for image crawlers
-User-agent: Googlebot-Image
-Allow: /images/
-Allow: /_next/image
-
 User-agent: Bingbot
 Crawl-delay: 5
 
-# SEO-friendly: Allow social media bots
+# ── Social previews ─────────────────────────────────────────────────────────
 User-agent: facebookexternalhit
 Allow: /
 
@@ -67,4 +70,8 @@ Allow: /
 User-agent: PinterestBot
 Allow: /
 
-# Last updated: February 14, 2026
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /_next/image
+
+# Last updated: 2026-08-03 (GEO — allow AI crawlers + IMR sitemap)

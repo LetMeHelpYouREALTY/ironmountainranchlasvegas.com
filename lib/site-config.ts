@@ -38,9 +38,10 @@ export const officeInfo = {
     zip: "89134",
     full: "9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
   },
+  // Align with GBP / lib/gbp-schema.ts for GEO entity consistency
   coordinates: {
-    lat: 36.1893,
-    lng: -115.2821,
+    lat: 36.1941,
+    lng: -115.2678,
   },
   phone: "(702) 500-1942",
   phoneTel: "tel:+17025001942",

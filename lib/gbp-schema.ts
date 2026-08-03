@@ -16,7 +16,7 @@ export const businessInfo = {
     tel: "+17025001942",
   },
   email: "homes@heyberkshire.com",
-  url: "https://www.ironmountainranchlasvegas.com",
+  url: "https://www.ironmountainranchlasvegas.com", // Canonical IMR host for GEO / NAP
 
   // Business Details
   license: "S.0197614.LLC",
