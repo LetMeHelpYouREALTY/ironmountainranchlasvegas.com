@@ -43,7 +43,7 @@ const listingsSchema = {
     "Live MLS property listings for Iron Mountain Ranch, Centennial Hills, and northwest Las Vegas homes for sale",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     telephone: "+17025001942",
   },
   areaServed: [
@@ -122,7 +122,7 @@ export default function ListingsPage() {
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-12">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Iron Mountain Ranch &amp; Las Vegas Homes for Sale
@@ -482,7 +482,7 @@ export default function ListingsPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

@@ -7,11 +7,11 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices North Las Vegas | Affordable Homes",
+  title: "North Las Vegas Homes | Affordable Homes",
   description:
-    "Find affordable North Las Vegas homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 500-1942.",
+    "Find affordable North Las Vegas homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 500-1942.",
   keywords: [
-    "Berkshire Hathaway HomeServices North Las Vegas",
+    "North Las Vegas Homes",
     "North Las Vegas homes for sale",
     "affordable homes Las Vegas",
     "first time home buyer Las Vegas",
@@ -82,14 +82,14 @@ export default function NorthLasVegasPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices North Las Vegas
+              North Las Vegas Homes
             </h1>
             <p className="text-xl text-slate-600">
               Affordable homeownership and investment opportunities. Find your North Las Vegas
-              home with <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              home with <strong>Homes by Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -317,7 +317,7 @@ export default function NorthLasVegasPage() {
                 Hathaway HomeServices agent, my job is to find the right fit—not the highest price."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -377,7 +377,7 @@ export default function NorthLasVegasPage() {
               Start Your Homeownership Journey
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices North Las Vegas expert,
+              Contact Dr. Jan Duffy, your North Las Vegas Homes expert,
               for guidance on finding affordable homes that fit your budget.
             </p>
             <a
@@ -388,7 +388,7 @@ export default function NorthLasVegasPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

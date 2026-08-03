@@ -7,11 +7,11 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
+  title: "Centennial Hills Homes | Las Vegas Homes",
   description:
-    "Find Centennial Hills homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 500-1942.",
+    "Find Centennial Hills homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 500-1942.",
   keywords: [
-    "Berkshire Hathaway HomeServices Centennial Hills",
+    "Centennial Hills Homes",
     "Centennial Hills homes for sale",
     "Centennial Hills Las Vegas",
     "northwest Las Vegas real estate",
@@ -82,14 +82,14 @@ export default function CentennialHillsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Centennial Hills
+              Centennial Hills Homes
             </h1>
             <p className="text-xl text-slate-600">
               Family-friendly northwest Las Vegas living. Find your Centennial Hills home with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              <strong>Homes by Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -316,7 +316,7 @@ export default function CentennialHillsPage() {
                 over time."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -376,7 +376,7 @@ export default function CentennialHillsPage() {
               Find Your Centennial Hills Home
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Centennial Hills expert,
+              Contact Dr. Jan Duffy, your Centennial Hills Homes expert,
               for guidance in this established family community.
             </p>
             <a
@@ -387,7 +387,7 @@ export default function CentennialHillsPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

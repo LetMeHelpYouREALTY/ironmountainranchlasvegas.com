@@ -7,11 +7,11 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Skye Canyon | Northwest Las Vegas",
+  title: "Skye Canyon Homes | Northwest Las Vegas",
   description:
-    "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 500-1942.",
+    "Find Skye Canyon homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 500-1942.",
   keywords: [
-    "Berkshire Hathaway HomeServices Skye Canyon",
+    "Skye Canyon Homes",
     "Skye Canyon homes for sale",
     "Skye Canyon Las Vegas",
     "northwest Las Vegas homes",
@@ -82,14 +82,14 @@ export default function SkyeCanyonPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Skye Canyon
+              Skye Canyon Homes
             </h1>
             <p className="text-xl text-slate-600">
               Northwest Las Vegas's fastest-growing community. Discover Skye Canyon with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              <strong>Homes by Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -316,7 +316,7 @@ export default function SkyeCanyonPage() {
                 features already included."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -376,7 +376,7 @@ export default function SkyeCanyonPage() {
               Discover Skye Canyon Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Skye Canyon specialist,
+              Contact Dr. Jan Duffy, your Skye Canyon Homes specialist,
               for expert guidance on new construction and resale homes.
             </p>
             <a
@@ -387,7 +387,7 @@ export default function SkyeCanyonPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

@@ -255,7 +255,7 @@ export default function DelWebbLakeLasVegasPage() {
                 which lots offer the best views and which floor plans work for their lifestyle."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>

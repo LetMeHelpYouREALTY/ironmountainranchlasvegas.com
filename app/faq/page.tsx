@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   keywords: [
     "Iron Mountain Ranch FAQ",
     "Iron Mountain Ranch HOA questions",
-    "Berkshire Hathaway HomeServices FAQ",
+    "Homes by Dr. Jan Duffy FAQ",
     "Las Vegas real estate questions",
     "buying a home 89131",
     "BHHS agent questions",
@@ -191,9 +191,9 @@ const allFaqs = faqCategories.flatMap((category) =>
 const pageSchemas = combineSchemas(
   generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
-    name: "Iron Mountain Ranch & Las Vegas Real Estate FAQ | Berkshire Hathaway HomeServices Las Vegas",
+    name: "Iron Mountain Ranch & Las Vegas Real Estate FAQ | Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     description:
-      "Comprehensive FAQ about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties.",
+      "Comprehensive FAQ about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy — Homes by Dr. Jan Duffy.",
     url: "/faq",
     dateModified: "2026-01-25",
   }),
@@ -211,7 +211,7 @@ export default function FAQPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Frequently Asked Questions
@@ -258,7 +258,7 @@ export default function FAQPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

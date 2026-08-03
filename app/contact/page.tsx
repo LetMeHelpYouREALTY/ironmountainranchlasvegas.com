@@ -10,7 +10,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Contact Your Iron Mountain Ranch REALTOR® | Dr. Jan Duffy | Las Vegas",
   description:
-    "Contact Your Iron Mountain Ranch REALTOR®, Iron Mountain Ranch real estate specialist at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment or call (702) 500-1942. Serving 89131, 89143 & all Las Vegas.",
+    "Contact Your Iron Mountain Ranch REALTOR®, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Schedule an appointment or call (702) 500-1942. Serving 89131, 89143 & all Las Vegas.",
   keywords: [
     "Iron Mountain Ranch realtor contact",
     "contact real estate agent Las Vegas",
@@ -26,7 +26,7 @@ const contactSchema = {
   "@type": "ContactPage",
   mainEntity: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     telephone: "+17025001942",
     email: "homes@heyberkshire.com",
     address: {
@@ -58,14 +58,14 @@ export default function ContactPage() {
           {/* Hero */}
           <div className="text-center mb-12">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Contact Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Questions about Iron Mountain Ranch or northwest Las Vegas real estate? Your{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> hyperlocal expert is here to help.
+              <strong>Homes by Dr. Jan Duffy</strong> hyperlocal expert is here to help.
               Schedule an appointment or reach out directly.
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Berkshire Hathaway HomeServices Nevada Properties - Office Location"
+                  title="Iron Mountain Ranch — Office Location | Homes by Dr. Jan Duffy"
                   className="w-full"
                 />
               </div>
@@ -188,7 +188,7 @@ export default function ContactPage() {
                 <p className="text-sm text-slate-700">
                   <strong>Dr. Jan Duffy, REALTOR®</strong><br />
                   License S.0197614.LLC<br />
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  Iron Mountain Ranch | Homes by Dr. Jan Duffy
                 </p>
               </div>
             </div>

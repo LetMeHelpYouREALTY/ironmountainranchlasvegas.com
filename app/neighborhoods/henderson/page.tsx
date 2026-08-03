@@ -7,11 +7,11 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
+  title: "Henderson Homes | Nevada Real Estate",
   description:
-    "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 500-1942.",
+    "Find Henderson homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 500-1942.",
   keywords: [
-    "Berkshire Hathaway HomeServices Henderson",
+    "Henderson Homes",
     "Henderson homes for sale",
     "Henderson real estate agent",
     "Henderson Nevada",
@@ -98,14 +98,13 @@ export default function HendersonPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Henderson
+              Henderson Homes
             </h1>
             <p className="text-xl text-slate-600">
-              Nevada's safest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> Henderson specialist.
+              Nevada's safest city. Find your Henderson home — <strong>Homes by Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -329,7 +328,7 @@ export default function HendersonPage() {
                 to Live' awards."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -389,7 +388,7 @@ export default function HendersonPage() {
               Find Your Henderson Home Today
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Henderson expert,
+              Contact Dr. Jan Duffy, your Henderson Homes expert,
               for personalized guidance and local market insights.
             </p>
             <a
@@ -400,7 +399,7 @@ export default function HendersonPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

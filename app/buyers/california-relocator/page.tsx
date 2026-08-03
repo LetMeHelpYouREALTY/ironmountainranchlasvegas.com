@@ -83,7 +83,7 @@ const faqSchema = {
 const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
   telephone: "+17025001942",
   url: "https://www.ironmountainranchlasvegas.com/buyers/california-relocator",
   address: {
@@ -457,7 +457,7 @@ export default function CaliforniaRelocatorPage() {
                 out alone."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -487,7 +487,7 @@ export default function CaliforniaRelocatorPage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

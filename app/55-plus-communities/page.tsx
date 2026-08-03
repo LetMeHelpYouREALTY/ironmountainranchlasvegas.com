@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "55+ Communities Near Iron Mountain Ranch | Dr. Jan Duffy",
     description:
-      "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living. Berkshire Hathaway HomeServices Nevada Properties.",
+      "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living. Iron Mountain Ranch | Homes by Dr. Jan Duffy.",
     type: "website",
   },
 };
@@ -108,7 +108,7 @@ const faqSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
   description:
     "55+ community specialist helping active adults find their perfect Las Vegas retirement home",
   telephone: "(702) 500-1942",
@@ -705,7 +705,7 @@ export default function FiftyFiveCommunitiesPage() {
                 knowledge to make confident decisions."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -880,7 +880,7 @@ export default function FiftyFiveCommunitiesPage() {
               </span>
             </p>
             <p className="mt-4 text-blue-300 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

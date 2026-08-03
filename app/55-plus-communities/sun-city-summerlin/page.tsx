@@ -280,7 +280,7 @@ export default function SunCitySummerlinPage() {
                 golf course views, mountain views, or proximity to their favorite rec center."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>

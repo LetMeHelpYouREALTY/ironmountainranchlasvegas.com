@@ -9,7 +9,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch & Las Vegas Market Report 2026 | Berkshire Hathaway HomeServices",
   description:
-    "Iron Mountain Ranch and Las Vegas real estate market statistics for 2026. Median prices, days on market, inventory for 89131 and the Las Vegas Valley from Berkshire Hathaway HomeServices Nevada Properties.",
+    "Iron Mountain Ranch and Las Vegas real estate market statistics for 2026. Median prices, days on market, inventory for 89131 and the Las Vegas Valley — Homes by Dr. Jan Duffy.",
   keywords: [
     "Iron Mountain Ranch market report",
     "Iron Mountain Ranch home prices 2026",
@@ -50,14 +50,14 @@ export default function MarketReportPage() {
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Market Intelligence
+              Iron Mountain Ranch Market Intelligence
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Iron Mountain Ranch &amp; Las Vegas Market Report
             </h1>
             <p className="text-xl text-slate-600">
               Expert analysis from{" "}
-              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> — hyperlocal focus
+              <strong>Iron Mountain Ranch | Homes by Dr. Jan Duffy</strong> — hyperlocal focus
               on Iron Mountain Ranch and northwest Las Vegas (89131 &amp; 89143)
             </p>
           </div>
@@ -228,7 +228,7 @@ export default function MarketReportPage() {
                 proper pricing and preparation."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
 
@@ -348,7 +348,7 @@ export default function MarketReportPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

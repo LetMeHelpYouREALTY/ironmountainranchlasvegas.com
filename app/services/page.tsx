@@ -25,7 +25,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "REALTOR® Services Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Full REALTOR® services for Iron Mountain Ranch and northwest Las Vegas (89131) from Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Buying, selling, valuations, investment, and relocation. Call (702) 500-1942.",
+    "Full REALTOR® services for Iron Mountain Ranch and northwest Las Vegas (89131) from Dr. Jan Duffy — Homes by Dr. Jan Duffy. Buying, selling, valuations, investment, and relocation. Call (702) 500-1942.",
   keywords: [
     "Iron Mountain Ranch realtor services",
     "Iron Mountain Ranch real estate agent",
@@ -42,7 +42,7 @@ const servicesSchema = {
   "@type": "Service",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     telephone: "+17025001942",
   },
   areaServed: "Iron Mountain Ranch, Centennial Hills, Las Vegas, Henderson, Clark County NV",
@@ -177,7 +177,7 @@ export default function ServicesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               REALTOR® Services for Iron Mountain Ranch
@@ -506,7 +506,7 @@ export default function ServicesPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

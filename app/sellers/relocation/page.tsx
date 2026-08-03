@@ -490,7 +490,7 @@ export default function RelocationPage() {
                 agent in your new city—someone who'll treat you like a VIP, not just a referral."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>

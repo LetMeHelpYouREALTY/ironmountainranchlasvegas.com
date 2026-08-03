@@ -14,11 +14,11 @@ import {
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
+  title: "Summerlin Homes | Las Vegas Luxury Real Estate",
   description:
-    "Find Summerlin homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 500-1942.",
+    "Find Summerlin homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 500-1942.",
   keywords: [
-    "Berkshire Hathaway HomeServices Summerlin",
+    "Summerlin Homes",
     "Summerlin homes for sale",
     "Summerlin real estate agent",
     "Summerlin Las Vegas",
@@ -94,14 +94,13 @@ export default function SummerlinPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Summerlin
+              Summerlin Homes
             </h1>
             <p className="text-xl text-slate-600">
-              Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> Summerlin expert.
+              Discover Las Vegas's premier master-planned community — <strong>Homes by Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -307,7 +306,7 @@ export default function SummerlinPage() {
                 what sets Berkshire Hathaway HomeServices apart."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy | Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -368,7 +367,7 @@ export default function SummerlinPage() {
               Ready to Find Your Summerlin Home?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Summerlin specialist,
+              Contact Dr. Jan Duffy, your Summerlin Homes specialist,
               for a personalized home search or free market analysis.
             </p>
             <a
@@ -379,7 +378,7 @@ export default function SummerlinPage() {
               Call (702) 500-1942
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

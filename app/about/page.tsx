@@ -23,7 +23,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | BHHS Las Vegas",
   description:
-    "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist at Berkshire Hathaway HomeServices Nevada Properties. Serving Las Vegas since 2008, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Serving Las Vegas since 2008, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy",
     "Iron Mountain Ranch realtor",
@@ -41,7 +41,7 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, specializing in Iron Mountain Ranch and northwest Las Vegas, serving the Las Vegas Valley since 2008.",
+    "Licensed real estate agent — Homes by Dr. Jan Duffy, specializing in Iron Mountain Ranch and northwest Las Vegas, serving the Las Vegas Valley since 2008.",
   telephone: "+17025001942",
   email: "homes@heyberkshire.com",
   url: "https://www.ironmountainranchlasvegas.com/about",
@@ -135,7 +135,7 @@ export default function AboutPage() {
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Your Iron Mountain Ranch REALTOR® — Dr. Jan Duffy
@@ -462,7 +462,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

@@ -89,7 +89,7 @@ export function generateRealEstateAgentSchema() {
     alternateName: [
       siteConfig.name,
       siteConfig.byline,
-      "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+      "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
       "BHHS Nevada Properties",
     ],
     url: BASE_URL,
@@ -201,7 +201,7 @@ export function generateRealEstateAgentSchema() {
       "55+ communities",
       "First-time homebuyers",
     ],
-    slogan: "Your Iron Mountain Ranch REALTOR® — Berkshire Hathaway HomeServices Nevada Properties",
+    slogan: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
   };
 }
 
@@ -322,7 +322,7 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     aggregateRating: generateAggregateRatingSchema(
       agentStats.averageRating,
       agentStats.reviewCount

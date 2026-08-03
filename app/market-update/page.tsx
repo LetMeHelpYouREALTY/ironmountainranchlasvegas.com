@@ -19,7 +19,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch & Las Vegas Market Update | Berkshire Hathaway HomeServices",
   description:
-    "Weekly Iron Mountain Ranch and Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Latest stats, notable 89131 sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1942.",
+    "Weekly Iron Mountain Ranch and Las Vegas real estate market update — Homes by Dr. Jan Duffy. Latest stats, notable 89131 sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1942.",
   keywords: [
     "Iron Mountain Ranch market update",
     "89131 housing market",
@@ -34,7 +34,7 @@ const articleSchema = {
   "@type": "NewsArticle",
   headline: "Las Vegas Real Estate Market Update - Week of January 20, 2026",
   description:
-    "Weekly market analysis from Berkshire Hathaway HomeServices Nevada Properties covering Las Vegas Valley real estate trends, statistics, and expert insights.",
+    "Weekly market analysis — Homes by Dr. Jan Duffy covering Las Vegas Valley real estate trends, statistics, and expert insights.",
   datePublished: "2026-01-20",
   dateModified: "2026-01-24",
   author: {
@@ -43,12 +43,12 @@ const articleSchema = {
     jobTitle: "REALTOR®",
     worksFor: {
       "@type": "RealEstateAgent",
-      name: "Berkshire Hathaway HomeServices Nevada Properties",
+      name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     },
   },
   publisher: {
     "@type": "Organization",
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     url: "https://www.ironmountainranchlasvegas.com",
   },
 };
@@ -85,7 +85,7 @@ export default function MarketUpdatePage() {
             </h1>
             <p className="text-xl text-slate-600">
               Your weekly insider report on Las Vegas Valley real estate from{" "}
-              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>
+              <strong>Iron Mountain Ranch | Homes by Dr. Jan Duffy</strong>
             </p>
             <div className="flex items-center justify-center mt-6 text-slate-500 text-sm">
               <span>By Dr. Jan Duffy, REALTOR® | BHHS Nevada Properties</span>
@@ -228,7 +228,7 @@ export default function MarketUpdatePage() {
                 <div>
                   <div className="font-bold text-slate-900">Dr. Jan Duffy</div>
                   <div className="text-slate-500 text-sm">
-                    REALTOR® | Berkshire Hathaway HomeServices Nevada Properties
+                    REALTOR® | Homes by Dr. Jan Duffy
                   </div>
                 </div>
               </div>
@@ -403,7 +403,7 @@ export default function MarketUpdatePage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
 
