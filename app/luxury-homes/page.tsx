@@ -20,17 +20,17 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Luxury Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Luxury Homes Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 500-1942.",
+    "Luxury real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices — Iron Mountain Ranch estates over $1M, plus The Ridges, MacDonald Highlands, and Summerlin. Call (702) 500-1942.",
   keywords: [
+    "Iron Mountain Ranch luxury homes",
+    "Iron Mountain Ranch estates",
     "Las Vegas luxury homes",
     "The Ridges Las Vegas",
     "Summerlin luxury real estate",
-    "Southern Highlands homes",
     "Berkshire Hathaway luxury",
     "million dollar homes Las Vegas",
-    "MacDonald Highlands Henderson",
     "luxury real estate agent Las Vegas",
   ],
 };

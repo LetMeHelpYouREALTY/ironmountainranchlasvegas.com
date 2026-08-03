@@ -54,13 +54,13 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Find Your Dream Home in
+          Find Your Home in
           <br />
-          <span className="text-blue-400">Las Vegas & Henderson</span>
+          <span className="text-blue-400">Iron Mountain Ranch, Las Vegas</span>
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-          Expert real estate services with personalized attention. Your trusted partner for buying,
-          selling, and investing in Southern Nevada.
+          Hyperlocal REALTOR® services for Iron Mountain Ranch and northwest Las Vegas — buying,
+          selling, and investing with village-by-village expertise.
         </p>
 
         {/* RealScout Search Widget */}

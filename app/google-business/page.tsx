@@ -27,21 +27,22 @@ import {
 } from "@/lib/gbp-schema";
 
 export const metadata: Metadata = {
-  title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Dr. Jan Duffy, REALTOR® | Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with Berkshire Hathaway HomeServices Nevada Properties. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, hyperlocal to Iron Mountain Ranch and northwest Las Vegas (89131). Also serving Summerlin, Henderson, and 55+ communities. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy realtor",
+    "Iron Mountain Ranch realtor",
     "Las Vegas real estate agent",
     "Berkshire Hathaway HomeServices Las Vegas",
-    "Summerlin realtor",
-    "Henderson real estate agent",
+    "northwest Las Vegas real estate agent",
+    "89131 realtor",
     "55+ communities Las Vegas",
-    "California relocation Las Vegas",
   ],
   openGraph: {
     title: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    description: "Trusted Las Vegas REALTOR® serving since 2008. Summerlin, Henderson, luxury homes, 55+ communities.",
+    description:
+      "Trusted Las Vegas REALTOR® serving since 2008. Hyperlocal to Iron Mountain Ranch and northwest Las Vegas.",
     url: "https://heyberkshire.com/google-business",
     type: "profile",
   },

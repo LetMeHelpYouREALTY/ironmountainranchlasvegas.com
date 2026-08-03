@@ -21,14 +21,14 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Relocating to Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Relocating to Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Moving to Las Vegas? Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties provides comprehensive relocation services. Schools, neighborhoods, cost of living. Call (702) 500-1942.",
+    "Moving to Las Vegas? Dr. Jan Duffy provides comprehensive relocation services with hyperlocal expertise in Iron Mountain Ranch and northwest Las Vegas — schools, neighborhoods, cost of living. Call (702) 500-1942.",
   keywords: [
+    "relocating to Iron Mountain Ranch",
+    "moving to northwest Las Vegas",
     "relocating to Las Vegas",
-    "moving to Las Vegas",
-    "Las Vegas relocation services",
-    "moving to Henderson Nevada",
+    "moving to Las Vegas 89131",
     "California to Las Vegas",
     "Las Vegas relocation agent",
     "moving from California to Nevada",

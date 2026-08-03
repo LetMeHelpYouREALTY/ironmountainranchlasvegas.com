@@ -380,7 +380,26 @@ export default function SummerlinPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        {/* Iron Mountain Ranch cross-link — hyperlocal focus */}
+        <section className="container mx-auto px-4 mt-4">
+          <div className="max-w-4xl mx-auto bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+            <h2 className="text-xl font-bold text-slate-900 mb-2">
+              Comparing with Iron Mountain Ranch?
+            </h2>
+            <p className="text-slate-600 text-sm mb-4">
+              Dr. Jan Duffy&apos;s hyperlocal specialty is Iron Mountain Ranch in northwest Las
+              Vegas (89131) — 9 gated villages, 2,000&ndash;4,500 sq ft homes, and a median list
+              price near $535,000 at about $235/sq ft.
+            </p>
+            <Link
+              href="/neighborhoods/iron-mountain-ranch"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors"
+            >
+              Explore Iron Mountain Ranch
+            </Link>
+          </div>
+        </section>
+        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
       <Footer />

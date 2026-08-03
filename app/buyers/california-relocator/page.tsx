@@ -19,15 +19,15 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Relocating from California to Las Vegas | Berkshire Hathaway HomeServices",
+  title: "California to Las Vegas Relocation | Iron Mountain Ranch & Northwest Las Vegas",
   description:
-    "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices, same sunshine. Dr. Jan Duffy helps CA relocators find their perfect Las Vegas home. Call (702) 500-1942.",
+    "Moving from California to Las Vegas? Zero state income tax and 40-60% lower home prices. Dr. Jan Duffy helps CA relocators discover Iron Mountain Ranch — gated villages at ~$235/sq ft in northwest Las Vegas. Call (702) 500-1942.",
   keywords: [
     "California to Las Vegas relocation",
+    "California buyers Iron Mountain Ranch",
     "moving from California to Nevada",
     "California relocator Las Vegas",
     "no state income tax Nevada",
-    "Las Vegas homes California buyers",
     "Berkshire Hathaway HomeServices relocation",
   ],
 };

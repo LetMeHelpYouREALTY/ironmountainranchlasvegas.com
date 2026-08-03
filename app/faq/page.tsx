@@ -13,14 +13,15 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
+  title: "FAQ | Iron Mountain Ranch & Las Vegas Real Estate | Berkshire Hathaway HomeServices",
   description:
-    "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
+    "Frequently asked questions about Iron Mountain Ranch and Las Vegas real estate — buying, selling, LMA dues, gated villages, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
   keywords: [
+    "Iron Mountain Ranch FAQ",
+    "Iron Mountain Ranch HOA questions",
     "Berkshire Hathaway HomeServices FAQ",
     "Las Vegas real estate questions",
-    "buying a home Las Vegas",
-    "selling a home Henderson",
+    "buying a home 89131",
     "BHHS agent questions",
   ],
 };
@@ -32,6 +33,27 @@ const breadcrumbs = [
 ];
 
 const faqCategories = [
+  {
+    title: "Iron Mountain Ranch — Our Hyperlocal Specialty",
+    faqs: [
+      {
+        q: "What is the current median home price in Iron Mountain Ranch?",
+        a: "As of mid-2026, the median list price in Iron Mountain Ranch is roughly $535,000 at about $235 per square foot, with homes ranging from around $400,000 to over $1M. Dr. Jan tracks every sale in all 9 villages — call (702) 500-1942 for a live comp pull.",
+      },
+      {
+        q: "Where is Iron Mountain Ranch located?",
+        a: "Iron Mountain Ranch is an 850-acre master-planned community in northwest Las Vegas (ZIP codes 89131 and 89143), inside the Centennial Hills area north of Providence, along Iron Mountain Road with quick access to US-95 and the 215 Beltway.",
+      },
+      {
+        q: "Does Iron Mountain Ranch have an HOA?",
+        a: "The community operates under a Landscape Maintenance Association (LMA) plus village-level associations, with typical combined dues around $95–$185/month as of 2026 — lower than most Summerlin or Henderson master plans.",
+      },
+      {
+        q: "Are Iron Mountain Ranch neighborhoods gated?",
+        a: "Several of the 9 villages have gated access. Homes are mostly 1- and 2-story single-family houses of roughly 2,000–4,500 square feet, built primarily between 2001 and 2008, many with Gass Peak views.",
+      },
+    ],
+  },
   {
     title: "About Berkshire Hathaway HomeServices",
     faqs: [
@@ -45,7 +67,7 @@ const faqCategories = [
       },
       {
         q: "What areas does BHHS Nevada Properties serve?",
-        a: "BHHS Nevada Properties serves all of Las Vegas, Henderson, North Las Vegas, and surrounding areas, with specialized expertise in Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, Inspirada, and all Henderson communities.",
+        a: "Dr. Jan Duffy's hyperlocal focus is Iron Mountain Ranch and the surrounding northwest Las Vegas corridor (89131 and 89143), including Centennial Hills, Providence, and Skye Canyon. BHHS Nevada Properties also serves all of Las Vegas, Henderson, and North Las Vegas.",
       },
       {
         q: "Does using a Berkshire Hathaway agent cost more?",

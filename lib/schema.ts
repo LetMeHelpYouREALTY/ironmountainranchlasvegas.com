@@ -113,6 +113,14 @@ export function generateRealEstateAgentSchema() {
     },
     areaServed: [
       {
+        "@type": "Place",
+        name: "Iron Mountain Ranch, Las Vegas, NV 89131",
+      },
+      {
+        "@type": "Place",
+        name: "Centennial Hills, Las Vegas, NV",
+      },
+      {
         "@type": "City",
         name: "Las Vegas",
         sameAs: "https://en.wikipedia.org/wiki/Las_Vegas",
@@ -129,10 +137,6 @@ export function generateRealEstateAgentSchema() {
       {
         "@type": "City",
         name: "North Las Vegas",
-      },
-      {
-        "@type": "Place",
-        name: "Green Valley",
       },
     ],
     openingHoursSpecification: [
@@ -177,6 +181,8 @@ export function generateRealEstateAgentSchema() {
       worstRating: "1",
     },
     knowsAbout: [
+      "Iron Mountain Ranch real estate",
+      "Northwest Las Vegas gated communities",
       "Las Vegas real estate",
       "Henderson homes",
       "Summerlin properties",
@@ -187,7 +193,7 @@ export function generateRealEstateAgentSchema() {
       "55+ communities",
       "First-time homebuyers",
     ],
-    slogan: "Your Berkshire Hathaway HomeServices expert in Las Vegas",
+    slogan: "Your Iron Mountain Ranch REALTOR® — Berkshire Hathaway HomeServices Nevada Properties",
   };
 }
 
@@ -518,7 +524,13 @@ export function generateServiceSchema(service: {
     provider: {
       "@id": `${BASE_URL}#organization`,
     },
-    areaServed: service.areaServed || ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
+    areaServed: service.areaServed || [
+      "Iron Mountain Ranch, Las Vegas, NV",
+      "Centennial Hills, Las Vegas, NV",
+      "Las Vegas",
+      "Henderson",
+      "North Las Vegas",
+    ],
     serviceType: "Real Estate Services",
   };
 }

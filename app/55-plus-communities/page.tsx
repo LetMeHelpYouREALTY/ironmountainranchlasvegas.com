@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title:
     "55+ Active Adult Communities Las Vegas | Sun City, Del Webb, Heritage | Dr. Jan Duffy",
   description:
-    "Find your perfect 55+ community in Las Vegas. Sun City Summerlin, Sun City Aliante, Del Webb Lake Las Vegas, Heritage at Stonebridge, Solera, Trilogy. Dr. Jan Duffy specializes in active adult living. Call (702) 500-1942.",
+    "Find your perfect 55+ community in Las Vegas — including northwest options near Iron Mountain Ranch like Sun City Aliante and Trilogy at Sunstone. Sun City Summerlin, Del Webb, Heritage at Stonebridge, Solera. Dr. Jan Duffy specializes in active adult living. Call (702) 500-1942.",
   keywords: [
     "55+ communities Las Vegas",
     "active adult communities Las Vegas",
@@ -881,8 +881,28 @@ export default function FiftyFiveCommunitiesPage() {
             </p>
           </section>
         </div>
+        {/* Iron Mountain Ranch downsizing cross-link — hyperlocal focus */}
+        <section className="container mx-auto px-4 mt-4">
+          <div className="max-w-4xl mx-auto bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+            <h2 className="text-xl font-bold text-slate-900 mb-2">
+              Downsizing from a Larger Home?
+            </h2>
+            <p className="text-slate-600 text-sm mb-4">
+              Many 55+ buyers sell a larger home first. Dr. Jan Duffy is the hyperlocal specialist
+              for Iron Mountain Ranch in northwest Las Vegas (89131) &mdash; 2,000&ndash;4,500 sq ft
+              homes at a median near $535,000 &mdash; and can coordinate your sale and 55+ purchase
+              together.
+            </p>
+            <Link
+              href="/neighborhoods/iron-mountain-ranch"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors"
+            >
+              Iron Mountain Ranch Home Values
+            </Link>
+          </div>
+        </section>
         <div className="text-center text-sm text-slate-500 mt-8">
-          Last Updated: January 2026
+          Last Updated: August 2026
         </div>
       </main>
       <RealScoutListings />

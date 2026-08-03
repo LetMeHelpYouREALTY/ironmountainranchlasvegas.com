@@ -58,13 +58,13 @@ const PropertyCard = ({ property }: { property: Property }) => (
 const properties: Property[] = [
   {
     id: 1,
-    name: "Modern Luxury Home",
-    location: "Summerlin, Las Vegas, NV",
-    price: "$850,000",
+    name: "Gated Village Home",
+    location: "Iron Mountain Ranch, Las Vegas, NV 89131",
+    price: "$585,000",
     image: "/Image/hero_bg_1.jpg",
     bedrooms: 4,
     bathrooms: 3,
-    squareFeet: 3200,
+    squareFeet: 2800,
   },
   {
     id: 2,
@@ -98,7 +98,7 @@ export default function FeaturedProperties() {
               Featured Properties
             </h2>
             <p className="text-slate-600 text-lg">
-              Discover exceptional homes in Las Vegas and Henderson
+              Discover exceptional homes in Iron Mountain Ranch and across Las Vegas
             </p>
           </div>
           <Button asChild variant="outline" className="mt-4 md:mt-0">

@@ -6,13 +6,14 @@ import { Phone, TrendingUp, DollarSign, Building, BarChart, CheckCircle, Calcula
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Investment Properties | Berkshire Hathaway HomeServices",
+  title: "Investment Properties Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Invest in Las Vegas real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1942.",
+    "Invest in Iron Mountain Ranch and Las Vegas real estate with Dr. Jan Duffy. Rental analysis for 89131 (median rent ~$2,160/mo), ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1942.",
   keywords: [
+    "Iron Mountain Ranch investment property",
+    "89131 rental property",
     "Las Vegas investment property",
     "Las Vegas rental property",
-    "Henderson real estate investing",
     "Nevada investment homes",
     "1031 exchange Las Vegas",
     "cash flow properties Las Vegas",
@@ -20,6 +21,13 @@ export const metadata: Metadata = {
 };
 
 const investmentAreas = [
+  {
+    area: "Iron Mountain Ranch (89131)",
+    avgPrice: "$535K",
+    avgRent: "$2,160",
+    capRate: "4.6%",
+    appreciation: "+4.0%",
+  },
   {
     area: "North Las Vegas",
     avgPrice: "$385K",

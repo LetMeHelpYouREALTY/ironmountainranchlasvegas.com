@@ -6,12 +6,13 @@ import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "luc
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
+  title: "Why Choose Berkshire Hathaway HomeServices | Iron Mountain Ranch Las Vegas",
   description:
-    "Discover why Berkshire Hathaway HomeServices is the most trusted name in real estate. Backed by Warren Buffett, with 50,000+ agents worldwide. Work with BHHS Nevada Properties today.",
+    "Why Iron Mountain Ranch buyers and sellers choose Berkshire Hathaway HomeServices: Warren Buffett-backed trust, 50,000+ agents worldwide, and Dr. Jan Duffy's hyperlocal northwest Las Vegas expertise.",
   keywords: [
     "Berkshire Hathaway HomeServices",
     "why choose BHHS",
+    "Iron Mountain Ranch realtor",
     "Warren Buffett real estate",
     "trusted real estate brand",
     "BHHS Nevada Properties",
@@ -55,7 +56,9 @@ export default function WhyBerkshireHathawayPage() {
             <p className="text-xl text-slate-600 leading-relaxed">
               When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're
               backed by a name synonymous with trust, ethical standards, and financial strength—the
-              same principles that built Warren Buffett's empire.
+              same principles that built Warren Buffett's empire. In Iron Mountain Ranch and
+              northwest Las Vegas, that brand strength is paired with Dr. Jan Duffy's hyperlocal,
+              village-by-village expertise.
             </p>
           </div>
 

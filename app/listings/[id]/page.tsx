@@ -6,8 +6,9 @@ import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Property Details | Las Vegas & Henderson Real Estate",
-  description: "View detailed information about this property listing in Las Vegas or Henderson, NV.",
+  title: "Property Details | Iron Mountain Ranch & Las Vegas Real Estate",
+  description:
+    "View detailed information about this property listing in Iron Mountain Ranch, northwest Las Vegas, or the greater Las Vegas Valley.",
 };
 
 // This would typically fetch from RealScout API

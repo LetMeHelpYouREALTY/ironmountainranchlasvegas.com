@@ -16,12 +16,13 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Downsizing from Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 500-1942.",
+    "Ready to simplify? Dr. Jan Duffy helps Iron Mountain Ranch and Las Vegas homeowners extract equity from larger homes (2,000–4,500 sq ft) and transition to low-maintenance living. Call (702) 500-1942.",
   keywords: [
+    "downsizing Iron Mountain Ranch",
+    "sell large home 89131",
     "downsizing Las Vegas",
-    "sell large home Las Vegas",
     "55 plus communities Las Vegas",
     "empty nester Las Vegas",
     "Berkshire Hathaway HomeServices downsizing",

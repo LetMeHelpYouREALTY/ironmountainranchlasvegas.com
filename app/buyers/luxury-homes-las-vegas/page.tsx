@@ -18,14 +18,14 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Luxury Homes Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Luxury Homes Las Vegas | Iron Mountain Ranch Estates & Guard-Gated Communities",
   description:
-    "Las Vegas luxury real estate from $1.2M to $10M+. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 500-1942.",
+    "Las Vegas luxury real estate from $1M to $10M+ — including Iron Mountain Ranch estates over $1M in northwest Las Vegas. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 500-1942.",
   keywords: [
     "luxury homes Las Vegas",
+    "Iron Mountain Ranch estates",
     "The Ridges Las Vegas",
     "MacDonald Highlands",
-    "luxury real estate Henderson",
     "guard gated communities Las Vegas",
     "Berkshire Hathaway luxury homes",
   ],

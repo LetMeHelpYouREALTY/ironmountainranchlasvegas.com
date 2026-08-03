@@ -16,13 +16,14 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Relocation Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Relocation Home Sales | Iron Mountain Ranch & Las Vegas | BHHS",
   description:
-    "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps relocating homeowners sell fast and coordinates with BHHS offices nationwide. Call (702) 500-1942.",
+    "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps Iron Mountain Ranch and Las Vegas homeowners sell fast — well-priced 89131 homes go under contract in about 27 days — and coordinates with BHHS offices nationwide. Call (702) 500-1942.",
   keywords: [
+    "relocation sale Iron Mountain Ranch",
     "relocation sale Las Vegas",
     "job relocation Las Vegas",
-    "sell home fast Las Vegas",
+    "sell home fast 89131",
     "Berkshire Hathaway relocation services",
     "corporate relocation Nevada",
   ],

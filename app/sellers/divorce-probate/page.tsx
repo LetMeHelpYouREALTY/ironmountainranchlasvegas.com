@@ -16,13 +16,14 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Divorce & Probate Home Sales | Iron Mountain Ranch & Las Vegas",
   description:
-    "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-1942.",
+    "Sensitive real estate situations handled with discretion in Iron Mountain Ranch and across Las Vegas. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-1942.",
   keywords: [
     "divorce home sale Las Vegas",
+    "probate real estate Iron Mountain Ranch",
     "probate real estate Las Vegas",
-    "estate sale Las Vegas",
+    "estate sale 89131",
     "court ordered sale Nevada",
     "Berkshire Hathaway HomeServices divorce",
   ],

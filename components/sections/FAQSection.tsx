@@ -13,7 +13,7 @@ export const defaultFaqs: FAQ[] = [
   {
     question: "What areas do you serve?",
     answer:
-      "We specialize in Las Vegas and Henderson, Nevada, including Summerlin, Green Valley, and surrounding communities. Our expertise covers residential, luxury, and investment properties throughout Southern Nevada.",
+      "Our hyperlocal specialty is Iron Mountain Ranch in northwest Las Vegas (89131 & 89143), along with the surrounding Centennial Hills corridor. We also serve all of Las Vegas and Henderson, including Summerlin and Green Valley, covering residential, luxury, and investment properties throughout Southern Nevada.",
   },
   {
     question: "How long does the home buying process take?",

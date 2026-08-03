@@ -20,17 +20,17 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
+  title: "New Construction Near Iron Mountain Ranch | Northwest Las Vegas Buyer's Guide",
   description:
-    "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 500-1942.",
+    "Free buyer representation on new construction in northwest Las Vegas — Skye Canyon, Centennial Hills, and communities near Iron Mountain Ranch. Dr. Jan Duffy negotiates builder contracts and upgrades. Call (702) 500-1942.",
   keywords: [
+    "new construction northwest Las Vegas",
+    "new homes near Iron Mountain Ranch",
+    "new construction 89131",
     "Berkshire Hathaway HomeServices new construction Las Vegas",
     "new homes Las Vegas",
-    "new construction Henderson",
-    "Las Vegas builders",
     "Toll Brothers Las Vegas",
     "Lennar Las Vegas",
-    "KB Home Las Vegas",
   ],
 };
 

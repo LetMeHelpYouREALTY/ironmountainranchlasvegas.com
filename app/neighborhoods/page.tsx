@@ -6,19 +6,30 @@ import { MapPin, Phone, Home, Users, GraduationCap } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch & Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
   description:
-    "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
+    "Explore Iron Mountain Ranch — our hyperlocal northwest Las Vegas specialty — plus Centennial Hills, Skye Canyon, Summerlin, Henderson, and more with Dr. Jan Duffy at BHHS Nevada Properties.",
   keywords: [
+    "Iron Mountain Ranch Las Vegas",
     "Las Vegas neighborhoods",
+    "northwest Las Vegas communities",
     "Henderson communities",
-    "Summerlin real estate",
     "best neighborhoods Las Vegas",
     "where to live Las Vegas",
   ],
 };
 
 const neighborhoods = [
+  {
+    name: "Iron Mountain Ranch",
+    slug: "iron-mountain-ranch",
+    medianPrice: "$535,000",
+    priceChange: "+4.0%",
+    description:
+      "Our hyperlocal specialty — 850-acre master plan with 9 villages, gated neighborhoods, large lots, and Gass Peak views",
+    highlights: ["9 Gated Villages", "Gass Peak Views", "Low LMA Dues", "Large Lots"],
+    bestFor: "Buyers seeking gated privacy and square-footage value in the northwest",
+  },
   {
     name: "Summerlin",
     slug: "summerlin",
@@ -123,10 +134,11 @@ export default function NeighborhoodsPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas & Henderson Neighborhoods
+              Iron Mountain Ranch &amp; Las Vegas Neighborhoods
             </h1>
             <p className="text-xl text-slate-600">
-              Explore the best communities in Southern Nevada with Dr. Jan Duffy, your{" "}
+              Hyperlocal expertise in <strong>Iron Mountain Ranch</strong> and northwest Las Vegas,
+              plus every major Southern Nevada community, with Dr. Jan Duffy, your{" "}
               <strong>Berkshire Hathaway HomeServices</strong> neighborhood expert
             </p>
           </div>
@@ -172,11 +184,12 @@ export default function NeighborhoodsPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-slate-50 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Every Las Vegas neighborhood has its own personality. Whether you want the
-                family-friendly parks of Summerlin, the established charm of Green Valley, or the
-                luxury of The Ridges, I'll help you find the community that matches your lifestyle.
-                That's the Berkshire Hathaway HomeServices difference—personalized guidance backed
-                by local expertise."
+                "Every Las Vegas neighborhood has its own personality. My home base is Iron Mountain
+                Ranch — nine villages, gated streets, and some of the best square-footage value in
+                the valley — but whether you want Summerlin's parks, Green Valley's mature
+                landscaping, or the luxury of The Ridges, I'll help you find the community that
+                matches your lifestyle. That's the Berkshire Hathaway HomeServices
+                difference—personalized guidance backed by hyperlocal expertise."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 — Dr. Jan Duffy, BHHS Nevada Properties

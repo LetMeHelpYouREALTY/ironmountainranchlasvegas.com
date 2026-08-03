@@ -19,12 +19,13 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "First-Time Home Buyers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "First-Time Home Buyers Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 500-1942.",
+    "First-time buyer in Las Vegas? Explore Iron Mountain Ranch townhomes and northwest Las Vegas starter options with down payment assistance and expert guidance from Dr. Jan Duffy. Call (702) 500-1942.",
   keywords: [
+    "first time home buyer Iron Mountain Ranch",
     "first time home buyer Las Vegas",
-    "first time buyer Nevada",
+    "first time buyer 89131",
     "down payment assistance Las Vegas",
     "FHA loans Las Vegas",
     "VA loans Las Vegas",

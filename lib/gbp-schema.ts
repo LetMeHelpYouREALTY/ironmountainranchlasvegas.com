@@ -39,12 +39,14 @@ export const businessInfo = {
     longitude: -115.2678,
   },
 
-  // Service areas - Start focused, expand with prominence
+  // Service areas - Iron Mountain Ranch hyperlocal focus, expand with prominence
   serviceAreas: [
-    // Primary (immediate city)
+    // Primary (hyperlocal focus)
+    "Iron Mountain Ranch, Las Vegas, NV",
+    "Centennial Hills, Las Vegas, NV",
+    // Secondary (immediate city)
     "Las Vegas, NV",
     "Summerlin, NV",
-    // Secondary (close ZIPs)
     "Henderson, NV",
     "North Las Vegas, NV",
     // Tertiary (county expansion)
@@ -63,6 +65,8 @@ export const businessInfo = {
   // Services - Each creates searchable fields in GBP
   services: [
     // Core Services
+    { name: "Iron Mountain Ranch Buyer & Seller Representation", description: "Hyperlocal expertise across all 9 Iron Mountain Ranch villages in northwest Las Vegas (89131 & 89143)" },
+    { name: "Iron Mountain Ranch Home Valuations", description: "Free village-specific CMAs using live Iron Mountain Ranch comps" },
     { name: "Buyer Representation", description: "Full-service home buying assistance" },
     { name: "Seller Representation", description: "List and sell your home for top dollar" },
     { name: "Luxury Home Sales", description: "High-end properties $1M+" },
@@ -157,7 +161,7 @@ Specialized services include: buyer and seller representation, luxury home sales
 Dr. Jan's approach is simple: treat every client like family, know the market inside and out, and never stop working until the deal closes successfully.`,
 
   // Section 3: Where - Areas served (~250 words)
-  whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, family-friendly Centennial Hills and Skye Canyon, and affordable options in Mountains Edge and North Las Vegas.
+  whereWeServe: `Dr. Jan's hyperlocal specialty is Iron Mountain Ranch — the 850-acre master-planned community in northwest Las Vegas (89131 and 89143) with 9 villages, gated neighborhoods, and Gass Peak views — plus the surrounding Centennial Hills corridor. She also serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County, including Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, Skye Canyon, and Mountains Edge.
 
 55+ active adult community specialization covers Sun City Summerlin (Nevada's largest 55+ community), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Investment property expertise spans single-family rentals, multi-family opportunities, and short-term rental analysis across the Las Vegas metro area.
 
@@ -168,7 +172,11 @@ Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Availab
 export const gbpFAQs = [
   {
     question: "What areas does Dr. Jan Duffy serve in Las Vegas?",
-    answer: "Dr. Jan serves all of Las Vegas, Summerlin, Henderson, North Las Vegas, and Clark County. Specialized neighborhood expertise includes Summerlin, Green Valley, The Ridges, Southern Highlands, Centennial Hills, Skye Canyon, Inspirada, and Mountains Edge.",
+    answer: "Dr. Jan's hyperlocal specialty is Iron Mountain Ranch in northwest Las Vegas (89131 & 89143), along with the surrounding Centennial Hills corridor. She also serves all of Las Vegas, Summerlin, Henderson, North Las Vegas, and Clark County.",
+  },
+  {
+    question: "Is Dr. Jan Duffy an Iron Mountain Ranch specialist?",
+    answer: "Yes. Dr. Jan tracks every listing and sale across Iron Mountain Ranch's 9 villages — gated access details, LMA dues, lot premiums, and floor plans. Iron Mountain Ranch currently lists at a median of about $535,000 with roughly 28 active listings. Call (702) 500-1942 for a live comp pull.",
   },
   {
     question: "Does Dr. Jan help buyers relocating from California?",
