@@ -14,6 +14,8 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import PageHeroImage from "@/components/sections/PageHeroImage";
+import ImrNearbyAmenities from "@/components/sections/ImrNearbyAmenities";
+import { DECATUR_RETAIL_CORRIDOR } from "@/lib/imr-nearby";
 
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch Homes for Sale | REALTOR® Services | Las Vegas 89131",
@@ -51,6 +53,11 @@ const imrFaqs = [
     question: "Where is Iron Mountain Ranch located?",
     answer:
       "Iron Mountain Ranch is an 850-acre master-planned community in northwest Las Vegas, ZIP codes 89131 and 89143, within the Centennial Hills area north of Providence. It sits along Iron Mountain Road with quick access to US-95 and the 215 Beltway, minutes from Floyd Lamb Park and Tule Springs Fossil Beds National Monument.",
+  },
+  {
+    question: "Where do Iron Mountain Ranch residents shop and dine nearby?",
+    answer:
+      "Daily needs are covered by the Iron Mountain Road commercial center. The N Decatur Blvd retail corridor near W Grand Teton Drive (around 7962 N Decatur Blvd, North Las Vegas, NV 89085) is about 8 minutes away for dining and shopping, with Centennial Hills retail and hospital about 10 minutes south.",
   },
   {
     question: "Are Iron Mountain Ranch neighborhoods gated?",
@@ -317,8 +324,10 @@ export default function IronMountainRanchPage() {
                 point of the Las Vegas Range, and its northern edge borders open desert leading to
                 the Tule Springs Fossil Beds National Monument. Floyd Lamb Park — 680 acres of
                 lakes, lawns, and walking paths — is minutes away. A commercial center on Iron
-                Mountain Road handles daily needs, with the Centennial Hills retail corridor and
-                Centennial Hills Hospital a short drive south.
+                Mountain Road handles daily needs. The N Decatur Blvd retail corridor near Grand
+                Teton (dining and shopping around 7962 N Decatur Blvd) is about eight minutes away,
+                with the Centennial Hills retail corridor and Centennial Hills Hospital a short
+                drive further south.
               </p>
               <p>
                 Unlike most Las Vegas master plans, Iron Mountain Ranch villages operate under a{" "}
@@ -381,10 +390,16 @@ export default function IronMountainRanchPage() {
                   </thead>
                   <tbody className="divide-y divide-slate-200">
                     <tr><td className="px-4 py-3">Floyd Lamb Park</td><td className="px-4 py-3">~5 min</td></tr>
-                    <tr className="bg-slate-50"><td className="px-4 py-3">Centennial Hills Hospital &amp; retail corridor</td><td className="px-4 py-3">~10 min</td></tr>
-                    <tr><td className="px-4 py-3">Downtown Summerlin</td><td className="px-4 py-3">~20 min</td></tr>
-                    <tr className="bg-slate-50"><td className="px-4 py-3">Las Vegas Strip</td><td className="px-4 py-3">~30 min</td></tr>
-                    <tr><td className="px-4 py-3">Harry Reid International Airport</td><td className="px-4 py-3">~35 min</td></tr>
+                    <tr className="bg-slate-50">
+                      <td className="px-4 py-3">
+                        N Decatur Blvd retail corridor (Grand Teton)
+                      </td>
+                      <td className="px-4 py-3">~{DECATUR_RETAIL_CORRIDOR.driveMinutesFromImr} min</td>
+                    </tr>
+                    <tr><td className="px-4 py-3">Centennial Hills Hospital &amp; retail corridor</td><td className="px-4 py-3">~10 min</td></tr>
+                    <tr className="bg-slate-50"><td className="px-4 py-3">Downtown Summerlin</td><td className="px-4 py-3">~20 min</td></tr>
+                    <tr><td className="px-4 py-3">Las Vegas Strip</td><td className="px-4 py-3">~30 min</td></tr>
+                    <tr className="bg-slate-50"><td className="px-4 py-3">Harry Reid International Airport</td><td className="px-4 py-3">~35 min</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -403,6 +418,9 @@ export default function IronMountainRanchPage() {
               </p>
             </div>
           </section>
+
+          {/* Nearby amenity map pin — retail corridor (not office NAP) */}
+          <ImrNearbyAmenities />
 
           {/* Expert Quote */}
           <section className="mb-16 max-w-4xl mx-auto">

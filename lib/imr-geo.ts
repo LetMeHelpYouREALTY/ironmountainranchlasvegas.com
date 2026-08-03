@@ -67,6 +67,11 @@ const TOPIC_FAQS: Record<ImrGeoTopic, FAQItem[]> = {
       question: "Where is Iron Mountain Ranch located?",
       answer: `Iron Mountain Ranch sits in northwest Las Vegas / Centennial Hills, ZIP codes ${IMR_FACTS.zipCodes}, along Iron Mountain Road with access to US-95 and the 215 Beltway.`,
     },
+    {
+      question: "Where do Iron Mountain Ranch residents shop and dine nearby?",
+      answer:
+        "Daily needs are covered by the Iron Mountain Road commercial center; the N Decatur Blvd retail corridor near W Grand Teton Drive (about 8 minutes) adds dining and shopping, with Centennial Hills retail and hospital about 10 minutes south.",
+    },
   ],
   buy: [
     {
