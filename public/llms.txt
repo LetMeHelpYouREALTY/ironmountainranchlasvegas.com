@@ -3,7 +3,7 @@
 
 ## Entity (NAP — match Google Business Profile)
 - Name: Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties
-- Address: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134
+- Address: 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085
 - Phone: (702) 500-1942
 - Email: homes@heyberkshire.com
 - License: S.0197614.LLC

@@ -57,7 +57,7 @@ const imrFaqs = [
   {
     question: "Where do Iron Mountain Ranch residents shop and dine nearby?",
     answer:
-      "Daily needs are covered by the Iron Mountain Road commercial center. The N Decatur Blvd retail corridor near W Grand Teton Drive (around 7962 N Decatur Blvd, North Las Vegas, NV 89085) is about 8 minutes away for dining and shopping, with Centennial Hills retail and hospital about 10 minutes south.",
+      "Daily needs are covered by the Iron Mountain Road commercial center. Dr. Jan's northwest office is at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085 — about 8 minutes away in the Decatur & Grand Teton retail corridor — with Centennial Hills retail and hospital about 10 minutes south.",
   },
   {
     question: "Are Iron Mountain Ranch neighborhoods gated?",
@@ -324,10 +324,10 @@ export default function IronMountainRanchPage() {
                 point of the Las Vegas Range, and its northern edge borders open desert leading to
                 the Tule Springs Fossil Beds National Monument. Floyd Lamb Park — 680 acres of
                 lakes, lawns, and walking paths — is minutes away. A commercial center on Iron
-                Mountain Road handles daily needs. The N Decatur Blvd retail corridor near Grand
-                Teton (dining and shopping around 7962 N Decatur Blvd) is about eight minutes away,
-                with the Centennial Hills retail corridor and Centennial Hills Hospital a short
-                drive further south.
+                Mountain Road handles daily needs. Our northwest office is at{" "}
+                <strong>7960 N Decatur Blvd, Suite B</strong> in the Decatur &amp; Grand Teton
+                retail corridor — about eight minutes away — with Centennial Hills retail and
+                Centennial Hills Hospital a short drive further south.
               </p>
               <p>
                 Unlike most Las Vegas master plans, Iron Mountain Ranch villages operate under a{" "}

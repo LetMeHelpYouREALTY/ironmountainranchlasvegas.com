@@ -5,10 +5,10 @@ export const businessInfo = {
   // NAP - Must match GBP exactly
   name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
   address: {
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-    addressLocality: "Las Vegas",
+    streetAddress: "7960 N Decatur Blvd, Suite B",
+    addressLocality: "North Las Vegas",
     addressRegion: "NV",
-    postalCode: "89134",
+    postalCode: "89085",
     addressCountry: "US",
   },
   phone: {
@@ -33,10 +33,10 @@ export const businessInfo = {
     sunday: "By Appointment",
   },
 
-  // Geo coordinates for distance ranking
+  // Geo coordinates for distance ranking (Decatur & Grand Teton corridor)
   geo: {
-    latitude: 36.1941,
-    longitude: -115.2678,
+    latitude: 36.305,
+    longitude: -115.205,
   },
 
   // Service areas - Iron Mountain Ranch hyperlocal focus, expand with prominence
@@ -165,7 +165,7 @@ Dr. Jan's approach is simple: treat every client like family, know the market in
 
 55+ active adult community specialization covers Sun City Summerlin (Nevada's largest 55+ community), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Investment property expertise spans single-family rentals, multi-family opportunities, and short-term rental analysis across the Las Vegas metro area.
 
-Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Call (702) 500-1942 for a free consultation or visit ironmountainranchlasvegas.com for Iron Mountain Ranch homes and REALTOR® services.`,
+Office located at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Call (702) 500-1942 for a free consultation or visit ironmountainranchlasvegas.com for Iron Mountain Ranch homes and REALTOR® services.`,
 };
 
 // FAQ Schema for GBP Q&A section
@@ -208,7 +208,7 @@ export const gbpFAQs = [
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",
-    answer: "Call or text (702) 500-1942 for immediate assistance, or email homes@heyberkshire.com. Office visits available at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
+    answer: "Call or text (702) 500-1942 for immediate assistance, or email homes@heyberkshire.com. Office visits available at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
   },
   {
     question: "Does Dr. Jan help with investment properties in Las Vegas?",

@@ -88,10 +88,10 @@ const realEstateAgentSchema = {
   url: "https://www.ironmountainranchlasvegas.com/buyers/california-relocator",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-    addressLocality: "Las Vegas",
+    streetAddress: "7960 N Decatur Blvd, Suite B",
+    addressLocality: "North Las Vegas",
     addressRegion: "NV",
-    postalCode: "89134",
+    postalCode: "89085",
   },
   areaServed: ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
   priceRange: "$350,000 - $10,000,000+",

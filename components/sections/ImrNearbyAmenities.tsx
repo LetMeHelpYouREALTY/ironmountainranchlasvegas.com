@@ -37,11 +37,11 @@ export default function ImrNearbyAmenities({
         id="imr-nearby-retail-heading"
         className="text-3xl font-bold text-slate-900 mb-3"
       >
-        Nearby shopping &amp; dining on N Decatur Blvd
+        Visit our northwest office on N Decatur Blvd
       </h2>
       <p className="text-lg text-slate-600 mb-8 max-w-3xl">
-        About {place.driveMinutesFromImr} minutes from Iron Mountain Ranch — the Decatur &amp;
-        Grand Teton retail corridor for everyday errands and restaurants.
+        Suite B at 7960 N Decatur Blvd — about {place.driveMinutesFromImr} minutes from Iron
+        Mountain Ranch, in the Decatur &amp; Grand Teton retail corridor.
       </p>
 
       <div className="relative w-full overflow-hidden border border-slate-200 bg-slate-100 aspect-[21/9] min-h-[240px] max-h-[420px]">

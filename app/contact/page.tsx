@@ -31,10 +31,10 @@ const contactSchema = {
     email: "homes@heyberkshire.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-      addressLocality: "Las Vegas",
+      streetAddress: "7960 N Decatur Blvd, Suite B",
+      addressLocality: "North Las Vegas",
       addressRegion: "NV",
-      postalCode: "89134",
+      postalCode: "89085",
       addressCountry: "US",
     },
     areaServed: [
@@ -126,8 +126,8 @@ export default function ContactPage() {
                     <address className="not-italic text-slate-700">
                       Berkshire Hathaway HomeServices<br />
                       Nevada Properties<br />
-                      9406 W Lake Mead Blvd, Suite 100<br />
-                      Las Vegas, NV 89134
+                      7960 N Decatur Blvd, Suite B<br />
+                      North Las Vegas, NV 89085
                     </address>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
               {/* Google Map Embed */}
               <div className="rounded-xl overflow-hidden shadow-md mb-4">
                 <iframe
-                  src="https://maps.google.com/maps?q=9406+W+Lake+Mead+Blvd+Suite+100,+Las+Vegas,+NV+89134&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=7960+N+Decatur+Blvd+Suite+B,+North+Las+Vegas,+NV+89085&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -165,7 +165,7 @@ export default function ContactPage() {
               {/* Map Action Buttons */}
               <div className="flex gap-3 mb-8">
                 <a
-                  href="https://www.google.com/maps/dir//9406+W+Lake+Mead+Blvd+Suite+100,+Las+Vegas,+NV+89134"
+                  href="https://www.google.com/maps/dir//7960+N+Decatur+Blvd+Suite+B,+North+Las+Vegas,+NV+89085"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-colors"
@@ -174,7 +174,7 @@ export default function ContactPage() {
                   Get Directions
                 </a>
                 <a
-                  href="https://maps.google.com/?q=Berkshire+Hathaway+HomeServices+Nevada+Properties+9406+W+Lake+Mead+Blvd+Las+Vegas+NV"
+                  href="https://maps.google.com/?q=7960+N+Decatur+Blvd+Suite+B+North+Las+Vegas+NV+89085"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-3 rounded-lg font-medium transition-colors"

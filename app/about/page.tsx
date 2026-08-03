@@ -50,10 +50,10 @@ const personSchema = {
     name: "Berkshire Hathaway HomeServices Nevada Properties",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-      addressLocality: "Las Vegas",
+      streetAddress: "7960 N Decatur Blvd, Suite B",
+      addressLocality: "North Las Vegas",
       addressRegion: "NV",
-      postalCode: "89134",
+      postalCode: "89085",
     },
   },
   hasCredential: {
@@ -210,8 +210,8 @@ export default function AboutPage() {
                     <div className="flex items-start text-slate-700">
                       <MapPin className="h-5 w-5 mr-3 text-blue-600 mt-0.5" />
                       <address className="not-italic">
-                        9406 W Lake Mead Blvd, Suite 100<br />
-                        Las Vegas, NV 89134
+                        7960 N Decatur Blvd, Suite B<br />
+                        North Las Vegas, NV 89085
                       </address>
                     </div>
                     <div className="flex items-center text-slate-700">

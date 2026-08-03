@@ -34,16 +34,17 @@ export const agentInfo = {
 export const officeInfo = {
   name: "Berkshire Hathaway HomeServices Nevada Properties",
   address: {
-    street: "9406 W Lake Mead Blvd, Suite 100",
-    city: "Las Vegas",
+    street: "7960 N Decatur Blvd, Suite B",
+    city: "North Las Vegas",
     state: "NV",
-    zip: "89134",
-    full: "9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
+    zip: "89085",
+    full: "7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085",
   },
   // Align with GBP / lib/gbp-schema.ts for GEO entity consistency
+  // Approximate pin: N Decatur Blvd & W Grand Teton Dr retail corridor
   coordinates: {
-    lat: 36.1941,
-    lng: -115.2678,
+    lat: 36.305,
+    lng: -115.205,
   },
   phone: "(702) 500-1942",
   phoneTel: "tel:+17025001942",

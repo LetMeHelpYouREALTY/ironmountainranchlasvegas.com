@@ -1,12 +1,14 @@
 /**
  * Nearby places for Iron Mountain Ranch context (amenities / map pins).
- * These are NOT office NAP — do not use for LocalBusiness address.
+ * Office NAP lives in lib/site-config.ts / lib/gbp-schema.ts — keep in sync.
  */
+
+import { officeInfo, siteConfig } from "@/lib/site-config";
 
 export type ImrNearbyPlace = {
   id: string;
   name: string;
-  category: "retail" | "dining" | "park" | "healthcare" | "other";
+  category: "office" | "retail" | "dining" | "park" | "healthcare" | "other";
   /** Street address for maps / NAP-style display of the place itself */
   streetAddress: string;
   city: string;
@@ -20,25 +22,24 @@ export type ImrNearbyPlace = {
   highlights: string[];
 };
 
-/** Decatur & Grand Teton retail corridor — dining/shopping pin for IMR buyers */
+/** Northwest office + Decatur & Grand Teton retail corridor pin */
 export const DECATUR_RETAIL_CORRIDOR: ImrNearbyPlace = {
-  id: "decatur-grand-teton-retail",
-  name: "N Decatur Blvd Retail Corridor",
-  category: "retail",
-  streetAddress: "7962 N Decatur Blvd",
-  city: "North Las Vegas",
+  id: "decatur-office-suite-b",
+  name: `${siteConfig.name} Office`,
+  category: "office",
+  streetAddress: officeInfo.address.street,
+  city: officeInfo.address.city,
   state: "NV",
-  zip: "89085",
-  // Public map pin near Decatur & W Grand Teton (Aug 2026 lookup)
-  latitude: 36.305,
-  longitude: -115.205,
+  zip: officeInfo.address.zip,
+  latitude: officeInfo.coordinates.lat,
+  longitude: officeInfo.coordinates.lng,
   driveMinutesFromImr: 8,
   description:
-    "Retail and dining strip on N Decatur Boulevard near W Grand Teton Drive — everyday shopping and restaurants a short drive from Iron Mountain Ranch villages.",
+    "Homes by Dr. Jan Duffy — northwest office in Suite B at the N Decatur Blvd retail corridor near W Grand Teton Drive. Dining and everyday shopping are steps away; Iron Mountain Ranch villages are about eight minutes west.",
   highlights: [
-    "Dining (including nearby Marco's Pizza, Taco Bell, McDonald's, Summit Tavern)",
-    "Surface parking and arterial access on Decatur",
-    "Links to Centennial Hills / Aliante shopping further south",
+    "Office: 7960 N Decatur Blvd, Suite B",
+    "Retail corridor dining nearby (Marco's Pizza, Summit Tavern, and more)",
+    "Quick access from Iron Mountain Ranch via Decatur / Grand Teton",
   ],
 };
 
@@ -63,11 +64,11 @@ export function placeMapsOpenUrl(place: ImrNearbyPlace): string {
   return `https://www.google.com/maps/search/?api=1&query=${q}`;
 }
 
-/** Place schema for a nearby amenity pin (not the agent LocalBusiness) */
+/** Place schema for the office / amenity pin */
 export function generateNearbyPlaceSchema(place: ImrNearbyPlace) {
   return {
     "@context": "https://schema.org",
-    "@type": "Place",
+    "@type": place.category === "office" ? "RealEstateAgent" : "Place",
     name: place.name,
     description: place.description,
     address: {

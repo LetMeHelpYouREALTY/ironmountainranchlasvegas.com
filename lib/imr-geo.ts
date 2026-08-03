@@ -70,7 +70,7 @@ const TOPIC_FAQS: Record<ImrGeoTopic, FAQItem[]> = {
     {
       question: "Where do Iron Mountain Ranch residents shop and dine nearby?",
       answer:
-        "Daily needs are covered by the Iron Mountain Road commercial center; the N Decatur Blvd retail corridor near W Grand Teton Drive (about 8 minutes) adds dining and shopping, with Centennial Hills retail and hospital about 10 minutes south.",
+        "Daily needs are covered by the Iron Mountain Road commercial center. The northwest office is at 7960 N Decatur Blvd, Suite B (about 8 minutes) in the Decatur & Grand Teton retail corridor, with Centennial Hills retail and hospital about 10 minutes south.",
     },
   ],
   buy: [
