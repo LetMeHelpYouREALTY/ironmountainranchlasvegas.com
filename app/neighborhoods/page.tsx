@@ -7,9 +7,9 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Iron Mountain Ranch & Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch & Las Vegas Neighborhoods | Homes by Dr. Jan Duffy",
   description:
-    "Explore Iron Mountain Ranch — our hyperlocal northwest Las Vegas specialty — plus Centennial Hills, Skye Canyon, Summerlin, Henderson, and more with Dr. Jan Duffy at BHHS Nevada Properties.",
+    "Explore Iron Mountain Ranch — our hyperlocal northwest Las Vegas specialty — plus Centennial Hills, Skye Canyon, Summerlin, Henderson, and more with Dr. Jan Duffy at Homes by Dr. Jan Duffy.",
   keywords: [
     "Iron Mountain Ranch Las Vegas",
     "Las Vegas neighborhoods",
@@ -140,7 +140,7 @@ export default function NeighborhoodsPage() {
             <p className="text-xl text-slate-600">
               Hyperlocal expertise in <strong>Iron Mountain Ranch</strong> and northwest Las Vegas,
               plus every major Southern Nevada community, with Dr. Jan Duffy, your{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> neighborhood expert
+              <strong>Homes by Dr. Jan Duffy</strong> neighborhood expert
             </p>
           </div>
 
@@ -191,11 +191,11 @@ export default function NeighborhoodsPage() {
                 Ranch — nine villages, gated streets, and some of the best square-footage value in
                 the valley — but whether you want Summerlin's parks, Green Valley's mature
                 landscaping, or the luxury of The Ridges, I'll help you find the community that
-                matches your lifestyle. That's the Berkshire Hathaway HomeServices
+                matches your lifestyle. That's the Homes by Dr. Jan Duffy
                 difference—personalized guidance backed by hyperlocal expertise."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>

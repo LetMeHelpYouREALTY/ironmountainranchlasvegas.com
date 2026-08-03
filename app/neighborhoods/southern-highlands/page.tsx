@@ -130,7 +130,7 @@ export default function SouthernHighlandsPage() {
                 <strong>Southern Highlands</strong> stands as southwest Las Vegas's answer to Summerlin—a
                 meticulously planned 2,200-acre community centered around an award-winning championship
                 golf course. For buyers seeking luxury living with convenient access to the Strip, airport,
-                and I-15 corridor, <strong>Berkshire Hathaway HomeServices</strong> considers Southern
+                and I-15 corridor, <strong>Homes by Dr. Jan Duffy</strong> considers Southern
                 Highlands among Las Vegas's finest residential options.
               </p>
               <p>
@@ -142,12 +142,12 @@ export default function SouthernHighlandsPage() {
                 entire community's aesthetic.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has represented buyers
+                <strong>Homes by Dr. Jan Duffy</strong> has represented buyers
                 and sellers in Southern Highlands for over two decades. Dr. Jan Duffy understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
                 course to the family-friendly neighborhoods in the community's newer phases. Whether
                 you're seeking a golf course lot with Strip views or a spacious family home with top-rated
-                schools, BHHS has the local expertise to guide your search.
+                schools, Dr. Jan has the local expertise to guide your search.
               </p>
 
               {/* Community Highlights */}
@@ -295,12 +295,11 @@ export default function SouthernHighlandsPage() {
                 from $500,000 in non-gated sections to over $3 million for golf course estates.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for Southern Highlands means
+                Choosing <strong>Homes by Dr. Jan Duffy</strong> for Southern Highlands means
                 working with agents who understand the community's unique value proposition. Dr. Jan Duffy
                 can explain the differences between various sections, which lots offer the best views,
-                and how HOA fees vary across the community. This knowledge, combined with the BHHS
-                reputation for excellence, ensures Southern Highlands buyers and sellers receive
-                exceptional service.
+                and how HOA fees vary across the community. This knowledge, combined with Dr. Jan's Iron Mountain Ranch expertise,
+                ensures Southern Highlands buyers and sellers receive exceptional service.
               </p>
             </div>
           </section>
@@ -311,8 +310,7 @@ export default function SouthernHighlandsPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Southern Highlands delivers luxury living at prices that often surprise buyers—especially
                 those relocating from California. You get championship golf, guard-gated security, mountain
-                views, and excellent schools, all just 15 minutes from the Strip. As a Berkshire Hathaway
-                HomeServices agent, I help clients see beyond the golf course to the community's full potential."
+                views, and excellent schools, all just 15 minutes from the Strip. As a Homes by Dr. Jan Duffy agent, I help clients see beyond the golf course to the community's full potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 — Dr. Jan Duffy | Homes by Dr. Jan Duffy

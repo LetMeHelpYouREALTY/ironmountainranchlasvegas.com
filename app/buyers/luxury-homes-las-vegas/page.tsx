@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "The Ridges Las Vegas",
     "MacDonald Highlands",
     "guard gated communities Las Vegas",
-    "Berkshire Hathaway luxury homes",
+    "luxury homes homes",
   ],
 };
 
@@ -57,7 +57,7 @@ const faqSchema = {
       name: "Do luxury buyers need representation?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely. Luxury transactions involve complex negotiations, privacy concerns, and significant financial exposure. One wrong move can cost hundreds of thousands. Berkshire Hathaway HomeServices provides discrete, sophisticated representation for discerning buyers.",
+        text: "Absolutely. Luxury transactions involve complex negotiations, privacy concerns, and significant financial exposure. One wrong move can cost hundreds of thousands. Homes by Dr. Jan Duffy provides discrete, sophisticated representation for discerning buyers.",
       },
     },
   ],
@@ -330,7 +330,7 @@ export default function LuxuryHomesPage() {
               <div>
                 <p className="text-slate-700 mb-4">
                   Luxury transactions require a level of discretion that most agents can't provide.
-                  Dr. Jan Duffy and <strong>Berkshire Hathaway HomeServices</strong> understand that
+                  Dr. Jan Duffy and <strong>Homes by Dr. Jan Duffy</strong> understand that
                   privacy isn't a luxury—it's a requirement.
                 </p>
                 <ul className="space-y-3">
@@ -374,7 +374,7 @@ export default function LuxuryHomesPage() {
                 "Luxury buyers expect discretion, market expertise, and flawless execution. In this
                 price range, one wrong move can cost hundreds of thousands of dollars. My clients
                 trust me because I've closed $127M+ in transactions and understand that their time
-                and privacy are worth more than any commission. <strong>Berkshire Hathaway HomeServices</strong>
+                and privacy are worth more than any commission. <strong>Homes by Dr. Jan Duffy</strong>
                 provides the global resources and credibility that luxury transactions demand."
               </blockquote>
               <cite className="text-slate-300 font-semibold">

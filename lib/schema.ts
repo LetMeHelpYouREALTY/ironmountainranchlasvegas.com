@@ -90,7 +90,7 @@ export function generateRealEstateAgentSchema() {
       siteConfig.name,
       siteConfig.byline,
       "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
-      "BHHS Nevada Properties",
+      "Homes by Dr. Jan Duffy",
     ],
     url: BASE_URL,
     logo: `${BASE_URL}/images/dr-jan-duffy.jpg`,
@@ -169,17 +169,10 @@ export function generateRealEstateAgentSchema() {
       identifier: agentInfo.license,
     },
     sameAs: Object.values(socialProfiles),
-    parentOrganization: {
-      "@type": "Organization",
-      "@id": `${BASE_URL}#parent-organization`,
-      name: "Berkshire Hathaway HomeServices Nevada Properties",
-      url: "https://www.bfrre.com",
-      parentOrganization: {
-        "@type": "Organization",
-        name: "Berkshire Hathaway HomeServices",
-        url: "https://www.bhhs.com",
-        sameAs: "https://en.wikipedia.org/wiki/Berkshire_Hathaway_HomeServices",
-      },
+    // Brokerage affiliation for structured data only (visible disclosure is footer-only)
+    worksFor: {
+      "@type": "RealEstateAgent",
+      name: agentInfo.brokerage,
     },
     aggregateRating: {
       "@type": "AggregateRating",
@@ -206,25 +199,16 @@ export function generateRealEstateAgentSchema() {
 }
 
 /**
- * Generate Organization schema for BHHS brand
+ * Generate Organization schema for this hyperlocal site brand
  */
 export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": `${BASE_URL}#parent-organization`,
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
-    url: "https://www.bfrre.com",
+    "@id": `${BASE_URL}#organization-brand`,
+    name: siteConfig.brandLine,
+    url: BASE_URL,
     logo: `${BASE_URL}/favicon-32x32.png`,
-    parentOrganization: {
-      "@type": "Organization",
-      name: "Berkshire Hathaway HomeServices",
-      url: "https://www.bhhs.com",
-      sameAs: [
-        "https://en.wikipedia.org/wiki/Berkshire_Hathaway_HomeServices",
-        "https://www.linkedin.com/company/berkshire-hathaway-homeservices/",
-      ],
-    },
   };
 }
 

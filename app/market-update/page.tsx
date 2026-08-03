@@ -17,13 +17,13 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Iron Mountain Ranch & Las Vegas Market Update | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch & Las Vegas Market Update | Homes by Dr. Jan Duffy",
   description:
     "Weekly Iron Mountain Ranch and Las Vegas real estate market update — Homes by Dr. Jan Duffy. Latest stats, notable 89131 sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1942.",
   keywords: [
     "Iron Mountain Ranch market update",
     "89131 housing market",
-    "Berkshire Hathaway HomeServices Las Vegas market update",
+    "Homes by Dr. Jan Duffy Las Vegas market update",
     "Las Vegas real estate market",
     "Las Vegas home prices",
   ],
@@ -88,7 +88,7 @@ export default function MarketUpdatePage() {
               <strong>Iron Mountain Ranch | Homes by Dr. Jan Duffy</strong>
             </p>
             <div className="flex items-center justify-center mt-6 text-slate-500 text-sm">
-              <span>By Dr. Jan Duffy, REALTOR® | BHHS Nevada Properties</span>
+              <span>By Dr. Jan Duffy, REALTOR® | Homes by Dr. Jan Duffy</span>
             </div>
           </div>
 
@@ -216,7 +216,7 @@ export default function MarketUpdatePage() {
                 <p>
                   What I'm watching closely: <strong>new listing activity</strong>. If inventory
                   continues declining while sales remain strong, we could see more competitive
-                  conditions by spring. <strong>Berkshire Hathaway HomeServices</strong> buyers
+                  conditions by spring. <strong>Homes by Dr. Jan Duffy</strong> buyers
                   should be prepared to move quickly on desirable properties, while sellers should
                   consider listing before the traditional spring rush creates more competition."
                 </p>
@@ -274,7 +274,7 @@ export default function MarketUpdatePage() {
                   <li className="flex items-start">
                     <ArrowRight className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>Work with an expert.</strong> A Berkshire Hathaway HomeServices agent
+                      <strong>Work with an expert.</strong> A Homes by Dr. Jan Duffy agent
                       can identify properties before they hit the market and negotiate effectively.
                     </span>
                   </li>
@@ -314,7 +314,7 @@ export default function MarketUpdatePage() {
                   <li className="flex items-start">
                     <ArrowRight className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>Leverage the BHHS brand.</strong> Berkshire Hathaway HomeServices
+                      <strong>Leverage Dr. Jan's Iron Mountain Ranch expertise.</strong> Homes by Dr. Jan Duffy
                       marketing reaches qualified buyers locally, nationally, and internationally.
                     </span>
                   </li>

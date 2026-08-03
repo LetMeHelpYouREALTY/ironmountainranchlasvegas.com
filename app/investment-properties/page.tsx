@@ -7,7 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Investment Properties Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Investment Properties Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Invest in Iron Mountain Ranch and Las Vegas real estate with Dr. Jan Duffy. Rental analysis for 89131 (median rent ~$2,160/mo), ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1942.",
   keywords: [
@@ -90,7 +90,7 @@ export default function InvestmentPropertiesPage() {
             <p className="text-xl text-slate-600">
               No state income tax, strong appreciation, and excellent rental yields. Discover why
               investors choose Las Vegas—with guidance from{" "}
-              <strong>Berkshire Hathaway HomeServices</strong>.
+              <strong>Homes by Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function InvestmentPropertiesPage() {
                 combination of cash flow and appreciation potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, Homes by Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -399,8 +399,7 @@ export default function InvestmentPropertiesPage() {
               </div>
               <p className="text-slate-600 text-sm">
                 Dr. Jan works with qualified intermediaries and can help identify replacement properties
-                within the 45-day window. Berkshire Hathaway's nationwide network is invaluable for
-                clients exchanging into or out of Las Vegas.
+                within the 45-day window—especially useful for clients exchanging into or out of Las Vegas.
               </p>
             </div>
           </section>
@@ -422,7 +421,7 @@ export default function InvestmentPropertiesPage() {
                 },
                 {
                   q: "Can you help with 1031 exchanges?",
-                  a: "Absolutely. Dr. Jan works with qualified intermediaries and can help identify replacement properties within the 45-day identification window. Berkshire Hathaway's nationwide network is particularly valuable for exchanging into or out of Las Vegas.",
+                  a: "Absolutely. Dr. Jan works with qualified intermediaries and can help identify replacement properties within the 45-day identification window for exchanges into or out of Las Vegas.",
                 },
                 {
                   q: "What's the best area for investment properties?",
@@ -444,7 +443,7 @@ export default function InvestmentPropertiesPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy and
-              Berkshire Hathaway HomeServices.
+              Homes by Dr. Jan Duffy.
             </p>
             <a
               href="tel:+17025001942"

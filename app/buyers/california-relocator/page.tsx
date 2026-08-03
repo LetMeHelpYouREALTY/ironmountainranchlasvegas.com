@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "moving from California to Nevada",
     "California relocator Las Vegas",
     "no state income tax Nevada",
-    "Berkshire Hathaway HomeServices relocation",
+    "Homes by Dr. Jan Duffy relocation",
   ],
 };
 
@@ -452,7 +452,7 @@ export default function CaliforniaRelocatorPage() {
                 "I've helped hundreds of California families make the move to Las Vegas. The most
                 common reaction? 'Why didn't we do this sooner?' Between the tax savings, the space,
                 and the lifestyle, most clients can't believe what their California equity buys here.
-                As a <strong>Berkshire Hathaway HomeServices</strong> agent, I coordinate with our
+                As a <strong>Homes by Dr. Jan Duffy</strong> agent, I coordinate with our
                 California offices to make the transition seamless—you don't have to figure this
                 out alone."
               </blockquote>

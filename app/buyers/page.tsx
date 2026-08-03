@@ -22,7 +22,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Buy a Home in Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Buy a Home in Iron Mountain Ranch Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Buying in Iron Mountain Ranch or northwest Las Vegas (89131)? Dr. Jan Duffy delivers village-by-village guidance, real-time listing alerts, and free buyer representation. Call (702) 500-1942.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "89131 homes for sale",
     "buy home Las Vegas",
     "northwest Las Vegas home buyer",
-    "Berkshire Hathaway buyer agent",
+    "buyer agent",
     "first time home buyer Las Vegas",
   ],
 };
@@ -113,7 +113,7 @@ export default function BuyersPage() {
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Hyperlocal buyer representation in <strong>Iron Mountain Ranch</strong> and northwest
-              Las Vegas from a <strong>Berkshire Hathaway HomeServices</strong> agent — and it costs
+              Las Vegas from a <strong>Homes by Dr. Jan Duffy</strong> agent — and it costs
               you nothing. The seller pays the commission, but the representation is yours. Only
               about 28 homes are listed in Iron Mountain Ranch at a time; Dr. Jan makes sure you see
               every one the moment it hits the market.
@@ -135,7 +135,7 @@ export default function BuyersPage() {
                 <p className="text-slate-300 mb-6">
                   Here's what many buyers don't know: having your own agent costs you nothing. The
                   seller pays the commission, but the representation is yours.{" "}
-                  <strong>Berkshire Hathaway HomeServices</strong> agents protect your interests,
+                  <strong>Homes by Dr. Jan Duffy</strong> agents protect your interests,
                   not the seller's. In a competitive market like Las Vegas, having expert 
                   representation can mean the difference between winning your dream home and losing out.
                 </p>
@@ -178,7 +178,7 @@ export default function BuyersPage() {
               Buying a home is one of the most significant financial decisions you'll make. 
               Understanding the process helps reduce stress and ensures you're prepared at each 
               step. Here's what to expect when purchasing a home in Las Vegas with Dr. Jan Duffy 
-              and Berkshire Hathaway HomeServices.
+              .
             </p>
             <div className="space-y-6">
               {buyingSteps.map((step, index) => {
@@ -300,34 +300,33 @@ export default function BuyersPage() {
             </div>
           </section>
 
-          {/* Why BHHS */}
+          {/* Why Dr. Jan */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Why Buy with Berkshire Hathaway HomeServices
+              Why Buy with Homes by Dr. Jan Duffy
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Not all real estate agents are created equal. When you choose a Berkshire Hathaway 
-              HomeServices agent, you're choosing the only real estate brand backed by Warren 
-              Buffett's Berkshire Hathaway Inc.—a name synonymous with trust, ethical standards, 
-              and financial strength.
+              Iron Mountain Ranch is not a generic Las Vegas search. When you buy with Homes by
+              Dr. Jan Duffy, you get village-level comps, gated-community knowledge, and direct
+              access from first tour to closing.
             </p>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Award className="h-7 w-7 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-slate-900 mb-2">Trusted Brand</h3>
+                <h3 className="font-bold text-slate-900 mb-2">Village Comps</h3>
                 <p className="text-slate-600 text-sm">
-                  The only real estate brand backed by Berkshire Hathaway Inc.
+                  Live MLS data by Iron Mountain Ranch village — not zip averages
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Users className="h-7 w-7 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-slate-900 mb-2">Global Network</h3>
+                <h3 className="font-bold text-slate-900 mb-2">Direct Access</h3>
                 <p className="text-slate-600 text-sm">
-                  50,000+ agents worldwide for seamless relocations and referrals
+                  Call or text (702) 500-1942 — Dr. Jan answers her own phone
                 </p>
               </div>
               <div className="text-center">
@@ -357,11 +356,11 @@ export default function BuyersPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "My job isn't just to show you houses—it's to make sure you don't overpay, that you
                 understand what you're buying, and that you're protected through every step of the
-                transaction. That's what Berkshire Hathaway HomeServices representation means. I treat 
+                transaction. That's what Homes by Dr. Jan Duffy representation means. I treat 
                 every client like family and won't stop until we find the right home for your needs."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties | Serving Las Vegas Since 2008
+                — Dr. Jan Duffy, Homes by Dr. Jan Duffy | Serving Las Vegas Since 2008
               </cite>
             </div>
           </section>
@@ -416,12 +415,12 @@ export default function BuyersPage() {
                   a: "Yes! Pre-approval shows sellers you're serious and gives you a clear budget. In competitive situations, pre-approved buyers have a significant advantage. The process typically takes 1-3 days with proper documentation.",
                 },
                 {
-                  q: "Does BHHS help with new construction purchases?",
+                  q: "Does local help with new construction purchases?",
                   a: "Yes! Dr. Jan provides free representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities. The builder pays her commission, but she works for you—reviewing contracts, negotiating upgrades, and protecting your interests during the build process.",
                 },
                 {
                   q: "What if I'm relocating from another state?",
-                  a: "Berkshire Hathaway's global network of 50,000+ agents makes relocations seamless. Dr. Jan can coordinate with agents in your current city while helping you find the perfect Las Vegas home remotely through virtual tours and video calls.",
+                  a: "Dr. Jan's northwest Las Vegas market knowledge makes relocations seamless. Dr. Jan can coordinate with agents in your current city while helping you find the perfect Las Vegas home remotely through virtual tours and video calls.",
                 },
                 {
                   q: "How competitive is the Las Vegas housing market?",
@@ -445,7 +444,7 @@ export default function BuyersPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Las Vegas Home?</h2>
             <p className="text-xl text-slate-300 mb-8">
               Questions about buying in Las Vegas? Call or text Dr. Jan Duffy for a free buyer
-              consultation. Get expert guidance backed by Berkshire Hathaway HomeServices—the 
+              consultation. Get expert guidance backed by Homes by Dr. Jan Duffy—the 
               seller pays the commission, so representation is free for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

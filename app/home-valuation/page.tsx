@@ -10,7 +10,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Free Iron Mountain Ranch Home Valuation | What's Your Home Worth? | Las Vegas 89131",
   description:
-    "What's your Iron Mountain Ranch home worth? Free village-specific CMA from Dr. Jan Duffy at Berkshire Hathaway HomeServices — live comps from all 9 villages, 89131 & 89143. Call (702) 500-1942.",
+    "What's your Iron Mountain Ranch home worth? Free village-specific CMA from Dr. Jan Duffy at Homes by Dr. Jan Duffy — live comps from all 9 villages, 89131 & 89143. Call (702) 500-1942.",
   keywords: [
     "Iron Mountain Ranch home value",
     "what is my Iron Mountain Ranch home worth",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "home valuation Las Vegas",
     "free home value estimate",
     "CMA northwest Las Vegas",
-    "Berkshire Hathaway home valuation",
+    "home valuation",
   ],
 };
 
@@ -93,7 +93,7 @@ export default function HomeValuationPage() {
             </h1>
             <p className="text-xl text-slate-600">
               Get a free, no-obligation valuation from Dr. Jan Duffy at{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> — built from live comps in your
+              <strong>Homes by Dr. Jan Duffy</strong> — built from live comps in your
               specific Iron Mountain Ranch village, adjusted for lot size, upgrades, and floor plan.
               Iron Mountain Ranch is currently listing at a median of about $535,000 ($235/sq ft),
               but village-to-village spreads are significant.
@@ -113,15 +113,14 @@ export default function HomeValuationPage() {
               </div>
               <CalendlyWidget url="https://calendly.com/drjanduffy/showing" height="650px" />
               <p className="text-xs text-slate-500 text-center p-4 border-t border-slate-200">
-                No obligation. No pressure. Just accurate information from Berkshire Hathaway
-                HomeServices.
+                No obligation. No pressure. Just accurate information from Homes by Dr. Jan Duffy.
               </p>
             </div>
 
             {/* Value Prop */}
             <div className="space-y-8">
               <div className="bg-slate-900 text-white rounded-lg p-8">
-                <h2 className="text-2xl font-bold mb-4">Why Request a BHHS Valuation?</h2>
+                <h2 className="text-2xl font-bold mb-4">Why Request a local Valuation?</h2>
                 <p className="text-slate-300 mb-6">
                   Online estimators like Zillow's "Zestimate" can be off by 10% or more—that's
                   $45,000+ on a typical Las Vegas home. Dr. Jan Duffy provides a comprehensive
@@ -176,7 +175,7 @@ export default function HomeValuationPage() {
                   algorithms—to determine your home's true value."
                 </blockquote>
                 <cite className="text-slate-900 font-semibold text-sm">
-                  — Dr. Jan Duffy, BHHS Nevada Properties
+                  — Dr. Jan Duffy, Homes by Dr. Jan Duffy
                 </cite>
               </div>
 
@@ -207,7 +206,7 @@ export default function HomeValuationPage() {
                 your home or understand the nuances of the Las Vegas market.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices</strong> agents like Dr. Jan Duffy provide
+                <strong>Homes by Dr. Jan Duffy</strong> agents like Dr. Jan Duffy provide
                 something these algorithms cannot: local expertise combined with a detailed
                 understanding of what makes your specific home valuable. A professional Comparative
                 Market Analysis (CMA) considers factors that online tools miss entirely.
@@ -245,7 +244,7 @@ export default function HomeValuationPage() {
                 </ul>
               </div>
               <div className="bg-green-50 border border-green-200 rounded-lg p-6">
-                <h3 className="font-bold text-green-800 mb-4">What a BHHS CMA Includes</h3>
+                <h3 className="font-bold text-green-800 mb-4">What a local CMA Includes</h3>
                 <ul className="space-y-2 text-green-700">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
@@ -375,7 +374,7 @@ export default function HomeValuationPage() {
           {/* The Valuation Process */}
           <section className="max-w-5xl mx-auto mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              The BHHS Home Valuation Process
+              The local Home Valuation Process
             </h2>
             <div className="space-y-6">
               <div className="flex items-start">
@@ -467,8 +466,7 @@ export default function HomeValuationPage() {
               Ready to Know What Your Home Is Worth?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Get a free, no-obligation home valuation from Dr. Jan Duffy and Berkshire Hathaway
-              HomeServices Nevada Properties. Accurate pricing. Expert guidance. Zero pressure.
+              Get a free, no-obligation home valuation from Dr. Jan Duffy and Homes by Dr. Jan Duffy. Accurate pricing. Expert guidance. Zero pressure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

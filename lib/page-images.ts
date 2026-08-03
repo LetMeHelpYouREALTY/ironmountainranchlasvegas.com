@@ -156,10 +156,6 @@ export function getPageHeroImage(pathname: string): PageImage {
       src: "/images/page-heroes/about-contact.jpg",
       alt: "Dr. Jan Duffy Iron Mountain Ranch Google Business Profile",
     },
-    "/why-berkshire-hathaway": {
-      src: "/images/neighborhoods/luxury-estate.jpg",
-      alt: "Berkshire Hathaway HomeServices for Iron Mountain Ranch real estate",
-    },
     "/55-plus-communities": {
       src: "/images/neighborhoods/55-plus.jpg",
       alt: "55+ active adult communities near Iron Mountain Ranch Las Vegas",

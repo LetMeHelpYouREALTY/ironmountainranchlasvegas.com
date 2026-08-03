@@ -15,7 +15,7 @@ export default function Footer() {
             <p className="text-blue-300 text-sm mb-4">{siteConfig.byline}</p>
             <p className="text-slate-300 mb-4 text-sm">
               Northwest Las Vegas real estate (89131 &amp; 89143), also serving Centennial Hills,
-              Skye Canyon, and the greater Las Vegas Valley. {agentInfo.brokerage}.
+              Skye Canyon, and the greater Las Vegas Valley.
             </p>
             <div className="flex space-x-4">
               <a
@@ -80,10 +80,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/why-berkshire-hathaway"
+                  href="/about"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  Why BHHS
+                  About Dr. Jan
                 </Link>
               </li>
               <li>
@@ -92,14 +92,6 @@ export default function Footer() {
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
                   Market Report
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-slate-300 hover:text-white transition-colors text-sm"
-                >
-                  About Dr. Jan
                 </Link>
               </li>
               <li>

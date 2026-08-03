@@ -39,7 +39,7 @@ export const IMR_FACTS = {
 } as const;
 
 /** One-sentence atomic answer for AI citation / Speakable */
-export const IMR_TLDR = `Iron Mountain Ranch is an ${IMR_FACTS.acres}-acre master-planned community in northwest Las Vegas (ZIP ${IMR_FACTS.zipCodes}) with about ${IMR_FACTS.villages} villages and ${IMR_FACTS.totalHomes} homes. As of ${IMR_FACTS.lastUpdated}, the median list price is about ${IMR_FACTS.medianPrice} (~${IMR_FACTS.pricePerSqFt}), with roughly ${IMR_FACTS.activeListings} active listings and ${IMR_FACTS.daysOnMarket} median days on market. Dr. Jan Duffy (${IMR_NAP.license}) offers Homes by Dr. Jan Duffy in Iron Mountain Ranch (Berkshire Hathaway HomeServices Nevada Properties) — call ${IMR_NAP.phoneDisplay}.`;
+export const IMR_TLDR = `Iron Mountain Ranch is an ${IMR_FACTS.acres}-acre master-planned community in northwest Las Vegas (ZIP ${IMR_FACTS.zipCodes}) with about ${IMR_FACTS.villages} villages and ${IMR_FACTS.totalHomes} homes. As of ${IMR_FACTS.lastUpdated}, the median list price is about ${IMR_FACTS.medianPrice} (~${IMR_FACTS.pricePerSqFt}), with roughly ${IMR_FACTS.activeListings} active listings and ${IMR_FACTS.daysOnMarket} median days on market. Dr. Jan Duffy (${IMR_NAP.license}) offers Homes by Dr. Jan Duffy in Iron Mountain Ranch — call ${IMR_NAP.phoneDisplay}.`;
 
 export type ImrGeoTopic =
   | "general"
@@ -57,7 +57,7 @@ const TOPIC_FAQS: Record<ImrGeoTopic, FAQItem[]> = {
   general: [
     {
       question: "Who is the REALTOR® for Iron Mountain Ranch Las Vegas?",
-      answer: `Dr. Jan Duffy (${IMR_NAP.license}) (Homes by Dr. Jan Duffy) specializes in Iron Mountain Ranch (89131 & 89143). Call ${IMR_NAP.phoneDisplay} for village-specific guidance.`,
+      answer: `Dr. Jan Duffy (${IMR_NAP.license}) specializes in Iron Mountain Ranch (89131 & 89143). Call ${IMR_NAP.phoneDisplay} for village-specific guidance.`,
     },
     {
       question: "What is the median home price in Iron Mountain Ranch?",

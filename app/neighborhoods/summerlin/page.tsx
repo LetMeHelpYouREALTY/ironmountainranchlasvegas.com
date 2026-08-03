@@ -51,9 +51,9 @@ const summerlinFaqs = [
       "Summerlin offers 150+ parks, 150+ miles of trails, top-rated schools, and stunning Red Rock Canyon views. The Howard Hughes Corporation has developed Summerlin with careful planning since 1990, creating distinct villages each with unique character.",
   },
   {
-    question: "Why should I use a Berkshire Hathaway HomeServices agent in Summerlin?",
+    question: "Why should I use your Iron Mountain Ranch REALTOR® in Summerlin?",
     answer:
-      "Berkshire Hathaway HomeServices agents like Dr. Jan Duffy bring deep Summerlin expertise combined with the global resources and trusted reputation of the BHHS brand. This combination helps buyers compete in Summerlin's competitive market and helps sellers maximize their home's value.",
+      "Dr. Jan Duffy brings deep Summerlin village knowledge—from The Paseos to The Ridges—plus Iron Mountain Ranch expertise and hands-on negotiation. That hyperlocal focus helps buyers compete in Summerlin's market and helps sellers maximize their home's value.",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function SummerlinPage() {
               </h2>
               <p>
                 When homebuyers search for the best neighborhoods in Las Vegas, <strong>Summerlin</strong> consistently
-                ranks at the top. As a <strong>Berkshire Hathaway HomeServices</strong> agent specializing in Summerlin
+                ranks at the top. As a <strong>Homes by Dr. Jan Duffy</strong> agent specializing in Summerlin
                 real estate, Dr. Jan Duffy has helped hundreds of families find their perfect home in this
                 award-winning master-planned community.
               </p>
@@ -151,11 +151,11 @@ export default function SummerlinPage() {
                 enjoy an active, healthy lifestyle that's hard to find elsewhere in the desert Southwest.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has deep roots in Summerlin,
+                <strong>Homes by Dr. Jan Duffy</strong> has deep roots in Summerlin,
                 and our agents understand the nuances of each village—from the family-friendly atmosphere of
                 The Paseos to the luxury estates of The Ridges. Whether you're a first-time buyer looking at
-                condos in Affinity or a move-up buyer seeking a custom home in Red Rock Country Club, BHHS
-                has the expertise to guide you through the process.
+                condos in Affinity or a move-up buyer seeking a custom home in Red Rock Country Club, Dr. Jan
+                has the Summerlin expertise to guide you through the process.
               </p>
 
               {/* Community Highlights */}
@@ -287,7 +287,7 @@ export default function SummerlinPage() {
                 a fraction of the cost—with no state income tax.
               </p>
               <p>
-                Working with a <strong>Berkshire Hathaway HomeServices</strong> agent gives you access to listings
+                Working with a <strong>Homes by Dr. Jan Duffy</strong> agent gives you access to listings
                 before they hit the market, expert negotiation skills, and the backing of a globally trusted brand.
                 Dr. Jan Duffy has been serving Summerlin since 2008, which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
@@ -303,7 +303,7 @@ export default function SummerlinPage() {
                 "Summerlin isn't just a neighborhood—it's a lifestyle. I've been serving this area since
                 2008, and I can tell you exactly which villages suit young families, which offer the
                 best investment potential, and where you'll find the hidden gems. That local knowledge is
-                what sets Berkshire Hathaway HomeServices apart."
+                what sets Homes by Dr. Jan Duffy apart."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 — Dr. Jan Duffy | Homes by Dr. Jan Duffy
@@ -349,13 +349,12 @@ export default function SummerlinPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why should I use a Berkshire Hathaway HomeServices agent in Summerlin?
+                  Why should I use your Iron Mountain Ranch REALTOR® in Summerlin?
                 </h3>
                 <p className="text-slate-600">
-                  Berkshire Hathaway HomeServices agents like Dr. Jan Duffy bring deep Summerlin expertise
-                  combined with the global resources and trusted reputation of the BHHS brand. This
-                  combination helps buyers compete in Summerlin's competitive market and helps sellers
-                  maximize their home's value.
+                  Dr. Jan Duffy brings deep Summerlin village knowledge—from The Paseos to The Ridges—plus Iron
+                  Mountain Ranch expertise and hands-on negotiation. That hyperlocal focus helps buyers
+                  compete in Summerlin's market and helps sellers maximize their home's value.
                 </p>
               </div>
             </div>

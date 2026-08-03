@@ -130,7 +130,7 @@ export default function InspiradaPage() {
                 <strong>Inspirada</strong> redefines what a master-planned community can be. This
                 2,000-acre development in Henderson consistently ranks among the nation's top-selling
                 communities, and for good reason: Inspirada delivers resort-style amenities that make
-                every day feel like a vacation. <strong>Berkshire Hathaway HomeServices</strong>
+                every day feel like a vacation. <strong>Homes by Dr. Jan Duffy</strong>
                 is proud to represent buyers and sellers in this exceptional community.
               </p>
               <p>
@@ -142,11 +142,11 @@ export default function InspiradaPage() {
                 to Inspirada's identity.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> provides free
+                <strong>Homes by Dr. Jan Duffy</strong> provides free
                 buyer representation on Inspirada new construction purchases. With multiple builders
                 offering homes in the community, navigating options can be overwhelming. Dr. Jan Duffy
                 helps buyers compare builders, negotiate upgrades, and avoid common new construction
-                pitfalls. For resales, BHHS agents identify properties where previous owners made
+                pitfalls. For resales, experienced agents identify properties where previous owners made
                 smart upgrade decisions, delivering better value than comparable new construction.
               </p>
 
@@ -292,7 +292,7 @@ export default function InspiradaPage() {
                 established yards and upgraded features offer compelling alternatives.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Inspirada purchase
+                Choosing <strong>Homes by Dr. Jan Duffy</strong> for your Inspirada purchase
                 means working with agents who understand the community's various neighborhoods, which
                 builders offer the best quality, and which lots provide the best value. Dr. Jan Duffy
                 has helped dozens of families find their Inspirada homes, and that experience
@@ -307,7 +307,7 @@ export default function InspiradaPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Inspirada isn't just a place to live—it's a lifestyle. Families move here for the
                 pools, the trails, and the community events that make weekends special. As a
-                Berkshire Hathaway HomeServices agent, I help clients find the specific neighborhood
+                Homes by Dr. Jan Duffy agent, I help clients find the specific neighborhood
                 within Inspirada that matches how they want to live, whether that's close to the
                 main pool complex or on a quiet cul-de-sac backing to open space."
               </blockquote>

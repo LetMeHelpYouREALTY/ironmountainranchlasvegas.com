@@ -21,15 +21,15 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | BHHS Las Vegas",
+  title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | local Las Vegas",
   description:
     "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Serving Las Vegas since 2008, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy",
     "Iron Mountain Ranch realtor",
-    "Berkshire Hathaway HomeServices agent",
+    "Homes by Dr. Jan Duffy agent",
     "Las Vegas realtor",
-    "BHHS Nevada Properties",
+    "Homes by Dr. Jan Duffy",
     "northwest Las Vegas real estate agent",
   ],
 };
@@ -47,7 +47,7 @@ const personSchema = {
   url: "https://www.ironmountainranchlasvegas.com/about",
   worksFor: {
     "@type": "RealEstateAgent",
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Homes by Dr. Jan Duffy",
     address: {
       "@type": "PostalAddress",
       streetAddress: "7960 N Decatur Blvd, Suite B",
@@ -160,7 +160,7 @@ export default function AboutPage() {
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
-                    When you choose to work with <strong>Berkshire Hathaway HomeServices</strong>,
+                    When you choose to work with <strong>Homes by Dr. Jan Duffy</strong>,
                     you're choosing a legacy of trust, integrity, and excellence. I'm proud to
                     represent this iconic brand in the Las Vegas real estate market, bringing 
                     world-class resources and local expertise to every client I serve.
@@ -173,8 +173,8 @@ export default function AboutPage() {
                     relocations—particularly for California families seeking Nevada's tax advantages.
                   </p>
                   <p>
-                    What sets <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
-                    apart? We're backed by Warren Buffett's Berkshire Hathaway Inc.—a name synonymous
+                    What sets <strong>Homes by Dr. Jan Duffy</strong>{" "}
+                    apart? We're backed by a trusted REALTOR® practice—a name synonymous
                     with financial strength and ethical standards. When you're making the biggest
                     financial decision of your life, that trust matters. You deserve an agent who 
                     puts your interests first, provides honest advice, and has the resources to 
@@ -228,7 +228,7 @@ export default function AboutPage() {
                   the transaction. I treat every client like family and won't stop until we achieve 
                   your real estate goals."
                   <cite className="block mt-2 text-slate-900 font-semibold not-italic">
-                    — Dr. Jan Duffy, BHHS Nevada Properties
+                    — Dr. Jan Duffy, Homes by Dr. Jan Duffy
                   </cite>
                 </blockquote>
               </div>
@@ -316,54 +316,53 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Why BHHS Section */}
+          {/* Why Dr. Jan Section */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Why Berkshire Hathaway HomeServices?
+              Why Homes by Dr. Jan Duffy?
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              Berkshire Hathaway HomeServices is the only real estate brand backed by Warren 
-              Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, 
-              ethical standards, and a commitment to client service that defines every transaction.
+              Iron Mountain Ranch is a unique northwest Las Vegas community — 9 villages, gated
+              streets, and thin inventory. You need an agent who tracks it daily, not a generic
+              valley-wide pitch.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Award className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Trusted Brand</h3>
+                <h3 className="font-bold text-xl mb-2">Village Expertise</h3>
                 <p className="text-slate-300 text-sm">
-                  The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.—a 
-                  name synonymous with trust and integrity worldwide.
+                  Comps by village, gate status, lot premiums, and LMA dues — not zip-code averages.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Users className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Global Network</h3>
+                <h3 className="font-bold text-xl mb-2">Direct Access</h3>
                 <p className="text-slate-300 text-sm">
-                  50,000+ agents worldwide for seamless referrals and relocations. Whether you're 
-                  moving from California or anywhere else, our network has you covered.
+                  Call or text Dr. Jan at (702) 500-1942 — she answers her own phone for Iron
+                  Mountain Ranch buyers and sellers.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Shield className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Ethical Standards</h3>
+                <h3 className="font-bold text-xl mb-2">Clear Guidance</h3>
                 <p className="text-slate-300 text-sm">
-                  Rigorous ethical guidelines ensure your interests always come first. No pressure, 
-                  no games—just honest advice and expert representation.
+                  Honest advice from offer to close. No pressure — just northwest Las Vegas market
+                  knowledge that protects your transaction.
                 </p>
               </div>
             </div>
             <div className="text-center">
               <Link
-                href="/why-berkshire-hathaway"
+                href="/contact"
                 className="inline-block bg-white text-slate-900 px-8 py-3 rounded-md font-semibold hover:bg-slate-100 transition-colors"
               >
-                Learn More About BHHS
+                Contact Dr. Jan
               </Link>
             </div>
           </section>
@@ -371,7 +370,7 @@ export default function AboutPage() {
           {/* Areas Served */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              Areas Served by BHHS Nevada Properties
+              Areas Served by Homes by Dr. Jan Duffy
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Dr. Jan Duffy serves the entire Las Vegas Valley with specialized knowledge of each 

@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Iron Mountain Ranch & Las Vegas Market Insights 2026 | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch & Las Vegas Market Insights 2026 | Homes by Dr. Jan Duffy",
   description:
     "Market analysis shaping Iron Mountain Ranch and Las Vegas real estate in 2026 — economic forecasts, California migration, and what it means for northwest Las Vegas buyers and sellers. Call (702) 500-1942.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Las Vegas real estate trends 2026",
     "Nevada economic outlook",
     "California to Las Vegas migration",
-    "Berkshire Hathaway market insights",
+    "market insights",
   ],
 };
 
@@ -38,7 +38,7 @@ const reportSchema = {
   author: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy",
-    worksFor: "Berkshire Hathaway HomeServices Nevada Properties",
+    worksFor: "Homes by Dr. Jan Duffy",
   },
   datePublished: "2026-01-23",
   about: {
@@ -415,7 +415,7 @@ export default function MarketInsightsPage() {
                 from reactive ones. Las Vegas is no longer just a gaming and tourism economy.
                 Tech investment, California migration, and economic diversification are reshaping
                 which neighborhoods will outperform. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I help clients position
+                <strong>Homes by Dr. Jan Duffy</strong> agent, I help clients position
                 themselves for where the market is going, not just where it's been."
               </blockquote>
               <cite className="text-slate-300 font-semibold">

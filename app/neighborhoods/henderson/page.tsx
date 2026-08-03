@@ -61,10 +61,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Why choose Berkshire Hathaway HomeServices for Henderson real estate?",
+      name: "Why choose Homes by Dr. Jan Duffy for Henderson real estate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy know every community, school district, and HOA. The Berkshire Hathaway name provides trust and resources that benefit both buyers and sellers.",
+        text: "Homes by Dr. Jan Duffy has served Henderson for decades. Our agents like Dr. Jan Duffy know every community, school district, and HOA. Local market expertise provides trust and resources that benefit both buyers and sellers.",
       },
     },
   ],
@@ -144,8 +144,7 @@ export default function HendersonPage() {
               <p>
                 <strong>Henderson</strong> has quietly become one of the most desirable cities in the American
                 Southwest. As Nevada's second-largest city with over 320,000 residents, Henderson offers the
-                perfect balance of suburban tranquility and urban convenience. <strong>Berkshire Hathaway
-                HomeServices</strong> has been helping families find their Henderson dream homes for decades,
+                perfect balance of suburban tranquility and urban convenience. Dr. Jan Duffy has been helping families find their Henderson dream homes for decades,
                 and Dr. Jan Duffy brings unmatched expertise to every transaction.
               </p>
               <p>
@@ -160,7 +159,7 @@ export default function HendersonPage() {
                 streets of <strong>Green Valley</strong> to the resort-style amenities of <strong>Inspirada</strong>,
                 from the luxury estates of <strong>MacDonald Highlands</strong> to the waterfront properties at
                 <strong> Lake Las Vegas</strong>—Henderson has a community for every lifestyle and budget.
-                <strong> Berkshire Hathaway HomeServices Nevada Properties</strong> agents know each of these
+                <strong> Homes by Dr. Jan Duffy</strong> agents know each of these
                 communities intimately.
               </p>
 
@@ -308,11 +307,11 @@ export default function HendersonPage() {
                 properties exceeding $2 million in guard-gated communities.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Henderson home search means
+                Choosing <strong>Homes by Dr. Jan Duffy</strong> for your Henderson home search means
                 working with agents who understand the subtle differences between Henderson's many communities.
                 Dr. Jan Duffy can explain which neighborhoods have the best schools for your children's ages,
                 which HOAs are well-managed, and which areas offer the strongest investment potential. That
-                local knowledge, backed by the resources and reputation of Berkshire Hathaway, makes all the
+                local knowledge, with deep northwest Las Vegas market knowledge, makes all the
                 difference.
               </p>
             </div>
@@ -323,7 +322,7 @@ export default function HendersonPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Henderson offers something for everyone—young professionals, growing families, active retirees.
-                As a Berkshire Hathaway HomeServices agent, I help clients cut through the options and find
+                As your Iron Mountain Ranch REALTOR®, I help clients cut through the options and find
                 the community that fits their lifestyle. There's a reason Henderson keeps winning 'Best Places
                 to Live' awards."
               </blockquote>
@@ -371,11 +370,11 @@ export default function HendersonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why choose Berkshire Hathaway HomeServices for Henderson real estate?
+                  Why choose Homes by Dr. Jan Duffy for Henderson real estate?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy
-                  know every community, school district, and HOA. The Berkshire Hathaway name provides
+                  Homes by Dr. Jan Duffy has served Henderson for decades. Our agents like Dr. Jan Duffy
+                  know every community, school district, and HOA. Local market expertise provides
                   trust and resources that benefit both buyers and sellers.
                 </p>
               </div>
@@ -389,7 +388,7 @@ export default function HendersonPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy, your Henderson Homes expert,
-              for personalized guidance and local market insights.
+              for personalized guidance and market insights.
             </p>
             <a
               href="tel:+17025001942"

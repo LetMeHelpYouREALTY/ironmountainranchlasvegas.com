@@ -23,7 +23,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "REALTOR® Services Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
+  title: "REALTOR® Services Iron Mountain Ranch Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Full REALTOR® services for Iron Mountain Ranch and northwest Las Vegas (89131) from Dr. Jan Duffy — Homes by Dr. Jan Duffy. Buying, selling, valuations, investment, and relocation. Call (702) 500-1942.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Iron Mountain Ranch real estate agent",
     "89131 realtor",
     "Las Vegas real estate services",
-    "Berkshire Hathaway services",
+    "real estate services",
     "home buying northwest Las Vegas",
     "home selling Iron Mountain Ranch",
   ],
@@ -64,7 +64,7 @@ const coreServices = [
     title: "Home Selling Services",
     slug: "sellers",
     description:
-      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Berkshire Hathaway HomeServices—the most trusted name in real estate.",
+      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Homes by Dr. Jan Duffy—the most trusted name in real estate.",
     highlights: ["World-class marketing", "Accurate pricing", "Global exposure", "Staging guidance"],
     stats: { label: "Homes Sold", value: "500+" },
   },
@@ -74,7 +74,7 @@ const coreServices = [
     slug: "luxury-homes",
     description:
       "Specialized expertise in Las Vegas luxury real estate. The Ridges, MacDonald Highlands, Southern Highlands, and the most prestigious communities in Southern Nevada.",
-    highlights: ["Discretion", "Global buyer network", "White-glove service", "Premium marketing"],
+    highlights: ["Discretion", "Qualified buyer outreach", "White-glove service", "Premium marketing"],
     stats: { label: "Luxury Volume", value: "$45M+" },
   },
   {
@@ -102,7 +102,7 @@ const specializedServices = [
     title: "Relocation Services",
     slug: "relocation",
     description:
-      "Comprehensive relocation assistance for moves to Las Vegas. Berkshire Hathaway HomeServices' global network of 50,000+ agents makes interstate transitions seamless.",
+      "Comprehensive relocation assistance for moves to Las Vegas. Homes by Dr. Jan Duffy's northwest Las Vegas market knowledge makes interstate transitions seamless.",
     highlights: ["Neighborhood matching", "School research", "Remote buying", "Moving coordination"],
   },
   {
@@ -160,7 +160,7 @@ const sellerTypes = [
   {
     title: "Relocation Sellers",
     href: "/sellers/relocation",
-    description: "Selling from out of state? Remote coordination with BHHS network support.",
+    description: "Selling from out of state? Remote coordination with local showing and closing support.",
   },
 ];
 
@@ -185,7 +185,7 @@ export default function ServicesPage() {
             <p className="text-xl text-slate-600 mb-8">
               Hyperlocal real estate services for <strong>Iron Mountain Ranch</strong> and northwest
               Las Vegas from Dr. Jan Duffy, backed by the most trusted name in the
-              business—<strong>Berkshire Hathaway HomeServices</strong>. Whether you're buying in
+              business—<strong>Homes by Dr. Jan Duffy</strong>. Whether you're buying in
               one of the 9 villages, selling for top dollar, or relocating to the northwest valley,
               you'll receive expert guidance every step of the way.
             </p>
@@ -215,8 +215,7 @@ export default function ServicesPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               These foundational services cover the majority of real estate transactions in Las Vegas. 
               Each service is delivered with the professionalism, resources, and ethical standards 
-              that define Berkshire Hathaway HomeServices—the only real estate brand backed by 
-              Warren Buffett's Berkshire Hathaway Inc.
+              that define Homes by Dr. Jan Duffy — a trusted REALTOR® practice
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {coreServices.map((service) => {
@@ -368,19 +367,14 @@ export default function ServicesPage() {
           {/* Value Proposition */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">
-              The Berkshire Hathaway HomeServices Difference
+              The Iron Mountain Ranch Difference
             </h2>
             <p className="text-lg text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name
-              synonymous with trust, ethical standards, and financial strength—the same principles
-              that built Warren Buffett's empire. This isn't just a logo; it's a commitment to 
-              putting your interests first.
+              When you work with Dr. Jan Duffy, you get a hyperlocal Iron Mountain Ranch
+              specialist—village-by-village pricing, northwest Las Vegas comps, and direct
+              representation that puts your goals first.
             </p>
-            <div className="grid md:grid-cols-4 gap-6 text-center mb-8">
-              <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">50,000+</div>
-                <div className="text-slate-300 text-sm">Agents Worldwide</div>
-              </div>
+            <div className="grid md:grid-cols-3 gap-6 text-center mb-8">
               <div>
                 <div className="text-3xl font-bold text-blue-400 mb-2">Since 2008</div>
                 <div className="text-slate-300 text-sm">Serving Las Vegas</div>
@@ -397,23 +391,23 @@ export default function ServicesPage() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <Shield className="h-10 w-10 text-blue-400 mx-auto mb-3" />
-                <h3 className="font-bold mb-2">Financial Strength</h3>
+                <h3 className="font-bold mb-2">Hyperlocal Focus</h3>
                 <p className="text-slate-400 text-sm">
-                  Backed by Berkshire Hathaway Inc., providing unmatched stability and trust
+                  Village-level Iron Mountain Ranch market knowledge in 89131 &amp; 89143
                 </p>
               </div>
               <div className="text-center">
                 <Award className="h-10 w-10 text-blue-400 mx-auto mb-3" />
                 <h3 className="font-bold mb-2">Ethical Standards</h3>
                 <p className="text-slate-400 text-sm">
-                  Rigorous ethical guidelines ensure your interests always come first
+                  Clear guidance and client-first negotiation on every transaction
                 </p>
               </div>
               <div className="text-center">
                 <Users className="h-10 w-10 text-blue-400 mx-auto mb-3" />
-                <h3 className="font-bold mb-2">Global Network</h3>
+                <h3 className="font-bold mb-2">Direct Access</h3>
                 <p className="text-slate-400 text-sm">
-                  Access to listings and referrals through 50,000+ agents worldwide
+                  Work with Dr. Jan—not a call center or rotating desk agent
                 </p>
               </div>
             </div>
@@ -425,10 +419,10 @@ export default function ServicesPage() {
               How Our Real Estate Services Work
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Whether you're buying or selling, the process begins with a free consultation 
-              to understand your goals, timeline, and unique circumstances. From there, 
-              Dr. Jan creates a customized strategy that leverages the full resources of 
-              Berkshire Hathaway HomeServices to achieve the best possible outcome.
+              Whether you're buying or selling, the process begins with a free consultation
+              to understand your goals, timeline, and unique circumstances. From there,
+              Dr. Jan creates a customized Iron Mountain Ranch strategy to achieve the
+              best possible outcome.
             </p>
             <div className="space-y-6">
               <div className="flex items-start">
@@ -488,7 +482,7 @@ export default function ServicesPage() {
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for a free consultation about any of our real estate services. 
               Whether you're buying, selling, investing, or relocating, you'll receive expert 
-              guidance backed by Berkshire Hathaway HomeServices.
+              guidance backed by Homes by Dr. Jan Duffy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

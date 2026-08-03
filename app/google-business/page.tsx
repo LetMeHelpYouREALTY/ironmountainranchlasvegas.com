@@ -29,14 +29,14 @@ import {
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Dr. Jan Duffy, REALTOR® | Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Dr. Jan Duffy, REALTOR® | Iron Mountain Ranch Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Dr. Jan Duffy is a trusted Las Vegas REALTOR® — Homes by Dr. Jan Duffy, hyperlocal to Iron Mountain Ranch and northwest Las Vegas (89131). Also serving Summerlin, Henderson, and 55+ communities. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Iron Mountain Ranch realtor",
     "Las Vegas real estate agent",
-    "Berkshire Hathaway HomeServices Las Vegas",
+    "Homes by Dr. Jan Duffy Las Vegas",
     "northwest Las Vegas real estate agent",
     "89131 realtor",
     "55+ communities Las Vegas",
@@ -76,13 +76,13 @@ export default function GoogleBusinessPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
+                    <span className="text-yellow-400 font-semibold">Homes by Dr. Jan Duffy</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy — Iron Mountain Ranch REALTOR®
                   </h1>
                   <p className="text-xl text-blue-200 mb-2">REALTOR® | License {businessInfo.license}</p>
-                  <p className="text-slate-300 mb-6">Nevada Properties</p>
+                  <p className="text-slate-300 mb-6">Iron Mountain Ranch | Homes by Dr. Jan Duffy</p>
                   
                   {/* NAP - Exact match to GBP */}
                   <div className="space-y-3">

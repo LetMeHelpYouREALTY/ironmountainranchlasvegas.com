@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Iron Mountain Ranch realtor contact",
     "contact real estate agent Las Vegas",
     "89131 real estate agent",
-    "Berkshire Hathaway contact",
+    "contact",
     "Dr. Jan Duffy phone",
     "schedule real estate appointment",
   ],
@@ -80,7 +80,7 @@ export default function ContactPage() {
                 Whether you're buying or selling in Iron Mountain Ranch, exploring the northwest
                 Las Vegas corridor, or considering an investment property, I'm here to provide
                 expert guidance backed by the trusted{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> brand. Serving Las Vegas since 2008
+                <strong>Homes by Dr. Jan Duffy</strong> brand. Serving Las Vegas since 2008
                 with $127M+ in closed transactions — with hyperlocal focus on Iron Mountain Ranch
                 (89131 &amp; 89143).
               </p>
@@ -124,8 +124,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office Address</h3>
                     <address className="not-italic text-slate-700">
-                      Berkshire Hathaway HomeServices<br />
-                      Nevada Properties<br />
+                      Iron Mountain Ranch<br />
+                      Homes by Dr. Jan Duffy<br />
                       7960 N Decatur Blvd, Suite B<br />
                       North Las Vegas, NV 89085
                     </address>
@@ -207,14 +207,14 @@ export default function ContactPage() {
                 <CalendlyWidget height="600px" />
               </div>
 
-              {/* Why Contact BHHS */}
+              {/* Why Contact local */}
               <div className="mt-6 bg-slate-900 text-white rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-4">Why Contact Berkshire Hathaway HomeServices?</h3>
+                <h3 className="font-bold text-lg mb-4">Why Contact Homes by Dr. Jan Duffy?</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <Shield className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Trusted Brand:</strong> The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.
+                      <strong className="text-white">IMR Focus:</strong> Hyperlocal Iron Mountain Ranch representation
                     </p>
                   </div>
                   <div className="flex items-start">
@@ -226,7 +226,7 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <Users className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Global Network:</strong> 50,000+ agents worldwide for seamless relocations and referrals.
+                      <strong className="text-white">Direct Access:</strong> Call or text (702) 500-1942 — Dr. Jan answers her own phone.
                     </p>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export default function ContactPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Dr. Jan Duffy provides expert real estate services throughout the Las Vegas Valley. 
               Whether you're buying, selling, or investing in any of these communities, contact us 
-              for personalized guidance backed by Berkshire Hathaway HomeServices.
+              for personalized guidance backed by Homes by Dr. Jan Duffy.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[

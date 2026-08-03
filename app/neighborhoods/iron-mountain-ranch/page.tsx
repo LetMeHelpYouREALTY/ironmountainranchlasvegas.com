@@ -182,7 +182,7 @@ const realtorServices = [
     icon: TrendingUp,
     title: "Listing & Selling Services",
     description:
-      "Village-specific pricing using every comparable sale in Iron Mountain Ranch, professional photography that showcases Gass Peak views and oversized lots, and BHHS global marketing reach. Well-priced homes here sell in about 27 days.",
+      "Village-specific pricing using every comparable sale in Iron Mountain Ranch, professional photography that showcases Gass Peak views and oversized lots, and local global marketing reach. Well-priced homes here sell in about 27 days.",
   },
   {
     icon: Calculator,
@@ -480,7 +480,7 @@ export default function IronMountainRanchPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Live comps, off-market alerts, and village-by-village expertise from Dr. Jan Duffy —
-              your Iron Mountain Ranch REALTOR® — Homes by Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada
+              your Iron Mountain Ranch REALTOR® — Homes by Dr. Jan Duffy, Homes by Dr. Jan Duffy Nevada
               Properties.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

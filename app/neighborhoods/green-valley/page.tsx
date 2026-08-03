@@ -52,7 +52,7 @@ const faqSchema = {
       name: "Is Green Valley a good investment?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand from families seeking top schools and safety. BHHS agents can provide detailed market analysis.",
+        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand from families seeking top schools and safety. experienced agents can provide detailed market analysis.",
       },
     },
   ],
@@ -130,7 +130,7 @@ export default function GreenValleyPage() {
                 <strong>Green Valley</strong> holds a special place in Henderson's history as the city's
                 original master-planned community. Established in 1988, Green Valley pioneered the concept
                 of thoughtfully designed neighborhoods in Southern Nevada—long before master-planned
-                communities became the norm. Today, <strong>Berkshire Hathaway HomeServices</strong>
+                communities became the norm. Today, <strong>Homes by Dr. Jan Duffy</strong>
                 continues to serve Green Valley families, helping new generations discover what long-time
                 residents already know: this is one of the best places to live in Nevada.
               </p>
@@ -143,11 +143,11 @@ export default function GreenValleyPage() {
                 develops over generations.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> agents have been selling
+                <strong>Homes by Dr. Jan Duffy</strong> agents have been selling
                 homes in Green Valley since the beginning. Dr. Jan Duffy knows which streets offer the best
                 mountain views, which school zones are most sought-after, and which HOAs maintain their
                 communities to the highest standards. This institutional knowledge, combined with the
-                resources and reputation of BHHS, gives Green Valley buyers and sellers a distinct advantage.
+                resources and reputation of local, gives Green Valley buyers and sellers a distinct advantage.
               </p>
 
               {/* Community Highlights */}
@@ -272,7 +272,7 @@ export default function GreenValleyPage() {
                 custom homes exceeding $1.2 million in Green Valley's more exclusive enclaves.
               </p>
               <p>
-                Working with a <strong>Berkshire Hathaway HomeServices</strong> agent in Green Valley
+                Working with a <strong>Homes by Dr. Jan Duffy</strong> agent in Green Valley
                 means understanding the subtle differences between Green Valley proper, Green Valley Ranch,
                 and Green Valley South. Each area has distinct characteristics, price points, and lifestyle
                 offerings. Dr. Jan Duffy helps buyers navigate these nuances and find the perfect fit—whether
@@ -339,7 +339,7 @@ export default function GreenValleyPage() {
                 <p className="text-slate-600">
                   Green Valley has shown consistent appreciation due to its prime Henderson location,
                   established infrastructure, and ongoing demand from families seeking top schools and
-                  safety. BHHS agents can provide detailed market analysis.
+                  safety. experienced agents can provide detailed market analysis.
                 </p>
               </div>
             </div>

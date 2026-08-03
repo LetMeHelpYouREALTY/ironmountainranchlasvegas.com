@@ -14,16 +14,16 @@ import {
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "FAQ | Iron Mountain Ranch & Las Vegas Real Estate | Berkshire Hathaway HomeServices",
+  title: "FAQ | Iron Mountain Ranch & Las Vegas Real Estate | Homes by Dr. Jan Duffy",
   description:
-    "Frequently asked questions about Iron Mountain Ranch and Las Vegas real estate — buying, selling, LMA dues, gated villages, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
+    "Frequently asked questions about Iron Mountain Ranch and Las Vegas real estate — buying, selling, LMA dues, gated villages, and working with Dr. Jan Duffy at Homes by Dr. Jan Duffy.",
   keywords: [
     "Iron Mountain Ranch FAQ",
     "Iron Mountain Ranch HOA questions",
     "Homes by Dr. Jan Duffy FAQ",
     "Las Vegas real estate questions",
     "buying a home 89131",
-    "BHHS agent questions",
+    "local agent questions",
   ],
 };
 
@@ -56,23 +56,23 @@ const faqCategories = [
     ],
   },
   {
-    title: "About Berkshire Hathaway HomeServices",
+    title: "About Homes by Dr. Jan Duffy",
     faqs: [
       {
-        q: "Why should I choose a Berkshire Hathaway HomeServices agent?",
-        a: "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, ethical standards, and a global referral network of 50,000+ agents. When you're making the biggest purchase of your life, that trust matters.",
+        q: "Why should I choose your Iron Mountain Ranch REALTOR®?",
+        a: "Iron Mountain Ranch has roughly 28 active listings across 9 villages. Village-level comps, gate details, and LMA dues knowledge protect your offer — that is what Dr. Jan tracks daily.",
       },
       {
-        q: "Is Berkshire Hathaway HomeServices owned by Warren Buffett?",
-        a: "Berkshire Hathaway HomeServices is part of HSF Affiliates LLC, a joint venture of Berkshire Hathaway Inc. (Warren Buffett's company) and HomeServices of America. The brand carries the trusted Berkshire Hathaway name and upholds its values.",
+        q: "What makes Homes by Dr. Jan Duffy different?",
+        a: "This site is focused on Iron Mountain Ranch and northwest Las Vegas (89131 & 89143) — not a generic valley-wide brand pitch. You get hyperlocal guidance and direct access to Dr. Jan Duffy.",
       },
       {
-        q: "What areas does BHHS Nevada Properties serve?",
-        a: "Dr. Jan Duffy's hyperlocal focus is Iron Mountain Ranch and the surrounding northwest Las Vegas corridor (89131 and 89143), including Centennial Hills, Providence, and Skye Canyon. BHHS Nevada Properties also serves all of Las Vegas, Henderson, and North Las Vegas.",
+        q: "What areas does Homes by Dr. Jan Duffy serve?",
+        a: "Dr. Jan Duffy's hyperlocal focus is Iron Mountain Ranch and the surrounding northwest Las Vegas corridor (89131 and 89143), including Centennial Hills, Providence, and Skye Canyon. She also serves Las Vegas, Henderson, and North Las Vegas.",
       },
       {
-        q: "Does using a Berkshire Hathaway agent cost more?",
-        a: "No. Commission rates are negotiable and comparable to other brokerages. The value you receive—global marketing exposure, trusted brand recognition, and experienced agents—often helps homes sell faster and for more money.",
+        q: "Does using Dr. Jan Duffy cost more?",
+        a: "No. Commission rates are negotiable and comparable to other brokerages. Precise village-level pricing and marketing often help homes sell faster and for stronger numbers.",
       },
     ],
   },
@@ -96,8 +96,8 @@ const faqCategories = [
         a: "Yes. With more inventory, returning negotiating power, and stable interest rates, buyers have more options than they've had in years. Well-priced homes still move quickly, but you won't face the bidding wars of 2021-2022.",
       },
       {
-        q: "Does BHHS help with new construction homes?",
-        a: "Yes! BHHS agents provide free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you. Having representation protects your interests.",
+        q: "Does local help with new construction homes?",
+        a: "Yes! experienced agents provide free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you. Having representation protects your interests.",
       },
     ],
   },
@@ -117,8 +117,8 @@ const faqCategories = [
         a: "Dr. Jan provides a personalized preparation checklist for every listing. Generally, decluttering, minor repairs, fresh paint, and professional photography are the highest-ROI improvements.",
       },
       {
-        q: "How does Berkshire Hathaway market my home?",
-        a: "BHHS provides world-class marketing including professional photography, virtual tours, MLS syndication to 100+ websites, social media promotion, the BHHS global network exposure, and targeted digital advertising.",
+        q: "How does Dr. Jan market my home?",
+        a: "Dr. Jan provides professional photography, virtual tours, MLS syndication to 100+ websites, social media promotion, buyer outreach, and targeted digital advertising.",
       },
       {
         q: "Should I wait for prices to go higher?",
@@ -138,7 +138,7 @@ const faqCategories = [
         a: "Returns vary by property type and location. Typical Las Vegas rental properties generate 5-8% cash-on-cash returns. Dr. Jan can analyze specific opportunities and provide realistic projections.",
       },
       {
-        q: "Does BHHS help with rental properties?",
+        q: "Does local help with rental properties?",
         a: "Yes. Dr. Jan specializes in investment properties and can help identify opportunities, analyze returns, and connect you with property management resources.",
       },
     ],
@@ -147,8 +147,8 @@ const faqCategories = [
     title: "Relocating to Las Vegas",
     faqs: [
       {
-        q: "Can BHHS help with relocations?",
-        a: "Absolutely! Our global network of 50,000+ agents makes relocations seamless. Dr. Jan can coordinate with BHHS agents in your current city while providing expert guidance on Las Vegas neighborhoods, schools, and communities.",
+        q: "Can local help with relocations?",
+        a: "Absolutely! Dr. Jan makes relocations to northwest Las Vegas seamless. Dr. Jan can coordinate with experienced agents in your current city while providing expert guidance on Las Vegas neighborhoods, schools, and communities.",
       },
       {
         q: "What are the best neighborhoods for families?",
@@ -218,7 +218,7 @@ export default function FAQPage() {
             </h1>
             <p className="text-xl text-slate-600">
               Everything you need to know about working with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> in Las Vegas
+              <strong>Homes by Dr. Jan Duffy</strong> in Las Vegas
             </p>
           </div>
 
@@ -248,7 +248,7 @@ export default function FAQPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Still Have Questions?</h2>
             <p className="text-xl text-blue-100 mb-8">
               Dr. Jan Duffy is happy to answer any questions about Las Vegas real estate or working
-              with Berkshire Hathaway HomeServices.
+              with Homes by Dr. Jan Duffy.
             </p>
             <a
               href="tel:+17025001942"

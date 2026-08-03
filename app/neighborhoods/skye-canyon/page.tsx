@@ -49,10 +49,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Why use Berkshire Hathaway HomeServices for Skye Canyon new construction?",
+      name: "Why use Homes by Dr. Jan Duffy for Skye Canyon new construction?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS provides free buyer representation on new construction purchases—the builder pays our commission. Dr. Jan Duffy can negotiate upgrades, review contracts, and ensure your interests are protected when builder sales agents work for the builder.",
+        text: "Dr. Jan provides free buyer representation on new construction purchases—the builder pays our commission. Dr. Jan Duffy can negotiate upgrades, review contracts, and ensure your interests are protected when builder sales agents work for the builder.",
       },
     },
   ],
@@ -130,7 +130,7 @@ export default function SkyeCanyonPage() {
                 <strong>Skye Canyon</strong> represents the future of Las Vegas master-planned living.
                 This 1,700-acre community in northwest Las Vegas has quickly become one of the valley's
                 most sought-after addresses, consistently ranking among the nation's top-selling
-                master-planned communities. <strong>Berkshire Hathaway HomeServices</strong> is proud
+                master-planned communities. <strong>Homes by Dr. Jan Duffy</strong> is proud
                 to help buyers discover what makes Skye Canyon special.
               </p>
               <p>
@@ -142,7 +142,7 @@ export default function SkyeCanyonPage() {
                 community connections that transform neighborhoods into true communities.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> offers free buyer
+                <strong>Homes by Dr. Jan Duffy</strong> offers free buyer
                 representation on all Skye Canyon new construction purchases. This is crucial because
                 when you walk into a builder's sales center, those agents work for the builder—not you.
                 Dr. Jan Duffy represents your interests, negotiates upgrades, reviews contracts for
@@ -296,7 +296,7 @@ export default function SkyeCanyonPage() {
                 from $450,000 to $800,000.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Skye Canyon purchase
+                Choosing <strong>Homes by Dr. Jan Duffy</strong> for your Skye Canyon purchase
                 means working with agents who know which builders offer the best quality, which lots
                 have the best views, and which upgrades deliver the best value. Dr. Jan Duffy has
                 helped dozens of families find their Skye Canyon homes, and that experience translates
@@ -311,7 +311,7 @@ export default function SkyeCanyonPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Skye Canyon is where young families want to be right now. The amenities are incredible,
                 the homes are modern and energy-efficient, and the community vibe is exactly what people
-                are looking for. As a Berkshire Hathaway HomeServices agent, I make sure my clients get
+                are looking for. As your Iron Mountain Ranch REALTOR®, I make sure my clients get
                 the best value—whether that's negotiating builder upgrades or finding a resale with
                 features already included."
               </blockquote>
@@ -359,10 +359,10 @@ export default function SkyeCanyonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why use Berkshire Hathaway HomeServices for Skye Canyon new construction?
+                  Why use Homes by Dr. Jan Duffy for Skye Canyon new construction?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS provides free buyer representation on new construction purchases—the builder pays
+                  Dr. Jan provides free buyer representation on new construction purchases—the builder pays
                   our commission. Dr. Jan Duffy can negotiate upgrades, review contracts, and ensure
                   your interests are protected when builder sales agents work for the builder.
                 </p>

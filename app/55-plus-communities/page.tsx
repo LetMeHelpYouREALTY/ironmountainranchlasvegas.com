@@ -67,7 +67,7 @@ const faqSchema = {
       name: "Can I buy in a 55+ community if I'm under 55?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Generally no, but there are exceptions. You may purchase if you'll be 55 by close of escrow, or as an investor who will rent to 55+ tenants. Some communities allow residents 45-54 in limited circumstances. A BHHS agent can explain each community's specific rules.",
+        text: "Generally no, but there are exceptions. You may purchase if you'll be 55 by close of escrow, or as an investor who will rent to 55+ tenants. Some communities allow residents 45-54 in limited circumstances. A local agent can explain each community's specific rules.",
       },
     },
     {
@@ -698,7 +698,7 @@ export default function FiftyFiveCommunitiesPage() {
                 typical purchase. You need to understand HOA rules, age
                 verification processes, and how the community fits your
                 lifestyle. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent
+                <strong>Homes by Dr. Jan Duffy</strong> agent
                 specializing in active adult communities, I guide clients through
                 every step—from touring amenities to reviewing HOA documents. Many
                 clients are relocating from California, and they rely on my local
@@ -781,7 +781,7 @@ export default function FiftyFiveCommunitiesPage() {
             </div>
           </section>
 
-          {/* Why BHHS */}
+          {/* Why Dr. Jan */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               Why Choose Dr. Jan Duffy for 55+ Communities?
@@ -811,9 +811,9 @@ export default function FiftyFiveCommunitiesPage() {
                     Relocation Support
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Many 55+ buyers relocate from out of state. Our national BHHS
-                    network provides referrals, and Dr. Jan offers virtual tours
-                    and detailed community information.
+                    Many 55+ buyers relocate from out of state. Dr. Jan offers virtual
+                    tours, clear community comparisons, and remote-friendly guidance
+                    before you travel.
                   </p>
                 </div>
               </div>
@@ -822,11 +822,10 @@ export default function FiftyFiveCommunitiesPage() {
                   <Shield className="h-5 w-5 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900 mb-1">Trusted Brand</h3>
+                  <h3 className="font-bold text-slate-900 mb-1">Direct Representation</h3>
                   <p className="text-slate-600 text-sm">
-                    The Berkshire Hathaway name represents trust and
-                    integrity—values that matter when making one of life's biggest
-                    decisions.
+                    Clear guidance and integrity matter when making one of life&apos;s
+                    biggest decisions—you work with Dr. Jan throughout.
                   </p>
                 </div>
               </div>

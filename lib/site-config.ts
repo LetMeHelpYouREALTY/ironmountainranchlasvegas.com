@@ -1,12 +1,13 @@
 // Site Configuration — Iron Mountain Ranch
-// Homes by Dr. Jan Duffy | Berkshire Hathaway HomeServices Nevada Properties
+// Public brand: Iron Mountain Ranch | Homes by Dr. Jan Duffy
+// Brokerage (footer legal only): Berkshire Hathaway HomeServices Nevada Properties
 
 export const siteConfig = {
   /** Primary site brand (hero-level, nav, titles) */
   name: "Iron Mountain Ranch",
   /** Agent byline under the site name */
   byline: "Homes by Dr. Jan Duffy",
-  fullName: "Berkshire Hathaway HomeServices Nevada Properties",
+  fullName: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
   tagline: "Homes by Dr. Jan Duffy | Northwest Las Vegas",
   /** Full brand line for titles and OG */
   brandLine: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
@@ -14,7 +15,7 @@ export const siteConfig = {
   shortName: "IMR",
   url: "https://www.ironmountainranchlasvegas.com",
   description:
-    "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Buy, sell, or invest with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
+    "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Buy, sell, or invest with Dr. Jan Duffy — Homes by Dr. Jan Duffy.",
   /** Primary hyperlocal service area */
   primaryArea: "Iron Mountain Ranch",
   primaryAreaFull: "Iron Mountain Ranch, Las Vegas, NV 89131",
@@ -28,11 +29,12 @@ export const agentInfo = {
   phoneFormatted: "(702) 500-1942",
   phoneTel: "tel:+17025001942",
   email: "homes@heyberkshire.com",
+  /** Legal brokerage — display only in footer attribution */
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
 };
 
 export const officeInfo = {
-  name: "Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
   address: {
     street: "7960 N Decatur Blvd, Suite B",
     city: "North Las Vegas",
@@ -112,11 +114,11 @@ export const agentStats = {
 
 // Value Propositions
 export const valuePropositions = {
-  main: "When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name synonymous with trust, ethical standards, and financial strength—the same principles that built Warren Buffett's empire.",
+  main: "When you work with your Iron Mountain Ranch REALTOR®, you get hyperlocal village expertise, direct access to Dr. Jan Duffy, and a client-first approach built on integrity—not a corporate pitch.",
   trust:
-    "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, ethical standards, and a global referral network of 50,000+ agents.",
+    "Dr. Jan Duffy focuses on Iron Mountain Ranch and northwest Las Vegas — gated villages, large lots, and live MLS comps by village.",
   expertise:
-    "Serving Las Vegas since 2008 with $127M+ in closed transactions, Dr. Jan Duffy combines deep local market knowledge with the resources of a global brand.",
+    "Serving Las Vegas since 2008 with $127M+ in closed transactions, Dr. Jan Duffy combines deep Iron Mountain Ranch knowledge with direct, personal service.",
 };
 
 // Neighborhoods served — Iron Mountain Ranch is the primary hyperlocal focus
@@ -263,24 +265,24 @@ export const expertQuotes = {
   investment: `"Las Vegas rental yields are among the best in the country right now. But you need to know which neighborhoods are appreciating and which have peaked."`,
   relocation: `"Moving to a new city is stressful enough. I handle everything from neighborhood tours to school research to contractor referrals so you can focus on your new beginning."`,
   newConstruction: `"Builders have sales agents who work for them, not you. Having your own representation costs you nothing but can save you tens of thousands in upgrades and negotiations."`,
-  valueProposition: `"When clients ask why they should choose a Berkshire Hathaway HomeServices agent, I tell them: you're not just getting me—you're getting a global network of 50,000 agents, world-class marketing, and a brand that's synonymous with trust."`,
+  valueProposition: `"When clients ask why they should choose your Iron Mountain Ranch REALTOR®, I tell them: you're getting village-by-village Iron Mountain Ranch expertise and direct access — I answer my own phone."`,
 };
 
 // Common FAQs
 export const commonFAQs = {
   general: [
     {
-      question: "Why should I choose a Berkshire Hathaway HomeServices agent?",
+      question: "Why should I choose your Iron Mountain Ranch REALTOR®?",
       answer:
-        "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, ethical standards, and a global referral network of 50,000+ agents. When you're making the biggest purchase of your life, that trust matters.",
+        "Iron Mountain Ranch has only about 28 active listings across 9 villages. Village-level comps and LMA knowledge protect your offer — that is what Dr. Jan tracks daily.",
     },
     {
-      question: "What areas does Berkshire Hathaway HomeServices Nevada Properties cover?",
+      question: "What areas does Dr. Jan Duffy cover?",
       answer:
-        "Dr. Jan Duffy's primary focus is Iron Mountain Ranch and the surrounding northwest Las Vegas corridor (89131 and 89143), including Centennial Hills, Providence, and Skye Canyon. She also serves all of Las Vegas, Henderson, and North Las Vegas through BHHS Nevada Properties.",
+        "Dr. Jan Duffy's primary focus is Iron Mountain Ranch and the surrounding northwest Las Vegas corridor (89131 and 89143), including Centennial Hills, Providence, and Skye Canyon. She also serves all of Las Vegas, Henderson, and North Las Vegas across Las Vegas, Henderson, and North Las Vegas.",
     },
     {
-      question: "How do Berkshire Hathaway HomeServices agents get paid?",
+      question: "How does Dr. Jan Duffy get paid?",
       answer:
         "Commission structures are negotiable. Dr. Jan Duffy offers transparent pricing and will walk you through all costs before you sign anything. For buyers, our services are typically free as commissions are paid by the seller.",
     },

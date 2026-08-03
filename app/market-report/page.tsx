@@ -7,7 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
-  title: "Iron Mountain Ranch & Las Vegas Market Report 2026 | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch & Las Vegas Market Report 2026 | Homes by Dr. Jan Duffy",
   description:
     "Iron Mountain Ranch and Las Vegas real estate market statistics for 2026. Median prices, days on market, inventory for 89131 and the Las Vegas Valley — Homes by Dr. Jan Duffy.",
   keywords: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "89131 real estate market",
     "Las Vegas real estate market",
     "Nevada housing market",
-    "Berkshire Hathaway market report",
+    "Iron Mountain Ranch market report",
   ],
 };
 
@@ -28,7 +28,7 @@ const reportSchema = {
   author: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy",
-    worksFor: "Berkshire Hathaway HomeServices Nevada Properties",
+    worksFor: "Homes by Dr. Jan Duffy",
   },
   datePublished: "2026-01-23",
   about: {
