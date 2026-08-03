@@ -53,8 +53,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/55-plus-communities/del-webb-lake-las-vegas`, priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
-  // Neighborhood pages
+  // Neighborhood pages — Iron Mountain Ranch is the primary hyperlocal focus
   const neighborhoodPages = [
+    { url: `${baseUrl}/neighborhoods/iron-mountain-ranch`, priority: 0.95, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/summerlin`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/henderson`, priority: 0.8, changeFrequency: "weekly" as const },

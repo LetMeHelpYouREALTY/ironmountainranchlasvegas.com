@@ -22,17 +22,17 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Real Estate Services Las Vegas | Berkshire Hathaway HomeServices",
+  title: "REALTOR® Services Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Comprehensive real estate services from Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 500-1942.",
+    "Full REALTOR® services for Iron Mountain Ranch and northwest Las Vegas (89131) from Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Buying, selling, valuations, investment, and relocation. Call (702) 500-1942.",
   keywords: [
+    "Iron Mountain Ranch realtor services",
+    "Iron Mountain Ranch real estate agent",
+    "89131 realtor",
     "Las Vegas real estate services",
     "Berkshire Hathaway services",
-    "home buying Las Vegas",
-    "home selling Henderson",
-    "luxury real estate services",
-    "55+ community specialist",
-    "California relocation Las Vegas",
+    "home buying northwest Las Vegas",
+    "home selling Iron Mountain Ranch",
   ],
 };
 
@@ -44,7 +44,7 @@ const servicesSchema = {
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     telephone: "+17025001942",
   },
-  areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
+  areaServed: "Iron Mountain Ranch, Centennial Hills, Las Vegas, Henderson, Clark County NV",
   serviceType: "Real Estate Services",
 };
 
@@ -179,12 +179,13 @@ export default function ServicesPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Real Estate Services
+              REALTOR® Services for Iron Mountain Ranch
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              Comprehensive real estate solutions from Dr. Jan Duffy, backed by the most trusted
-              name in the business—<strong>Berkshire Hathaway HomeServices</strong>. Whether you're 
-              buying your first home, selling a luxury estate, or relocating from California, 
+              Hyperlocal real estate services for <strong>Iron Mountain Ranch</strong> and northwest
+              Las Vegas from Dr. Jan Duffy, backed by the most trusted name in the
+              business—<strong>Berkshire Hathaway HomeServices</strong>. Whether you're buying in
+              one of the 9 villages, selling for top dollar, or relocating to the northwest valley,
               you'll receive expert guidance every step of the way.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">

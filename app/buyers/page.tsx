@@ -21,17 +21,17 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home Buying Guide Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Buy a Home in Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 500-1942.",
+    "Buying in Iron Mountain Ranch or northwest Las Vegas (89131)? Dr. Jan Duffy delivers village-by-village guidance, real-time listing alerts, and free buyer representation. Call (702) 500-1942.",
   keywords: [
+    "buy home Iron Mountain Ranch",
+    "Iron Mountain Ranch buyer agent",
+    "89131 homes for sale",
     "buy home Las Vegas",
-    "Las Vegas home buyer",
+    "northwest Las Vegas home buyer",
     "Berkshire Hathaway buyer agent",
-    "Henderson homes for sale",
     "first time home buyer Las Vegas",
-    "California relocation Las Vegas",
-    "55+ communities Las Vegas",
   ],
 };
 
@@ -44,7 +44,7 @@ const buyerSchema = {
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     telephone: "+17025001942",
   },
-  areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
+  areaServed: "Iron Mountain Ranch, Centennial Hills, Las Vegas, Henderson, Clark County NV",
   serviceType: "Buyer Representation",
 };
 
@@ -82,12 +82,12 @@ const buyingSteps = [
 ];
 
 const neighborhoods = [
+  { name: "Iron Mountain Ranch", price: "$535K", description: "9 gated villages with Gass Peak views — our hyperlocal specialty" },
+  { name: "Centennial Hills", price: "$495K", description: "Northwest district surrounding Iron Mountain Ranch" },
+  { name: "Skye Canyon", price: "$550K", description: "Newer construction 10 minutes west of Iron Mountain Ranch" },
   { name: "Summerlin", price: "$625K", description: "Master-planned community with Red Rock views" },
-  { name: "Henderson", price: "$485K", description: "Family-friendly with low crime rates" },
-  { name: "Green Valley", price: "$520K", description: "Established with mature landscaping" },
-  { name: "The Ridges", price: "$2.5M", description: "Ultra-luxury guard-gated estates" },
-  { name: "North Las Vegas", price: "$385K", description: "Affordable new construction" },
-  { name: "Southern Highlands", price: "$750K", description: "Golf course community" },
+  { name: "North Las Vegas", price: "$385K", description: "Lower-priced new construction" },
+  { name: "Henderson", price: "$485K", description: "Nevada's second-largest city" },
 ];
 
 export default function BuyersPage() {
@@ -106,12 +106,14 @@ export default function BuyersPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Buy Your Las Vegas Home with Confidence
+              Buy Your Iron Mountain Ranch Home with Confidence
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              When you work with a <strong>Berkshire Hathaway HomeServices</strong> buyer's agent,
-              you're backed by the most trusted name in real estate—and it costs you nothing.
-              The seller pays the commission, but the representation is yours.
+              Hyperlocal buyer representation in <strong>Iron Mountain Ranch</strong> and northwest
+              Las Vegas from a <strong>Berkshire Hathaway HomeServices</strong> agent — and it costs
+              you nothing. The seller pays the commission, but the representation is yours. Only
+              about 28 homes are listed in Iron Mountain Ranch at a time; Dr. Jan makes sure you see
+              every one the moment it hits the market.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Buyer Representation</span>

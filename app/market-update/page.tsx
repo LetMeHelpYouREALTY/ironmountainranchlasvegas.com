@@ -16,14 +16,14 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
+  title: "Iron Mountain Ranch & Las Vegas Market Update | Berkshire Hathaway HomeServices",
   description:
-    "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1942.",
+    "Weekly Iron Mountain Ranch and Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Latest stats, notable 89131 sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1942.",
   keywords: [
+    "Iron Mountain Ranch market update",
+    "89131 housing market",
     "Berkshire Hathaway HomeServices Las Vegas market update",
     "Las Vegas real estate market",
-    "Las Vegas housing market 2026",
-    "Henderson real estate market",
     "Las Vegas home prices",
   ],
 };

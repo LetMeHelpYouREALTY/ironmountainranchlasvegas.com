@@ -7,14 +7,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "Contact Your Iron Mountain Ranch REALTOR® | Dr. Jan Duffy | Las Vegas",
   description:
-    "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 500-1942. Las Vegas, Henderson, Summerlin real estate expert.",
+    "Contact Dr. Jan Duffy, Iron Mountain Ranch real estate specialist at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment or call (702) 500-1942. Serving 89131, 89143 & all Las Vegas.",
   keywords: [
+    "Iron Mountain Ranch realtor contact",
     "contact real estate agent Las Vegas",
+    "89131 real estate agent",
     "Berkshire Hathaway contact",
     "Dr. Jan Duffy phone",
-    "Las Vegas realtor contact",
     "schedule real estate appointment",
   ],
 };
@@ -57,8 +58,8 @@ export default function ContactPage() {
               Contact Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Questions about Las Vegas real estate? Your{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> expert is here to help. 
+              Questions about Iron Mountain Ranch or northwest Las Vegas real estate? Your{" "}
+              <strong>Berkshire Hathaway HomeServices</strong> hyperlocal expert is here to help.
               Schedule an appointment or reach out directly.
             </p>
           </div>
@@ -68,10 +69,12 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h2>
               <p className="text-slate-700 mb-8">
-                Whether you're buying your first home, selling a luxury property, or exploring
-                investment opportunities, I'm here to provide expert guidance backed by the trusted{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> brand. Serving Las Vegas since 2008 
-                with $127M+ in closed transactions.
+                Whether you're buying or selling in Iron Mountain Ranch, exploring the northwest
+                Las Vegas corridor, or considering an investment property, I'm here to provide
+                expert guidance backed by the trusted{" "}
+                <strong>Berkshire Hathaway HomeServices</strong> brand. Serving Las Vegas since 2008
+                with $127M+ in closed transactions — with hyperlocal focus on Iron Mountain Ranch
+                (89131 &amp; 89143).
               </p>
 
               {/* NAP Information */}

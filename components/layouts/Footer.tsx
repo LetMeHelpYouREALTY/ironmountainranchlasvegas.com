@@ -12,8 +12,9 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4">Berkshire Hathaway HomeServices</h3>
             <p className="text-slate-300 mb-4 text-sm">
-              Nevada Properties - Your trusted real estate partner in Las Vegas, Henderson, and
-              Summerlin. Backed by Warren Buffett's legacy of trust.
+              Nevada Properties - Your Iron Mountain Ranch real estate specialist in northwest Las
+              Vegas (89131 &amp; 89143), also serving Centennial Hills, Skye Canyon, and the greater
+              Las Vegas Valley. Backed by Warren Buffett's legacy of trust.
             </p>
             <div className="flex space-x-4">
               <a
@@ -59,6 +60,14 @@ export default function Footer() {
                 >
                   All Properties
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/neighborhoods/iron-mountain-ranch"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Iron Mountain Ranch Homes
+                </Link>
               </li>
               <li>
                 <Link

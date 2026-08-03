@@ -4,15 +4,18 @@
 export const siteConfig = {
   name: "HeyBerkshire",
   fullName: "Berkshire Hathaway HomeServices Nevada Properties",
-  tagline: "Private Client Real Estate Advisory",
-  /** Full brand line for titles and OG: Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory */
+  tagline: "Iron Mountain Ranch Real Estate | Northwest Las Vegas",
+  /** Full brand line for titles and OG: Berkshire Hathaway HomeServices Nevada Properties | Iron Mountain Ranch Real Estate */
   brandLine:
-    "Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory",
+    "Berkshire Hathaway HomeServices Nevada Properties | Iron Mountain Ranch Real Estate",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
   url: "https://heyberkshire.com",
   description:
-    "Expert real estate services in Las Vegas and Henderson, NV. Buy, sell, or invest with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent.",
+    "Iron Mountain Ranch real estate expert in northwest Las Vegas (89131 & 89143). Buy, sell, or invest in Iron Mountain Ranch with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
+  /** Primary hyperlocal service area */
+  primaryArea: "Iron Mountain Ranch",
+  primaryAreaFull: "Iron Mountain Ranch, Las Vegas, NV 89131",
 };
 
 export const agentInfo = {
@@ -43,9 +46,24 @@ export const officeInfo = {
   phoneTel: "tel:+17025001942",
 };
 
-// Market Statistics (Updated January 2026)
+// Market Statistics (Updated August 2026)
 export const marketStats = {
-  lastUpdated: "January 2026",
+  lastUpdated: "August 2026",
+  ironMountainRanch: {
+    medianPrice: 535000,
+    medianPriceFormatted: "$535,000",
+    pricePerSqFt: 235,
+    pricePerSqFtFormatted: "$235/sq ft",
+    daysOnMarket: 27,
+    activeListings: 28,
+    priceRange: "$400K – $1M+",
+    homeSizeRange: "2,000 – 4,500 sq ft",
+    lmaDues: "$95 – $185/mo",
+    villages: 9,
+    totalHomes: "~1,700",
+    builtYears: "2001 – 2008",
+    zipCodes: ["89131", "89143"],
+  },
   lasVegas: {
     medianPrice: 450000,
     medianPriceFormatted: "$450,000",
@@ -97,8 +115,16 @@ export const valuePropositions = {
     "Serving Las Vegas since 2008 with $127M+ in closed transactions, Dr. Jan Duffy combines deep local market knowledge with the resources of a global brand.",
 };
 
-// Neighborhoods served
+// Neighborhoods served — Iron Mountain Ranch is the primary hyperlocal focus
 export const neighborhoods = [
+  {
+    name: "Iron Mountain Ranch",
+    slug: "iron-mountain-ranch",
+    description:
+      "850-acre master-planned community in northwest Las Vegas with 9 villages, gated neighborhoods, and Gass Peak views",
+    medianPrice: "$535,000",
+    highlights: ["Gated villages", "Large lots", "Gass Peak views", "Low LMA dues"],
+  },
   {
     name: "Summerlin",
     slug: "summerlin",
@@ -225,6 +251,7 @@ export const services = [
 
 // Expert quotes from Dr. Jan Duffy
 export const expertQuotes = {
+  ironMountainRanch: `"Iron Mountain Ranch is the best-kept secret in northwest Las Vegas. Nine villages, gated streets, big lots, and LMA dues under $200 a month — you get more square footage per dollar here than almost anywhere in the valley. With only about 28 homes on the market at a time, you need an agent watching it daily."`,
   market: `"The Las Vegas market remains strong heading into 2026. We're seeing continued demand from California relocators and remote workers, but the days of 20 offers on every listing are behind us. Buyers finally have some negotiating power."`,
   buyers: `"My job isn't just to show you houses—it's to make sure you don't overpay, that you understand what you're buying, and that you're protected through every step of the transaction."`,
   sellers: `"Pricing your home correctly from day one is the single most important factor in getting top dollar. Overpriced homes sit, and every day on market costs you money."`,
@@ -246,7 +273,7 @@ export const commonFAQs = {
     {
       question: "What areas does Berkshire Hathaway HomeServices Nevada Properties cover?",
       answer:
-        "BHHS Nevada Properties serves all of Las Vegas, Henderson, North Las Vegas, and surrounding areas, with specialized expertise in Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, and Henderson's master-planned communities.",
+        "Dr. Jan Duffy's primary focus is Iron Mountain Ranch and the surrounding northwest Las Vegas corridor (89131 and 89143), including Centennial Hills, Providence, and Skye Canyon. She also serves all of Las Vegas, Henderson, and North Las Vegas through BHHS Nevada Properties.",
     },
     {
       question: "How do Berkshire Hathaway HomeServices agents get paid?",
@@ -256,7 +283,12 @@ export const commonFAQs = {
     {
       question: "What is Dr. Jan Duffy's experience in Las Vegas real estate?",
       answer:
-        "Dr. Jan Duffy has been serving Las Vegas since 2008, with $127M+ in closed transactions and 500+ satisfied clients. Her expertise spans residential, luxury, investment, and new construction properties throughout Southern Nevada.",
+        "Dr. Jan Duffy has been serving Las Vegas since 2008, with $127M+ in closed transactions and 500+ satisfied clients. Her hyperlocal specialty is Iron Mountain Ranch in northwest Las Vegas, where she tracks every sale across the community's 9 villages.",
+    },
+    {
+      question: "Why work with an Iron Mountain Ranch specialist instead of a general Las Vegas agent?",
+      answer:
+        "Iron Mountain Ranch has only about 28 active listings at any time across 9 villages, several of them gated. Knowing which villages are gated, what the LMA covers, how lot sizes vary by village, and what identical floor plans closed for last month is the difference between a fair deal and an expensive mistake.",
     },
   ],
   buying: [
@@ -278,9 +310,9 @@ export const commonFAQs = {
   ],
   selling: [
     {
-      question: "What is my home worth in today's Las Vegas market?",
+      question: "What is my Iron Mountain Ranch home worth in today's market?",
       answer:
-        "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise serving Las Vegas since 2008.",
+        "Iron Mountain Ranch homes are currently listing at a median of about $535,000 (roughly $235/sq ft), but value varies significantly by village, lot size, and floor plan. Dr. Jan provides free, comprehensive valuations using live MLS comps from your specific village.",
     },
     {
       question: "How long will it take to sell my home?",

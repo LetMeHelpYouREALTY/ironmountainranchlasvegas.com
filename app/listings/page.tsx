@@ -20,15 +20,15 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch Homes for Sale | MLS Property Search | Las Vegas 89131",
   description:
-    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 500-1942.",
+    "Browse Iron Mountain Ranch and northwest Las Vegas homes for sale with live MLS listings. Search 9 gated villages by price and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 500-1942.",
   keywords: [
+    "Iron Mountain Ranch homes for sale",
+    "Iron Mountain Ranch MLS listings",
+    "89131 homes for sale",
     "Las Vegas homes for sale",
-    "Henderson real estate",
-    "MLS listings Las Vegas",
-    "Summerlin homes",
-    "houses for sale Las Vegas",
+    "northwest Las Vegas real estate",
     "Berkshire Hathaway listings",
   ],
 };
@@ -36,25 +36,26 @@ export const metadata: Metadata = {
 const listingsSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateListing",
-  name: "Las Vegas MLS Property Listings",
-  description: "Live MLS property listings for Las Vegas, Henderson, and Summerlin homes for sale",
+  name: "Iron Mountain Ranch & Las Vegas MLS Property Listings",
+  description:
+    "Live MLS property listings for Iron Mountain Ranch, Centennial Hills, and northwest Las Vegas homes for sale",
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     telephone: "+17025001942",
   },
   areaServed: [
+    { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89131" },
     { "@type": "City", name: "Las Vegas, NV" },
     { "@type": "City", name: "Henderson, NV" },
-    { "@type": "City", name: "Summerlin, NV" },
   ],
 };
 
 const popularSearches = [
+  { name: "Iron Mountain Ranch Homes", href: "/neighborhoods/iron-mountain-ranch", count: "28+" },
+  { name: "Centennial Hills", href: "/neighborhoods/centennial-hills", count: "270+" },
+  { name: "Skye Canyon", href: "/neighborhoods/skye-canyon", count: "124+" },
   { name: "Summerlin Homes", href: "/neighborhoods/summerlin", count: "1,200+" },
-  { name: "Henderson Properties", href: "/neighborhoods/henderson", count: "980+" },
-  { name: "Green Valley", href: "/neighborhoods/green-valley", count: "450+" },
-  { name: "The Ridges Luxury", href: "/neighborhoods/the-ridges", count: "85+" },
   { name: "55+ Communities", href: "/55-plus-communities", count: "320+" },
   { name: "New Construction", href: "/new-construction", count: "600+" },
 ];
@@ -69,40 +70,40 @@ const priceRanges = [
 
 const neighborhoods = [
   {
-    name: "Summerlin",
-    description: "Master-planned community with Red Rock views, top schools, and 150+ parks",
-    medianPrice: "$625,000",
-    daysOnMarket: 22,
+    name: "Iron Mountain Ranch",
+    description: "9 gated villages with 2,000–4,500 sq ft homes, large lots, and Gass Peak views",
+    medianPrice: "$535,000",
+    daysOnMarket: 27,
   },
   {
-    name: "Henderson",
-    description: "Nevada's second-largest city with family-friendly communities and low crime",
-    medianPrice: "$485,000",
-    daysOnMarket: 24,
-  },
-  {
-    name: "Green Valley",
-    description: "Established Henderson community with mature landscaping and golf courses",
-    medianPrice: "$520,000",
-    daysOnMarket: 26,
-  },
-  {
-    name: "Southern Highlands",
-    description: "Guard-gated luxury community with championship golf and mountain views",
-    medianPrice: "$750,000",
-    daysOnMarket: 32,
-  },
-  {
-    name: "North Las Vegas",
-    description: "Affordable new construction and growing infrastructure",
-    medianPrice: "$385,000",
-    daysOnMarket: 18,
+    name: "Centennial Hills",
+    description: "Northwest district surrounding Iron Mountain Ranch — retail, hospital, parks",
+    medianPrice: "$495,000",
+    daysOnMarket: 25,
   },
   {
     name: "Skye Canyon",
     description: "Newer master-planned community with modern amenities and mountain access",
     medianPrice: "$550,000",
     daysOnMarket: 20,
+  },
+  {
+    name: "Summerlin",
+    description: "Master-planned community with Red Rock views and 150+ parks",
+    medianPrice: "$625,000",
+    daysOnMarket: 22,
+  },
+  {
+    name: "North Las Vegas",
+    description: "Lower-priced new construction and growing infrastructure",
+    medianPrice: "$385,000",
+    daysOnMarket: 18,
+  },
+  {
+    name: "Henderson",
+    description: "Nevada's second-largest city with established master-planned communities",
+    medianPrice: "$485,000",
+    daysOnMarket: 24,
   },
 ];
 
@@ -122,12 +123,12 @@ export default function ListingsPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Homes for Sale
+              Iron Mountain Ranch &amp; Las Vegas Homes for Sale
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              Search thousands of Las Vegas, Henderson, and Summerlin properties with live MLS 
-              listings updated every 15 minutes. Find your dream home with expert guidance from 
-              Dr. Jan Duffy at <strong>Berkshire Hathaway HomeServices</strong>.
+              Search every Iron Mountain Ranch listing — plus Centennial Hills, Skye Canyon, and the
+              full Las Vegas Valley — with live MLS data updated every 15 minutes. Hyperlocal
+              guidance from Dr. Jan Duffy at <strong>Berkshire Hathaway HomeServices</strong>.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Live MLS Data</span>

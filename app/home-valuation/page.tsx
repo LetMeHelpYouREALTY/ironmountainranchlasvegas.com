@@ -7,17 +7,17 @@ import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, Dollar
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Home Valuation Las Vegas | What's Your Home Worth? | Berkshire Hathaway HomeServices",
+  title: "Free Iron Mountain Ranch Home Valuation | What's Your Home Worth? | Las Vegas 89131",
   description:
-    "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 500-1942.",
+    "What's your Iron Mountain Ranch home worth? Free village-specific CMA from Dr. Jan Duffy at Berkshire Hathaway HomeServices — live comps from all 9 villages, 89131 & 89143. Call (702) 500-1942.",
   keywords: [
+    "Iron Mountain Ranch home value",
+    "what is my Iron Mountain Ranch home worth",
+    "home valuation 89131",
     "home valuation Las Vegas",
-    "what is my home worth Las Vegas",
     "free home value estimate",
-    "CMA Las Vegas",
+    "CMA northwest Las Vegas",
     "Berkshire Hathaway home valuation",
-    "Summerlin home value",
-    "Henderson home value",
   ],
 };
 
@@ -88,12 +88,14 @@ export default function HomeValuationPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              What's Your Las Vegas Home Worth?
+              What's Your Iron Mountain Ranch Home Worth?
             </h1>
             <p className="text-xl text-slate-600">
-              Get a free, no-obligation home valuation from Dr. Jan Duffy at{" "}
-              <strong>Berkshire Hathaway HomeServices</strong>. Accurate pricing backed by 17+ years
-              of Las Vegas market expertise and $127M+ in closed transactions.
+              Get a free, no-obligation valuation from Dr. Jan Duffy at{" "}
+              <strong>Berkshire Hathaway HomeServices</strong> — built from live comps in your
+              specific Iron Mountain Ranch village, adjusted for lot size, upgrades, and floor plan.
+              Iron Mountain Ranch is currently listing at a median of about $535,000 ($235/sq ft),
+              but village-to-village spreads are significant.
             </p>
           </div>
 

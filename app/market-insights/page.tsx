@@ -17,15 +17,15 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Insights 2026 | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch & Las Vegas Market Insights 2026 | Berkshire Hathaway HomeServices",
   description:
-    "Technology trends, economic forecasts, and market analysis shaping Las Vegas real estate in 2026. AI, data centers, California migration, and what it means for buyers and sellers. Call (702) 500-1942.",
+    "Market analysis shaping Iron Mountain Ranch and Las Vegas real estate in 2026 — economic forecasts, California migration, and what it means for northwest Las Vegas buyers and sellers. Call (702) 500-1942.",
   keywords: [
+    "Iron Mountain Ranch real estate trends",
+    "northwest Las Vegas market forecast",
     "Las Vegas real estate trends 2026",
-    "Las Vegas market forecast",
     "Nevada economic outlook",
     "California to Las Vegas migration",
-    "Las Vegas tech hub",
     "Berkshire Hathaway market insights",
   ],
 };
@@ -72,11 +72,11 @@ export default function MarketInsightsPage() {
               2026 Economic & Real Estate Analysis
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Market Insights
+              Iron Mountain Ranch &amp; Las Vegas Market Insights
             </h1>
             <p className="text-xl text-slate-600">
-              Technology trends, economic forces, and market dynamics shaping Las Vegas
-              real estate in 2026 and beyond.
+              Technology trends, economic forces, and market dynamics shaping Iron Mountain Ranch,
+              northwest Las Vegas, and the greater valley in 2026 and beyond.
             </p>
           </div>
 

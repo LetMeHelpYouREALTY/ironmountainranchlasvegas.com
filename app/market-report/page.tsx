@@ -6,13 +6,14 @@ import { TrendingUp, TrendingDown, Home, Calendar, DollarSign, BarChart, Phone }
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
+  title: "Iron Mountain Ranch & Las Vegas Market Report 2026 | Berkshire Hathaway HomeServices",
   description:
-    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
+    "Iron Mountain Ranch and Las Vegas real estate market statistics for 2026. Median prices, days on market, inventory for 89131 and the Las Vegas Valley from Berkshire Hathaway HomeServices Nevada Properties.",
   keywords: [
+    "Iron Mountain Ranch market report",
+    "Iron Mountain Ranch home prices 2026",
+    "89131 real estate market",
     "Las Vegas real estate market",
-    "Las Vegas home prices 2026",
-    "Henderson real estate market",
     "Nevada housing market",
     "Berkshire Hathaway market report",
   ],
@@ -51,13 +52,47 @@ export default function MarketReportPage() {
               Berkshire Hathaway HomeServices Market Intelligence
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Real Estate Market Report
+              Iron Mountain Ranch &amp; Las Vegas Market Report
             </h1>
             <p className="text-xl text-slate-600">
-              January 2026 | Expert analysis from{" "}
-              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>
+              Expert analysis from{" "}
+              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> — hyperlocal focus
+              on Iron Mountain Ranch and northwest Las Vegas (89131 &amp; 89143)
             </p>
           </div>
+
+          {/* Iron Mountain Ranch Snapshot */}
+          <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
+            <h2 className="text-2xl font-bold mb-8 text-center">
+              Iron Mountain Ranch Snapshot | August 2026
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold mb-2">$535,000</div>
+                <div className="text-blue-100 text-sm">Median List Price</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold mb-2">27</div>
+                <div className="text-blue-100 text-sm">Median Days on Market</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold mb-2">~28</div>
+                <div className="text-blue-100 text-sm">Active Listings</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold mb-2">$235</div>
+                <div className="text-blue-100 text-sm">Price per Sq Ft</div>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <Link
+                href="/neighborhoods/iron-mountain-ranch"
+                className="inline-block bg-white text-blue-600 px-6 py-3 rounded-md font-semibold hover:bg-blue-50 transition-colors"
+              >
+                Full Iron Mountain Ranch Guide
+              </Link>
+            </div>
+          </section>
 
           {/* Key Stats Overview */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">

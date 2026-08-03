@@ -19,16 +19,16 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | BHHS Las Vegas",
   description:
-    "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist at Berkshire Hathaway HomeServices Nevada Properties. Serving Las Vegas since 2008, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy",
+    "Iron Mountain Ranch realtor",
     "Berkshire Hathaway HomeServices agent",
     "Las Vegas realtor",
     "BHHS Nevada Properties",
-    "Henderson real estate agent",
-    "Summerlin realtor",
+    "northwest Las Vegas real estate agent",
   ],
 };
 
@@ -39,7 +39,7 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
+    "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, specializing in Iron Mountain Ranch and northwest Las Vegas, serving the Las Vegas Valley since 2008.",
   telephone: "+17025001942",
   email: "homes@heyberkshire.com",
   url: "https://heyberkshire.com/about",
@@ -60,9 +60,10 @@ const personSchema = {
     credentialNumber: "S.0197614.LLC",
   },
   knowsAbout: [
+    "Iron Mountain Ranch real estate",
+    "Northwest Las Vegas gated communities",
     "Las Vegas real estate",
     "Henderson properties",
-    "Summerlin homes",
     "Luxury real estate",
     "Investment properties",
     "55+ communities",
@@ -71,6 +72,11 @@ const personSchema = {
 };
 
 const specializations = [
+  {
+    title: "Iron Mountain Ranch Specialist",
+    description:
+      "Hyperlocal expertise across all 9 villages — gated access, LMA details, lot premiums, and live village-level comps",
+  },
   {
     title: "Residential Home Sales",
     description: "Single-family homes, condos, and townhomes throughout Las Vegas and Henderson",
@@ -98,6 +104,8 @@ const specializations = [
 ];
 
 const areasServed = [
+  "Iron Mountain Ranch",
+  "Centennial Hills",
   "Las Vegas",
   "Henderson",
   "Summerlin",

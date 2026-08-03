@@ -20,17 +20,17 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
+  title: "Sell Your Iron Mountain Ranch Home | Berkshire Hathaway HomeServices Las Vegas",
   description:
-    "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Free home valuation. World-class marketing. Call (702) 500-1942.",
+    "Sell your Iron Mountain Ranch or northwest Las Vegas home for top dollar with Dr. Jan Duffy. Village-specific pricing, free valuation, world-class BHHS marketing. Call (702) 500-1942.",
   keywords: [
-    "sell home Las Vegas",
-    "Las Vegas listing agent",
+    "sell home Iron Mountain Ranch",
+    "Iron Mountain Ranch listing agent",
+    "what is my Iron Mountain Ranch home worth",
+    "sell home Las Vegas 89131",
+    "northwest Las Vegas listing agent",
     "Berkshire Hathaway sell house",
-    "Henderson home selling",
-    "what is my home worth Las Vegas",
     "Las Vegas real estate agent",
-    "Summerlin home selling",
   ],
 };
 
@@ -43,7 +43,7 @@ const sellerSchema = {
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     telephone: "+17025001942",
   },
-  areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
+  areaServed: "Iron Mountain Ranch, Centennial Hills, Las Vegas, Henderson, Clark County NV",
   serviceType: "Seller Representation",
 };
 
@@ -138,13 +138,14 @@ export default function SellersPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sell Your Las Vegas Home for Top Dollar
+              Sell Your Iron Mountain Ranch Home for Top Dollar
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               When you list with <strong>Berkshire Hathaway HomeServices</strong>, you get
-              world-class marketing, expert pricing, and a name that buyers trust. Dr. Jan Duffy 
-              has been serving Las Vegas since 2008—helping sellers achieve top-dollar results 
-              with proven marketing strategies and skilled negotiation.
+              world-class marketing, expert pricing, and a name that buyers trust. Dr. Jan Duffy
+              specializes in <strong>Iron Mountain Ranch</strong> and northwest Las Vegas — pricing
+              your home against real village-level comps, not zip-code averages, and marketing it to
+              buyers already searching this community.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Home Valuation</span>
@@ -156,12 +157,12 @@ export default function SellersPage() {
           {/* Market Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-4 text-center">
-              Las Vegas Seller Market Statistics | January 2026
+              Iron Mountain Ranch Seller Market | August 2026
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              The Las Vegas housing market remains favorable for sellers with low inventory and 
-              steady demand. Well-priced homes are selling quickly, and appreciation continues 
-              to outpace national averages. Here's what sellers need to know about current conditions.
+              Iron Mountain Ranch sellers are in a strong position: only about 28 active listings
+              community-wide, a median list price near $535,000, and well-priced homes going under
+              contract in roughly 27 days. Here's what sellers need to know about current conditions.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
