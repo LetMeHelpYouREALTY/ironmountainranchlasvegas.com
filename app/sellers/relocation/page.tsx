@@ -15,6 +15,7 @@ import {
   Calendar,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Relocation Home Sales | Iron Mountain Ranch & Las Vegas | BHHS",
@@ -68,6 +69,8 @@ export default function RelocationPage() {
               Start Your Relocation → (702) 500-1942
             </a>
           </div>
+
+          <PageHeroImage pathname="/sellers/relocation" />
 
           {/* Network Advantage */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

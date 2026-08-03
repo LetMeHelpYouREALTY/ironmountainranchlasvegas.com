@@ -18,6 +18,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "First-Time Home Buyers Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
@@ -115,6 +116,8 @@ export default function FirstTimeBuyersPage() {
               Let's Make Homeownership Happen → (702) 500-1942
             </a>
           </div>
+
+          <PageHeroImage pathname="/buyers/first-time-buyers" />
 
           {/* Financing Options */}
           <section className="mb-16 max-w-5xl mx-auto">

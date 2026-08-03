@@ -16,6 +16,7 @@ import {
   DollarSign,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
@@ -95,6 +96,8 @@ export default function SoleraAnthemPage() {
               in Henderson's safest neighborhood.
             </p>
           </div>
+
+          <PageHeroImage pathname="/55-plus-communities/solera-anthem" />
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

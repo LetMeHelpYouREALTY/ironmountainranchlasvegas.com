@@ -15,6 +15,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch & Las Vegas Market Update | Berkshire Hathaway HomeServices",
@@ -91,6 +92,8 @@ export default function MarketUpdatePage() {
               <span>By Dr. Jan Duffy, REALTOR® | BHHS Nevada Properties</span>
             </div>
           </div>
+
+          <PageHeroImage pathname="/market-update" />
 
           {/* Key Statistics */}
           <section className="mb-16 max-w-5xl mx-auto">

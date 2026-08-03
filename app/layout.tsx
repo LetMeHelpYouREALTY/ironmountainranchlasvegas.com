@@ -13,6 +13,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { siteConfig, agentInfo } from "@/lib/site-config";
+import { DEFAULT_OG_IMAGE } from "@/lib/page-images";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -36,10 +37,10 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: "en_US",
       images: [
         {
-          url: "/Image/hero_bg_1.jpg",
+          url: DEFAULT_OG_IMAGE.src,
           width: 1200,
           height: 630,
-          alt: `${config.neighborhood} — ${agentInfo.name}, Berkshire Hathaway HomeServices Nevada Properties`,
+          alt: DEFAULT_OG_IMAGE.alt,
         },
       ],
     },
@@ -47,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: config.heroHeadline,
       description: config.description,
-      images: ["/Image/hero_bg_1.jpg"],
+      images: [DEFAULT_OG_IMAGE.src],
     },
     alternates: {
       canonical: canonicalHost,

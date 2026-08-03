@@ -15,6 +15,7 @@ import {
   Sun,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Downsizing from Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
@@ -67,6 +68,8 @@ export default function DownsizingPage() {
               Let's Talk About Your Options → (702) 500-1942
             </a>
           </div>
+
+          <PageHeroImage pathname="/sellers/downsizing" />
 
           {/* Equity Extraction */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

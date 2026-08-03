@@ -18,6 +18,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | BHHS Las Vegas",
@@ -146,6 +148,8 @@ export default function AboutPage() {
             </p>
           </div>
 
+          <PageHeroImage pathname="/about" />
+
           {/* Agent Profile */}
           <section className="mb-16">
             <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
@@ -232,13 +236,14 @@ export default function AboutPage() {
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                {/* Agent Photo Placeholder */}
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👩‍💼</div>
-                    <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
-                  </div>
+                <div className="relative aspect-square overflow-hidden bg-slate-100">
+                  <Image
+                    src="/images/agent/dr-jan-duffy.jpg"
+                    alt="Real estate consultation desk for Dr. Jan Duffy, Iron Mountain Ranch REALTOR®"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 480px"
+                  />
                 </div>
 
                 {/* Stats Grid */}

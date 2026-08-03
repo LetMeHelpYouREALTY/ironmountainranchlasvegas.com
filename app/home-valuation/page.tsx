@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Free Iron Mountain Ranch Home Valuation | What's Your Home Worth? | Las Vegas 89131",
@@ -99,6 +100,8 @@ export default function HomeValuationPage() {
               but village-to-village spreads are significant.
             </p>
           </div>
+
+          <PageHeroImage pathname="/home-valuation" />
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
             {/* Calendly Widget */}

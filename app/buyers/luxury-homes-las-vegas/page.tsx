@@ -17,6 +17,7 @@ import {
   DollarSign,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Luxury Homes Las Vegas | Iron Mountain Ranch Estates & Guard-Gated Communities",
@@ -104,6 +105,8 @@ export default function LuxuryHomesPage() {
               Schedule a Private Preview → (702) 500-1942
             </a>
           </div>
+
+          <PageHeroImage pathname="/buyers/luxury-homes-las-vegas" />
 
           {/* Market Performance */}
           <section className="mb-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

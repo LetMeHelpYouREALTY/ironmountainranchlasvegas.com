@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "lucide-react";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Why Choose Berkshire Hathaway HomeServices | Iron Mountain Ranch Las Vegas",
@@ -62,6 +63,8 @@ export default function WhyBerkshireHathawayPage() {
               village-by-village expertise.
             </p>
           </div>
+
+          <PageHeroImage pathname="/why-berkshire-hathaway" />
 
           {/* Warren Buffett Section */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

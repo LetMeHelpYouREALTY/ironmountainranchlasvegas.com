@@ -14,6 +14,7 @@ import {
   Shield,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Move-Up Sellers Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
@@ -66,6 +67,8 @@ export default function MoveUpSellerPage() {
               Start Your Upgrade → (702) 500-1942
             </a>
           </div>
+
+          <PageHeroImage pathname="/sellers/move-up" />
 
           {/* Equity Section */}
           <section className="mb-16 bg-green-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
@@ -108,6 +109,8 @@ export default function HendersonPage() {
               <strong>Berkshire Hathaway HomeServices</strong> Henderson specialist.
             </p>
           </div>
+
+          <PageHeroImage pathname="/neighborhoods/henderson" />
 
           {/* Market Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

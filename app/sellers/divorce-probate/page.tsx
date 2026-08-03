@@ -15,6 +15,7 @@ import {
   Users,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Divorce & Probate Home Sales | Iron Mountain Ranch & Las Vegas",
@@ -68,6 +69,8 @@ export default function DivorceProbatePage() {
               Confidential Consultation → (702) 500-1942
             </a>
           </div>
+
+          <PageHeroImage pathname="/sellers/divorce-probate" />
 
           {/* Situations We Help With */}
           <section className="mb-16 max-w-5xl mx-auto">

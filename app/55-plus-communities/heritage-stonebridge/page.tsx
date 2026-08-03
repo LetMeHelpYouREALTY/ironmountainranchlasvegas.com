@@ -16,6 +16,7 @@ import {
   Star,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Heritage at Stonebridge Homes for Sale | Guard-Gated 55+ Summerlin | Dr. Jan Duffy",
@@ -95,6 +96,8 @@ export default function HeritageAtStonebridgePage() {
               Summerlin.
             </p>
           </div>
+
+          <PageHeroImage pathname="/55-plus-communities/heritage-stonebridge" />
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

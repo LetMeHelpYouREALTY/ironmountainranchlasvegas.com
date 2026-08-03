@@ -21,6 +21,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "REALTOR® Services Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
@@ -204,6 +205,8 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
+
+          <PageHeroImage pathname="/services" />
 
           {/* Core Services Section */}
           <section className="mb-16 max-w-6xl mx-auto">

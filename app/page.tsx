@@ -5,12 +5,14 @@ import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
 import { agentInfo, agentStats, marketStats, officeInfo, siteConfig } from "@/lib/site-config";
 import { generateFAQSchema } from "@/lib/schema";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import { HOME_HERO } from "@/lib/page-images";
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -120,10 +122,15 @@ export default async function Home() {
       <main>
         {/* Domain-Aware Hero */}
         <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('/Image/hero_bg_1.jpg')" }}
+          <Image
+            src={HOME_HERO.src}
+            alt={HOME_HERO.alt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center opacity-40"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/55 to-slate-900/35" aria-hidden />
           <div className="relative z-10 container mx-auto px-4 text-center">
             {config.ctaBadge && (
               <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-6">

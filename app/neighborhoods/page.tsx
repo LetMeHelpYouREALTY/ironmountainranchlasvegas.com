@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MapPin, Phone, Home, Users, GraduationCap } from "lucide-react";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch & Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
@@ -143,6 +144,8 @@ export default function NeighborhoodsPage() {
               <strong>Berkshire Hathaway HomeServices</strong> neighborhood expert
             </p>
           </div>
+
+          <PageHeroImage pathname="/neighborhoods" />
 
           {/* Neighborhood Grid */}
           <section className="mb-16 max-w-6xl mx-auto">

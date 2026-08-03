@@ -15,6 +15,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
@@ -94,6 +95,8 @@ export default function SunCityAliantePage() {
               100+ clubs—from $280K.
             </p>
           </div>
+
+          <PageHeroImage pathname="/55-plus-communities/sun-city-aliante" />
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

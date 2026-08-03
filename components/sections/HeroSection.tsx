@@ -9,9 +9,18 @@ export default function HeroSection() {
   const prefersReducedMotion = useReducedMotion();
   
   const images = [
-    "/Image/hero_bg_1.jpg",
-    "/Image/hero_bg_2.jpg",
-    "/Image/hero_bg_3.jpg",
+    {
+      src: "/images/hero/iron-mountain-ranch.jpg",
+      alt: "Iron Mountain Ranch neighborhood street with Mediterranean homes in northwest Las Vegas",
+    },
+    {
+      src: "/images/neighborhoods/iron-mountain-ranch-pool.jpg",
+      alt: "Iron Mountain Ranch backyard pool with desert mountain views",
+    },
+    {
+      src: "/images/neighborhoods/luxury-estate.jpg",
+      alt: "Luxury Las Vegas estate home with desert landscaping",
+    },
   ];
 
   useEffect(() => {
@@ -22,15 +31,17 @@ export default function HeroSection() {
       setCurrentImage((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(intervalId);
+    // images is a stable constant in this component
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [prefersReducedMotion]);
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0">
-        {images.map((src, index) => (
+        {images.map((image, index) => (
           <div
-            key={index}
+            key={image.src}
             className={`absolute inset-0 ${
               prefersReducedMotion 
                 ? '' 
@@ -40,11 +51,12 @@ export default function HeroSection() {
             }`}
           >
             <Image
-              src={src}
-              alt={`Hero image ${index + 1}`}
+              src={image.src}
+              alt={image.alt}
               fill
               className="object-cover"
               priority={index === 0}
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-black/40" />
           </div>

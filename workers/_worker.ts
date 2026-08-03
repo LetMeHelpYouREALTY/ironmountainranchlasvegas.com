@@ -58,6 +58,7 @@ export default {
 function isImageRequest(pathname: string): boolean {
   return /\.(jpg|jpeg|png|gif|webp|avif|svg|ico)$/i.test(pathname) ||
          pathname.startsWith('/Image/') ||
+         pathname.startsWith('/images/') ||
          pathname.startsWith('/_next/image');
 }
 

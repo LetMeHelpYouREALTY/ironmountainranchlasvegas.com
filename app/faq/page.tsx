@@ -12,6 +12,7 @@ import {
   generateWebPageSchema,
   combineSchemas,
 } from "@/lib/schema";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "FAQ | Iron Mountain Ranch & Las Vegas Real Estate | Berkshire Hathaway HomeServices",
@@ -221,6 +222,8 @@ export default function FAQPage() {
               <strong>Berkshire Hathaway HomeServices</strong> in Las Vegas
             </p>
           </div>
+
+          <PageHeroImage pathname="/faq" />
 
           {/* FAQ Categories */}
           <div className="max-w-4xl mx-auto space-y-12">

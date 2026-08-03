@@ -62,7 +62,11 @@ function getCacheRules(pathname: string, contentType: string | null): CacheRule 
   }
 
   // Images - cache for 1 year
-  if (pathname.startsWith('/Image/') || contentType?.startsWith('image/')) {
+  if (
+    pathname.startsWith('/Image/') ||
+    pathname.startsWith('/images/') ||
+    contentType?.startsWith('image/')
+  ) {
     return {
       shouldCache: true,
       cacheControl: 'public, max-age=31536000',

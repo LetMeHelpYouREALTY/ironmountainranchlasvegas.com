@@ -5,6 +5,7 @@ import Link from "next/link";
 import { TrendingUp, TrendingDown, Home, Calendar, DollarSign, BarChart, Phone } from "lucide-react";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch & Las Vegas Market Report 2026 | Berkshire Hathaway HomeServices",
@@ -61,6 +62,8 @@ export default function MarketReportPage() {
               on Iron Mountain Ranch and northwest Las Vegas (89131 &amp; 89143)
             </p>
           </div>
+
+          <PageHeroImage pathname="/market-report" />
 
           {/* Iron Mountain Ranch Snapshot */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">

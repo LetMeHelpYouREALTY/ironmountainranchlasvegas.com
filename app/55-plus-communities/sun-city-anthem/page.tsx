@@ -21,6 +21,7 @@ import {
   generateFAQSchema,
   combineSchemas,
 } from "@/lib/schema";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
@@ -131,6 +132,8 @@ export default function SunCityAnthemPage() {
               7,100+ homes. Mountain views. Henderson safety. Championship golf.
             </p>
           </div>
+
+          <PageHeroImage pathname="/55-plus-communities/sun-city-anthem" />
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

@@ -6,6 +6,7 @@ import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Contact Your Iron Mountain Ranch REALTOR® | Dr. Jan Duffy | Las Vegas",
@@ -69,6 +70,8 @@ export default function ContactPage() {
               Schedule an appointment or reach out directly.
             </p>
           </div>
+
+          <PageHeroImage pathname="/contact" />
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info & Map */}

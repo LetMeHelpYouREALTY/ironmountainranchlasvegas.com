@@ -14,6 +14,7 @@ import {
   generateHowToSchema,
   combineSchemas,
 } from "@/lib/schema";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch Homes for Sale | REALTOR® Services | Las Vegas 89131",
@@ -224,6 +225,8 @@ export default function IronMountainRanchPage() {
               free village-specific valuations.
             </p>
           </div>
+
+          <PageHeroImage pathname="/neighborhoods/iron-mountain-ranch" />
 
           {/* Market Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

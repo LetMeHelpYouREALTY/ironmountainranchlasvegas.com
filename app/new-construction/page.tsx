@@ -19,6 +19,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "New Construction Near Iron Mountain Ranch | Northwest Las Vegas Buyer's Guide",
@@ -279,6 +280,8 @@ export default function NewConstructionPage() {
               </div>
             </div>
           </div>
+
+          <PageHeroImage pathname="/new-construction" />
 
           {/* Why Free Representation */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

@@ -5,6 +5,7 @@ import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import { FEATURED_PROPERTY_IMAGES } from "@/lib/page-images";
 
 export const metadata: Metadata = {
   title: "Property Details | Iron Mountain Ranch & Las Vegas Real Estate",
@@ -12,22 +13,83 @@ export const metadata: Metadata = {
     "View detailed information about this property listing in Iron Mountain Ranch, northwest Las Vegas, or the greater Las Vegas Valley.",
 };
 
-// This would typically fetch from RealScout API
-async function getProperty(id: string) {
-  // Placeholder - replace with RealScout API call
-  return {
-    id,
-    name: "Modern Luxury Home",
-    location: "Summerlin, Las Vegas, NV",
-    price: "$850,000",
-    image: "/Image/hero_bg_1.jpg",
+const DEMO_PROPERTIES: Record<
+  string,
+  {
+    id: string;
+    name: string;
+    location: string;
+    price: string;
+    image: string;
+    imageAlt: string;
+    bedrooms: number;
+    bathrooms: number;
+    squareFeet: number;
+    yearBuilt: number;
+    description: string;
+  }
+> = {
+  "1": {
+    id: "1",
+    name: "Gated Village Home",
+    location: "Iron Mountain Ranch, Las Vegas, NV 89131",
+    price: "$585,000",
+    image: FEATURED_PROPERTY_IMAGES.imrGated.src,
+    imageAlt: FEATURED_PROPERTY_IMAGES.imrGated.alt,
     bedrooms: 4,
     bathrooms: 3,
-    squareFeet: 3200,
-    yearBuilt: 2018,
+    squareFeet: 2800,
+    yearBuilt: 2006,
     description:
-      "Stunning modern home in desirable Summerlin community. Features open floor plan, updated kitchen, and beautiful backyard. Close to schools, shopping, and entertainment.",
-  };
+      "Mediterranean-style home in a gated Iron Mountain Ranch village. Open great room, updated kitchen, and a private backyard with desert mountain views. Close to the 215 Beltway and Centennial Hills shopping.",
+  },
+  "2": {
+    id: "2",
+    name: "Spacious Family Home",
+    location: "Henderson, NV",
+    price: "$625,000",
+    image: FEATURED_PROPERTY_IMAGES.henderson.src,
+    imageAlt: FEATURED_PROPERTY_IMAGES.henderson.alt,
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 2400,
+    yearBuilt: 2012,
+    description:
+      "Spacious Henderson family home with a bright open floor plan, covered patio, and mature landscaping. Convenient to parks, shopping, and the 215 corridor.",
+  },
+  "3": {
+    id: "3",
+    name: "Elegant Estate",
+    location: "Green Valley, Henderson, NV",
+    price: "$1,200,000",
+    image: FEATURED_PROPERTY_IMAGES.greenValley.src,
+    imageAlt: FEATURED_PROPERTY_IMAGES.greenValley.alt,
+    bedrooms: 5,
+    bathrooms: 4,
+    squareFeet: 4500,
+    yearBuilt: 2015,
+    description:
+      "Elegant Green Valley estate with formal living spaces, chef’s kitchen, and a resort-style backyard. Premium finishes throughout in one of Henderson’s most established communities.",
+  },
+};
+
+async function getProperty(id: string) {
+  return (
+    DEMO_PROPERTIES[id] ?? {
+      id,
+      name: "Iron Mountain Ranch Home",
+      location: "Iron Mountain Ranch, Las Vegas, NV 89131",
+      price: "Price upon request",
+      image: FEATURED_PROPERTY_IMAGES.imrGated.src,
+      imageAlt: FEATURED_PROPERTY_IMAGES.imrGated.alt,
+      bedrooms: 4,
+      bathrooms: 3,
+      squareFeet: 2800,
+      yearBuilt: 2005,
+      description:
+        "Single-family home in Iron Mountain Ranch with Mediterranean curb appeal, open living areas, and easy access to northwest Las Vegas amenities. Contact Dr. Jan Duffy for current availability and comps.",
+    }
+  );
 }
 
 type PropertyPageProps = {
@@ -53,7 +115,12 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               </li>
               <li>/</li>
               <li>
-                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+                <a
+                  href="http://drjanduffy.realscout.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
                   Properties
                 </a>
               </li>
@@ -75,13 +142,14 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
           </div>
 
           {/* Main Image */}
-          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden mb-8">
+          <div className="relative h-64 md:h-96 overflow-hidden mb-8">
             <Image
               src={property.image}
-              alt={property.name}
+              alt={property.imageAlt}
               fill
               className="object-cover"
               priority
+              sizes="(max-width: 768px) 100vw, 1200px"
             />
           </div>
 
@@ -116,7 +184,6 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                 </div>
               </div>
 
-              {/* RealScout Widget Integration Point */}
               <div className="bg-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Schedule a Showing</h3>
                 <p className="text-slate-700 mb-4">

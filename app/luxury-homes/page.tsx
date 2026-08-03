@@ -19,6 +19,7 @@ import {
   Users,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Luxury Homes Iron Mountain Ranch & Las Vegas | Berkshire Hathaway HomeServices",
@@ -144,6 +145,8 @@ export default function LuxuryHomesPage() {
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Discrete Transactions</span>
             </div>
           </div>
+
+          <PageHeroImage pathname="/luxury-homes" />
 
           {/* Luxury Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

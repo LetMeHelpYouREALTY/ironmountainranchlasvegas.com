@@ -26,6 +26,7 @@ import {
   generateLocalBusinessSchema,
   generateFAQSchema,
 } from "@/lib/gbp-schema";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® | Iron Mountain Ranch Las Vegas | Berkshire Hathaway HomeServices",
@@ -66,6 +67,8 @@ export default function GoogleBusinessPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageHeroImage pathname="/google-business" />
+
           {/* Hero - NAP Prominent */}
           <section className="max-w-5xl mx-auto mb-16">
             <div className="bg-gradient-to-br from-slate-900 to-blue-900 text-white rounded-2xl p-8 md:p-12">

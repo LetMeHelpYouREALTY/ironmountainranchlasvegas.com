@@ -19,6 +19,7 @@ import {
   Award,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "Sell Your Iron Mountain Ranch Home | Berkshire Hathaway HomeServices Las Vegas",
@@ -154,6 +155,8 @@ export default function SellersPage() {
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Expert Negotiation</span>
             </div>
           </div>
+
+          <PageHeroImage pathname="/sellers" />
 
           {/* Market Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

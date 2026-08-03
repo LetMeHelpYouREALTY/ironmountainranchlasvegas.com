@@ -18,6 +18,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
   title: "California to Las Vegas Relocation | Iron Mountain Ranch & Northwest Las Vegas",
@@ -143,6 +144,8 @@ export default function CaliforniaRelocatorPage() {
               Start Your Tax-Free Life → (702) 500-1942
             </a>
           </div>
+
+          <PageHeroImage pathname="/buyers/california-relocator" />
 
           {/* Tax Savings Comparison */}
           <section className="mb-16 bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
