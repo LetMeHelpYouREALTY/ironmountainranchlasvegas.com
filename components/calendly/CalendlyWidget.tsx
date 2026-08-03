@@ -15,6 +15,12 @@ export default function CalendlyWidget({
 }: CalendlyWidgetProps) {
   const widgetRef = useRef<HTMLDivElement>(null);
 
+  // Guard: a bare event slug (e.g. "showing") is not a valid Calendly URL and
+  // renders Calendly's "This Calendly URL is not valid" error. Normalize it.
+  if (!url.startsWith("https://")) {
+    url = `https://calendly.com/drjanduffy/${url.replace(/^\/+/, "")}`;
+  }
+
   useEffect(() => {
     // Ensure Calendly script is loaded and widget is initialized
     const initWidget = () => {
