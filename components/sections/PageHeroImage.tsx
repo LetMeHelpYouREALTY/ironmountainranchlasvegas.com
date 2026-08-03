@@ -31,11 +31,7 @@ export default function PageHeroImage({
           fill
           priority={priority}
           sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-slate-950/20"
-          aria-hidden
+          className="object-cover object-center brightness-110 contrast-105"
         />
       </div>
     </div>

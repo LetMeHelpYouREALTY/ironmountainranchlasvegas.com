@@ -54,11 +54,11 @@ export default function HeroSection() {
               src={image.src}
               alt={image.alt}
               fill
-              className="object-cover"
+              className="object-cover brightness-110"
               priority={index === 0}
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/20 to-black/10" />
           </div>
         ))}
       </div>
