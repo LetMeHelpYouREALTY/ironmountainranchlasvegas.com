@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   TrendingUp,
@@ -80,7 +81,7 @@ export default function MarketUpdatePage() {
               Week of January 20, 2026
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Berkshire Hathaway HomeServices Las Vegas Market Update
+              Iron Mountain Ranch Market Update
             </h1>
             <p className="text-xl text-slate-600">
               Your weekly insider report on Las Vegas Valley real estate from{" "}
@@ -433,6 +434,7 @@ export default function MarketUpdatePage() {
         </div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="general" />
       <Footer />
     </>
   );

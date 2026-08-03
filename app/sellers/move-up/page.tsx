@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   TrendingUp,
@@ -52,7 +53,7 @@ export default function MoveUpSellerPage() {
               Your Equity Unlocks Your Dream Home
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Ready for Your Next Chapter?
+              Sell & Move Up in Iron Mountain Ranch
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Your home's equity unlocks your dream home. Let's make the upgrade seamless.
@@ -404,6 +405,7 @@ export default function MoveUpSellerPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="sell" />
       <Footer />
     </>
   );

@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   Shield,
@@ -90,7 +91,7 @@ export default function LuxuryHomesPage() {
               $1.2M - $10M+
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Luxury Real Estate
+              Luxury Homes in Iron Mountain Ranch & Las Vegas
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Guard-gated estates. Strip penthouses. Uncompromising privacy.
@@ -412,6 +413,7 @@ export default function LuxuryHomesPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="luxury" />
       <Footer />
     </>
   );

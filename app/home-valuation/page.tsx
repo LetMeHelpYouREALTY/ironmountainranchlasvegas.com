@@ -5,6 +5,7 @@ import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
 import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 
 export const metadata: Metadata = {
   title: "Free Iron Mountain Ranch Home Valuation | What's Your Home Worth? | Las Vegas 89131",
@@ -492,6 +493,7 @@ export default function HomeValuationPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="value" />
       <Footer />
     </>
   );

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
+import ImrHyperlocalBand from '@/components/sections/ImrHyperlocalBand'
 
 export const metadata: Metadata = {
   title: 'Security Policy',
-  description: 'Security policy and responsible disclosure information for heyberkshire.com',
+  description: 'Security policy and responsible disclosure for ironmountainranchlasvegas.com — Dr. Jan Duffy, Iron Mountain Ranch REALTOR®.',
   robots: {
     index: true,
     follow: true,
@@ -220,7 +221,7 @@ export default function SecurityPolicyPage() {
               To protect your information when using our site:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Ensure you're on the correct domain: <strong>heyberkshire.com</strong></li>
+              <li>Ensure you're on the correct domain: <strong>ironmountainranchlasvegas.com</strong></li>
               <li>Look for the padlock icon (HTTPS)</li>
               <li>Don't share sensitive information via email</li>
               <li>Use strong, unique passwords if creating an account</li>
@@ -246,8 +247,8 @@ export default function SecurityPolicyPage() {
               </p>
               <p className="mb-2">
                 Email:{' '}
-                <a href="mailto:info@heyberkshire.com" className="text-blue-600 underline">
-                  info@heyberkshire.com
+                <a href="mailto:homes@heyberkshire.com" className="text-blue-600 underline">
+                  homes@heyberkshire.com
                 </a>
               </p>
               <p>
@@ -270,6 +271,7 @@ export default function SecurityPolicyPage() {
           </footer>
         </div>
       </div>
+      <ImrHyperlocalBand topic="general" showFaq={false} />
     </div>
   )
 }

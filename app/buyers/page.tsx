@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   Search,
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
 const buyerSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Home Buying Services Las Vegas",
+  name: "Iron Mountain Ranch Home Buying Services",
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
@@ -46,6 +47,8 @@ const buyerSchema = {
   },
   areaServed: "Iron Mountain Ranch, Centennial Hills, Las Vegas, Henderson, Clark County NV",
   serviceType: "Buyer Representation",
+  description: "Buyer representation for Iron Mountain Ranch and northwest Las Vegas (89131 & 89143).",
+  url: "https://www.ironmountainranchlasvegas.com/buyers",
 };
 
 const buyingSteps = [
@@ -468,6 +471,7 @@ export default function BuyersPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="buy" />
       <Footer />
     </>
   );

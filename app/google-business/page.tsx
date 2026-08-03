@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   Mail,
@@ -75,7 +76,7 @@ export default function GoogleBusinessPage() {
                     <span className="text-yellow-400 font-semibold">Berkshire Hathaway HomeServices</span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Dr. Jan Duffy
+                    Dr. Jan Duffy — Iron Mountain Ranch REALTOR®
                   </h1>
                   <p className="text-xl text-blue-200 mb-2">REALTOR® | License {businessInfo.license}</p>
                   <p className="text-slate-300 mb-6">Nevada Properties</p>
@@ -311,6 +312,7 @@ export default function GoogleBusinessPage() {
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
+      <ImrHyperlocalBand topic="general" />
       <Footer />
     </>
   );

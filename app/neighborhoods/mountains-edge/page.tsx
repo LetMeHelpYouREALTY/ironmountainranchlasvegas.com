@@ -4,6 +4,7 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Mountain, TreePine, DollarSign, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
@@ -408,6 +409,7 @@ export default function MountainsEdgePage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="neighborhood" />
       <Footer />
     </>
   );

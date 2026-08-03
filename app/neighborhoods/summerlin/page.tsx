@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, MapPin, TreePine, Mountain, GraduationCap, ShoppingBag } from "lucide-react";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   generateBreadcrumbSchema,
   generateFAQSchema,
@@ -402,6 +403,7 @@ export default function SummerlinPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="neighborhood" />
       <Footer />
     </>
   );

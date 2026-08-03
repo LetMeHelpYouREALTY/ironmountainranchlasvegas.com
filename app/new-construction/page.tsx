@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   Building2,
@@ -255,7 +256,7 @@ export default function NewConstructionPage() {
               Free Buyer Representation
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices New Construction Las Vegas
+              New Construction Near Iron Mountain Ranch
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Your complete buyer's guide to new homes in Las Vegas. Free representation,
@@ -694,6 +695,7 @@ export default function NewConstructionPage() {
         </div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="new-construction" />
       <Footer />
     </>
   );

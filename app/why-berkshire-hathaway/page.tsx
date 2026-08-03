@@ -4,6 +4,7 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "lucide-react";
 import type { Metadata } from "next";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 
 export const metadata: Metadata = {
   title: "Why Choose Berkshire Hathaway HomeServices | Iron Mountain Ranch Las Vegas",
@@ -25,7 +26,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Berkshire Hathaway HomeServices",
   url: "https://www.bhhs.com",
-  logo: "https://heyberkshire.com/favicon-32x32.png",
+  logo: "https://www.ironmountainranchlasvegas.com/favicon-32x32.png",
   description:
     "Berkshire Hathaway HomeServices is a real estate brokerage network, part of Berkshire Hathaway Inc., one of the world's most respected and trusted companies.",
   parentOrganization: {
@@ -51,7 +52,7 @@ export default function WhyBerkshireHathawayPage() {
               The Most Trusted Name in Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Why Choose Berkshire Hathaway HomeServices?
+              Why BHHS for Iron Mountain Ranch Real Estate?
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're
@@ -293,6 +294,7 @@ export default function WhyBerkshireHathawayPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="general" />
       <Footer />
     </>
   );

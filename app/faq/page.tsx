@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   generateBreadcrumbSchema,
   generateFAQSchema,
@@ -190,7 +191,7 @@ const allFaqs = faqCategories.flatMap((category) =>
 const pageSchemas = combineSchemas(
   generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
-    name: "Frequently Asked Questions | Berkshire Hathaway HomeServices Las Vegas",
+    name: "Iron Mountain Ranch & Las Vegas Real Estate FAQ | Berkshire Hathaway HomeServices Las Vegas",
     description:
       "Comprehensive FAQ about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties.",
     url: "/faq",
@@ -264,6 +265,7 @@ export default function FAQPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="general" />
       <Footer />
     </>
   );

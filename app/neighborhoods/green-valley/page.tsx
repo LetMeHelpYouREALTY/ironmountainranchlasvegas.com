@@ -4,6 +4,7 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, TreePine, ShoppingBag, GraduationCap, MapPin } from "lucide-react";
 import type { Metadata } from "next";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
@@ -385,6 +386,7 @@ export default function GreenValleyPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: August 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="neighborhood" />
       <Footer />
     </>
   );

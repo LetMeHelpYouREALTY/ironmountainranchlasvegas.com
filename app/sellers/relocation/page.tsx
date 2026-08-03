@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   Plane,
@@ -53,7 +54,7 @@ export default function RelocationPage() {
               Nationwide BHHS Network
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              New Opportunity?<br />We Handle Your Sale.
+              Relocating Out?<br />Sell Your Iron Mountain Ranch Home.
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Sell your Las Vegas home while you focus on your new chapter.
@@ -521,6 +522,7 @@ export default function RelocationPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="sell" />
       <Footer />
     </>
   );

@@ -5,11 +5,12 @@ import { Phone, Mail, MapPin, Clock, Calendar, CheckCircle, Star, Users, Shield 
 import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
 import type { Metadata } from "next";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 
 export const metadata: Metadata = {
   title: "Contact Your Iron Mountain Ranch REALTOR® | Dr. Jan Duffy | Las Vegas",
   description:
-    "Contact Dr. Jan Duffy, Iron Mountain Ranch real estate specialist at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment or call (702) 500-1942. Serving 89131, 89143 & all Las Vegas.",
+    "Contact Your Iron Mountain Ranch REALTOR®, Iron Mountain Ranch real estate specialist at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment or call (702) 500-1942. Serving 89131, 89143 & all Las Vegas.",
   keywords: [
     "Iron Mountain Ranch realtor contact",
     "contact real estate agent Las Vegas",
@@ -36,6 +37,11 @@ const contactSchema = {
       postalCode: "89134",
       addressCountry: "US",
     },
+    areaServed: [
+      { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89131" },
+      { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89143" },
+    ],
+    url: "https://www.ironmountainranchlasvegas.com/contact",
   },
 };
 
@@ -324,6 +330,7 @@ export default function ContactPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="general" />
       <Footer />
     </>
   );

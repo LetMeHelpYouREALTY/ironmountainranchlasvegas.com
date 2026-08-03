@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   Heart,
@@ -53,7 +54,7 @@ export default function DownsizingPage() {
               Embrace Low-Maintenance Living
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Simplify. Downsize. Enjoy.
+              Downsize in Iron Mountain Ranch
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Extract your equity. Embrace low-maintenance living. Start your next chapter.
@@ -472,6 +473,7 @@ export default function DownsizingPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="sell" />
       <Footer />
     </>
   );

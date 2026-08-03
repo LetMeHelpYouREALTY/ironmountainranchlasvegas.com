@@ -10,6 +10,7 @@ import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
 import { agentInfo, agentStats, marketStats, officeInfo, siteConfig } from "@/lib/site-config";
 import { generateFAQSchema } from "@/lib/schema";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -278,6 +279,7 @@ export default async function Home() {
           </div>
         </section>
       </main>
+      <ImrHyperlocalBand topic="general" />
       <Footer />
     </>
   );

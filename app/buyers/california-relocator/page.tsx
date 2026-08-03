@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   DollarSign,
@@ -84,7 +85,7 @@ const realEstateAgentSchema = {
   "@type": "RealEstateAgent",
   name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
   telephone: "+17025001942",
-  url: "https://heyberkshire.com/buyers/california-relocator",
+  url: "https://www.ironmountainranchlasvegas.com/buyers/california-relocator",
   address: {
     "@type": "PostalAddress",
     streetAddress: "9406 W Lake Mead Blvd, Suite 100",
@@ -129,7 +130,7 @@ export default function CaliforniaRelocatorPage() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Relocating from California?<br />
-              <span className="text-blue-600">Welcome Home to Las Vegas</span>
+              <span className="text-blue-600">Welcome to Iron Mountain Ranch</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-8">
               Zero state income tax. 40-60% lower home prices. Same sunshine.
@@ -491,6 +492,7 @@ export default function CaliforniaRelocatorPage() {
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="relocate" />
       <Footer />
     </>
   );

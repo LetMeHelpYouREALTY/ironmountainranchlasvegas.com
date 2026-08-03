@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 
 export const metadata: Metadata = {
   title: "Property Details | Iron Mountain Ranch & Las Vegas Real Estate",
@@ -148,6 +149,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
           </div>
         </div>
       </main>
+      <ImrHyperlocalBand topic="buy" />
       <Footer />
     </>
   );

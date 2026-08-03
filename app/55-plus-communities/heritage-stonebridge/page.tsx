@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
   Phone,
   MapPin,
@@ -443,6 +444,7 @@ export default function HeritageAtStonebridgePage() {
         </div>
       </main>
       <RealScoutListings />
+      <ImrHyperlocalBand topic="55plus" />
       <Footer />
     </>
   );
