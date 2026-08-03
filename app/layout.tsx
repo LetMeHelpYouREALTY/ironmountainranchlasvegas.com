@@ -14,6 +14,7 @@ import {
 } from "@/lib/schema";
 import { siteConfig, agentInfo } from "@/lib/site-config";
 import { DEFAULT_OG_IMAGE } from "@/lib/page-images";
+import { cfOgImageUrl } from "@/lib/cf-images";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -37,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: "en_US",
       images: [
         {
-          url: DEFAULT_OG_IMAGE.src,
+          url: cfOgImageUrl(DEFAULT_OG_IMAGE.src),
           width: 1200,
           height: 630,
           alt: DEFAULT_OG_IMAGE.alt,
@@ -48,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: config.heroHeadline,
       description: config.description,
-      images: [DEFAULT_OG_IMAGE.src],
+      images: [cfOgImageUrl(DEFAULT_OG_IMAGE.src)],
     },
     alternates: {
       canonical: canonicalHost,

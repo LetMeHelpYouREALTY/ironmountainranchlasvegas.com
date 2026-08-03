@@ -3,12 +3,11 @@ const nextConfig = {
   // Output configuration for Cloudflare Pages
   output: 'standalone',
 
-  // Image optimization for Cloudflare
+  // Image optimization for Cloudflare Images (/cdn-cgi/image or imagedelivery.net)
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    // Use Cloudflare Images loader
     loader: 'custom',
     loaderFile: './lib/cloudflare-image-loader.ts',
   },

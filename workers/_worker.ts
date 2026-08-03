@@ -66,6 +66,8 @@ interface Env {
   // Cloudflare bindings
   ANALYTICS_DATASET?: any;
   CF_IMAGES_URL?: string;
+  /** Images binding from wrangler.toml */
+  IMAGES?: unknown;
   DEBUG?: string;
   
   // Environment variables

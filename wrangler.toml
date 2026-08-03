@@ -23,6 +23,11 @@ DEBUG = "false"
 # binding = "CACHE"
 # id = "your-kv-namespace-id"
 
+# Cloudflare Images binding — byte-level transforms in workers/image-optimizer.ts
+# Docs: https://developers.cloudflare.com/images/optimization/binding/
+[images]
+binding = "IMAGES"
+
 # Analytics Engine (optional - requires Workers Paid plan)
 # [[analytics_engine_datasets]]
 # binding = "ANALYTICS_DATASET"

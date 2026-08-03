@@ -36,4 +36,4 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 - Prefer `/images/*` over legacy `/Image/*`.
 - Do not use stock headshots for Dr. Jan Duffy or client testimonials.
 - Always include location-specific alt text for SEO.
-- Next.js `next/image` handles AVIF/WebP optimization.
+- Next.js `next/image` handles AVIF/WebP optimization locally; enable Cloudflare Images via env (see `.env.example`) for edge transforms (`/cdn-cgi/image`, Images binding, or `imagedelivery.net`).

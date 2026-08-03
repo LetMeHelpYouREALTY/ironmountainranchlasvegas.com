@@ -157,38 +157,60 @@ wrangler deploy
 - ✅ Permissions-Policy
 - ✅ DNS Prefetch Control
 
-### 3. Image Optimizer Worker
+### 3. Image Optimizer Worker (+ Cloudflare Images)
 
-**Location:** `workers/image-optimizer.ts`
+**Location:** `workers/image-optimizer.ts` · loader: `lib/cloudflare-image-loader.ts` · helpers: `lib/cf-images.ts`
+
+Per Cloudflare Images docs (2026): prefer the URL interface (`/cdn-cgi/image/…`), Workers `cf.image`, or the Images binding — not ad-hoc Content-Type rewriting.
 
 **Features:**
-- ✅ Automatic WebP/AVIF conversion
-- ✅ Client capability detection (Accept header)
-- ✅ Responsive image sizing
-- ✅ Quality optimization
-- ✅ Optional Cloudflare Images integration
+- ✅ `/cdn-cgi/image/width=…,format=auto/…` via Next.js custom loader (opt-in)
+- ✅ Worker `cf.image` transforms with Accept negotiation (AVIF/WebP)
+- ✅ Images binding (`[images] binding = "IMAGES"` in `wrangler.toml`)
+- ✅ `width=auto`-ready responsive sizes from Next `deviceSizes`
+- ✅ Long-lived cache (`max-age=31536000`) + `Vary: Accept`
+
+**Enable (pick one path):**
+
+```bash
+# A) Zone URL interface — use a dedicated orange-cloud image host if apex is gray-cloud/Vercel
+NEXT_PUBLIC_CF_IMAGE_RESIZING=true
+NEXT_PUBLIC_CF_IMAGE_ZONE=https://img.heyberkshire.com
+
+# B) Worker query-string optimizer on image routes
+NEXT_PUBLIC_CF_IMAGE_WORKER=true
+
+# C) Hosted Images (imagedelivery.net)
+NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true
+NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH=your_account_hash
+```
 
 **Usage:**
 
 ```tsx
-// Automatic optimization
+import Image from "next/image";
+import { cfImageUrl, cfOgImageUrl } from "@/lib/cf-images";
+
+// Next/Image — loader builds /cdn-cgi/image/… when env flags are on
 <Image
-  src="/Image/property.jpg"
-  alt="Property"
-  width={800}
-  height={600}
+  src="/images/hero/iron-mountain-ranch.jpg"
+  alt="Iron Mountain Ranch"
+  width={1920}
+  height={1080}
+  priority
 />
 
-// Manual optimization via URL parameters
-<img src="/Image/property.jpg?w=800&q=85&f=webp" alt="Property" />
+// Manual / OG
+const og = cfOgImageUrl("/images/og/default.jpg");
+<img src={cfImageUrl("/images/neighborhoods/summerlin.jpg", { width: 800, quality: 85 })} alt="Summerlin" />
 ```
 
-**URL Parameters:**
-- `w` - Width in pixels
-- `h` - Height in pixels
-- `q` - Quality (1-100, default: 85)
-- `f` - Format (auto, webp, avif, jpeg, png)
-- `fit` - Fit mode (scale-down, contain, cover, crop, pad)
+**URL Parameters (Worker mode):**
+- `w` / `width` - Width in pixels
+- `h` / `height` - Height in pixels
+- `q` / `quality` - Quality (1-100, default: 85)
+- `f` / `format` - Format (auto, webp, avif, jpeg, png)
+- `fit` - Fit mode (scale-down, contain, cover, crop, pad, aspect-crop, scale-up)
 
 ### 4. Analytics Worker
 

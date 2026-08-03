@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
+
+// Cloudflare Images /cdn-cgi/image or imagedelivery.net (opt-in).
+// Keep Next.js default optimizer when unset so Vercel/local still work.
+// Prefer a dedicated image zone (NEXT_PUBLIC_CF_IMAGE_ZONE) when the
+// apex is DNS-only (gray cloud) in front of Vercel.
+const useCloudflareImages =
+  process.env.NEXT_PUBLIC_CF_IMAGE_RESIZING === 'true' ||
+  process.env.NEXT_PUBLIC_CF_IMAGE_WORKER === 'true' ||
+  process.env.NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED === 'true';
+
 const nextConfig = {
   // Standalone output for Docker/Vercel optimization
   output: 'standalone',
@@ -12,6 +22,12 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    ...(useCloudflareImages
+      ? {
+          loader: 'custom',
+          loaderFile: './lib/cloudflare-image-loader.ts',
+        }
+      : {}),
   },
 
   // Compression
@@ -63,7 +79,7 @@ const nextConfig = {
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://em.realscout.com https://www.realscout.com https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com",
               "style-src 'self' 'unsafe-inline' https://em.realscout.com https://www.realscout.com https://assets.calendly.com",
-              "img-src 'self' data: blob: https: http:",
+              "img-src 'self' data: blob: https: http: https://imagedelivery.net https://*.imagedelivery.net",
               "font-src 'self' data: https://assets.calendly.com",
               "connect-src 'self' https://em.realscout.com https://www.realscout.com https://openrouter.ai https://api.openai.com https://calendly.com https://www.google-analytics.com https://analytics.google.com https://*.ingest.sentry.io",
               "frame-src 'self' https://em.realscout.com https://www.realscout.com https://calendly.com https://assets.calendly.com https://www.google.com https://maps.google.com https://*.google.com",
