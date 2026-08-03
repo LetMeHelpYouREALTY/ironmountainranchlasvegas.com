@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { siteConfig, agentInfo, officeInfo } from "@/lib/site-config";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,11 +11,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-xl mb-4">Berkshire Hathaway HomeServices</h3>
+            <h3 className="font-bold text-xl mb-1">{siteConfig.name}</h3>
+            <p className="text-blue-300 text-sm mb-4">{siteConfig.byline}</p>
             <p className="text-slate-300 mb-4 text-sm">
-              Nevada Properties - Your Iron Mountain Ranch real estate specialist in northwest Las
-              Vegas (89131 &amp; 89143), also serving Centennial Hills, Skye Canyon, and the greater
-              Las Vegas Valley. Backed by Warren Buffett's legacy of trust.
+              Northwest Las Vegas real estate (89131 &amp; 89143), also serving Centennial Hills,
+              Skye Canyon, and the greater Las Vegas Valley. {agentInfo.brokerage}.
             </p>
             <div className="flex space-x-4">
               <a
@@ -213,8 +214,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm text-center md:text-left">
-              © {currentYear} Berkshire Hathaway HomeServices Nevada Properties. All Rights
-              Reserved.
+              © {currentYear} {siteConfig.name} · {siteConfig.byline}. All Rights Reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
@@ -226,12 +226,10 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-slate-500 text-xs mt-4 text-center">
-            Dr. Jan Duffy, REALTOR® | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
-            Properties
+            {agentInfo.name}, REALTOR® | License {agentInfo.license} | {agentInfo.brokerage}
           </p>
           <p className="text-slate-600 text-xs mt-2 text-center max-w-3xl mx-auto">
-            When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name
-            synonymous with trust, ethical standards, and financial strength.
+            {officeInfo.address.full} · {agentInfo.phoneFormatted}
           </p>
         </div>
       </div>

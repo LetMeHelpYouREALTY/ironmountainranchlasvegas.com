@@ -25,13 +25,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(siteConfig.url),
-    title: `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`,
+    title: {
+      default: `${siteConfig.name} | ${siteConfig.byline}`,
+      template: `%s | ${siteConfig.name}`,
+    },
     description: config.description,
     keywords: config.keywords,
     authors: [{ name: agentInfo.name, url: siteConfig.url }],
     creator: agentInfo.name,
     openGraph: {
-      title: config.heroHeadline,
+      title: `${siteConfig.name} | ${siteConfig.byline}`,
       description: config.description,
       type: "website",
       url: canonicalHost,
@@ -48,7 +51,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: config.heroHeadline,
+      title: `${siteConfig.name} | ${siteConfig.byline}`,
       description: config.description,
       images: [cfOgImageUrl(DEFAULT_OG_IMAGE.src)],
     },

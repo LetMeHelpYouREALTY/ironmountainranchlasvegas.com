@@ -84,9 +84,9 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
   "zoomintohomes.com": { domain: "zoomintohomes.com", neighborhood: "Las Vegas", tagline: "Zoom Into Las Vegas Homes", description: "Virtual home tours and in-depth Las Vegas real estate guidance from Dr. Jan Duffy.", heroHeadline: "Zoom Into Las Vegas Homes", heroSubheadline: "Virtual tours, 3D walkthroughs, and live video showings — home buying on your schedule.", keywords: ["virtual home tours Las Vegas", "zoom home tour Las Vegas", "remote home buying Las Vegas"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Virtual Tour Expert", ctaHeadline: "Tour Homes From Anywhere", ctaSubheadline: "Cannot visit in person? I will do a live video tour of any Las Vegas home. Call 702-222-1964." },
 
   // --- Iron Mountain Ranch hyperlocal focus added 2026-08-03 ---
-  "ironmountainranchlasvegas.com": { domain: "ironmountainranchlasvegas.com", neighborhood: "Iron Mountain Ranch", tagline: "Iron Mountain Ranch Las Vegas | Homes for Sale & REALTOR® Services", description: "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Gated villages, 2,000–4,500 sq ft homes, Gass Peak views. Dr. Jan Duffy, your Iron Mountain Ranch REALTOR®.", heroHeadline: "Iron Mountain Ranch Homes for Sale", heroSubheadline: "9 gated villages, roughly 1,700 homes, and Gass Peak views in northwest Las Vegas — your Iron Mountain Ranch REALTOR® knows every street.", keywords: ["Iron Mountain Ranch homes for sale", "Iron Mountain Ranch Las Vegas", "Iron Mountain Ranch realtor", "89131 homes for sale", "northwest Las Vegas real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Iron Mountain Ranch Specialist", ctaHeadline: "Buy or Sell in Iron Mountain Ranch", ctaSubheadline: "Live comps, off-market alerts, and gated-village expertise. Call or text 702-500-1942 — I answer my own phone." },
-  "heyberkshire.com": { domain: "heyberkshire.com", neighborhood: "Iron Mountain Ranch", tagline: "Iron Mountain Ranch Homes for Sale | Northwest Las Vegas", description: "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Gated villages, 2,000–4,500 sq ft homes, Gass Peak views. Dr. Jan Duffy, your Iron Mountain Ranch REALTOR®.", heroHeadline: "Iron Mountain Ranch Homes for Sale", heroSubheadline: "9 gated villages, roughly 1,700 homes, and Gass Peak views in northwest Las Vegas — your Iron Mountain Ranch REALTOR® knows every street.", keywords: ["Iron Mountain Ranch homes for sale", "Iron Mountain Ranch Las Vegas", "Iron Mountain Ranch realtor", "89131 homes for sale", "northwest Las Vegas real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Iron Mountain Ranch Specialist", ctaHeadline: "Buy or Sell in Iron Mountain Ranch", ctaSubheadline: "Live comps, off-market alerts, and gated-village expertise. Call or text 702-500-1942 — I answer my own phone." },
-  "ironmountainranchhomes.com": { domain: "ironmountainranchhomes.com", neighborhood: "Iron Mountain Ranch", tagline: "Iron Mountain Ranch Homes for Sale", description: "Search Iron Mountain Ranch homes for sale in northwest Las Vegas. Expert guidance from Dr. Jan Duffy, Iron Mountain Ranch specialist.", heroHeadline: "Iron Mountain Ranch Homes for Sale", heroSubheadline: "Gated villages, large lots, and Gass Peak views — every Iron Mountain Ranch listing, updated in real time.", keywords: ["Iron Mountain Ranch homes", "Iron Mountain Ranch 89131", "Iron Mountain Ranch real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Iron Mountain Ranch Expert", ctaHeadline: "Find Your Iron Mountain Ranch Home", ctaSubheadline: "I track every sale in all 9 villages. Call 702-500-1942 for a live comp pull." },
+  "ironmountainranchlasvegas.com": { domain: "ironmountainranchlasvegas.com", neighborhood: "Iron Mountain Ranch", tagline: "Iron Mountain Ranch | Homes by Dr. Jan Duffy", description: "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Gated villages, 2,000–4,500 sq ft homes, Gass Peak views. Homes by Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.", heroHeadline: "Iron Mountain Ranch", heroSubheadline: "9 gated villages, roughly 1,700 homes, and Gass Peak views in northwest Las Vegas.", keywords: ["Iron Mountain Ranch homes for sale", "Iron Mountain Ranch Las Vegas", "Iron Mountain Ranch realtor", "89131 homes for sale", "northwest Las Vegas real estate", "Homes by Dr. Jan Duffy"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "", ctaHeadline: "Buy or Sell in Iron Mountain Ranch", ctaSubheadline: "Live comps, off-market alerts, and gated-village expertise. Call or text 702-500-1942 — I answer my own phone." },
+  "heyberkshire.com": { domain: "heyberkshire.com", neighborhood: "Iron Mountain Ranch", tagline: "Iron Mountain Ranch | Homes by Dr. Jan Duffy", description: "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Gated villages, 2,000–4,500 sq ft homes, Gass Peak views. Homes by Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.", heroHeadline: "Iron Mountain Ranch", heroSubheadline: "9 gated villages, roughly 1,700 homes, and Gass Peak views in northwest Las Vegas.", keywords: ["Iron Mountain Ranch homes for sale", "Iron Mountain Ranch Las Vegas", "Iron Mountain Ranch realtor", "89131 homes for sale", "northwest Las Vegas real estate", "Homes by Dr. Jan Duffy"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "", ctaHeadline: "Buy or Sell in Iron Mountain Ranch", ctaSubheadline: "Live comps, off-market alerts, and gated-village expertise. Call or text 702-500-1942 — I answer my own phone." },
+  "ironmountainranchhomes.com": { domain: "ironmountainranchhomes.com", neighborhood: "Iron Mountain Ranch", tagline: "Iron Mountain Ranch | Homes by Dr. Jan Duffy", description: "Search Iron Mountain Ranch homes for sale in northwest Las Vegas. Homes by Dr. Jan Duffy, Iron Mountain Ranch specialist.", heroHeadline: "Iron Mountain Ranch", heroSubheadline: "Gated villages, large lots, and Gass Peak views — every listing updated in real time.", keywords: ["Iron Mountain Ranch homes", "Iron Mountain Ranch 89131", "Iron Mountain Ranch real estate", "Homes by Dr. Jan Duffy"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "", ctaHeadline: "Find Your Iron Mountain Ranch Home", ctaSubheadline: "I track every sale in all 9 villages. Call 702-500-1942 for a live comp pull." },
 
 };
 
@@ -95,22 +95,23 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
 export const DEFAULT_CONFIG: DomainConfig = {
   domain: "default",
   neighborhood: "Iron Mountain Ranch",
-  tagline: "Iron Mountain Ranch Homes for Sale | Northwest Las Vegas",
+  tagline: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
   description:
-    "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Gated villages, 2,000–4,500 sq ft homes, Gass Peak views. Dr. Jan Duffy, your Iron Mountain Ranch REALTOR®.",
-  heroHeadline: "Iron Mountain Ranch Homes for Sale",
+    "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Gated villages, 2,000–4,500 sq ft homes, Gass Peak views. Homes by Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
+  heroHeadline: "Iron Mountain Ranch",
   heroSubheadline:
-    "9 gated villages, roughly 1,700 homes, and Gass Peak views in northwest Las Vegas — your Iron Mountain Ranch REALTOR® knows every street.",
+    "9 gated villages, roughly 1,700 homes, and Gass Peak views in northwest Las Vegas.",
   keywords: [
     "Iron Mountain Ranch homes for sale",
     "Iron Mountain Ranch Las Vegas",
     "Iron Mountain Ranch realtor",
     "89131 homes for sale",
     "northwest Las Vegas real estate",
+    "Homes by Dr. Jan Duffy",
   ],
   pageType: "community",
   realscoutAgentId: REALSCOUT_AGENT_ID,
-  ctaBadge: "Iron Mountain Ranch Specialist",
+  ctaBadge: "",
   ctaHeadline: "Buy or Sell in Iron Mountain Ranch",
   ctaSubheadline: "Call or text Dr. Jan at 702-500-1942 — I answer my own phone.",
 };

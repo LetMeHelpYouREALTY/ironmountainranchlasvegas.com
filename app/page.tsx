@@ -83,7 +83,9 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": `${siteUrl}#local-agent`,
-    name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
+    name: isIMR
+      ? `${siteConfig.name} | ${siteConfig.byline}`
+      : `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
     url: siteUrl,
     telephone: agentInfo.phoneTel.replace("tel:", ""),
     email: agentInfo.email,
@@ -135,17 +137,30 @@ export default async function Home() {
             aria-hidden
           />
           <div className="relative z-10 container mx-auto px-4 text-center">
-            {config.ctaBadge && (
-              <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-6">
+            {/* Brand-first hero: site name is the hero signal; byline sits under it */}
+            {!isIMR && config.ctaBadge ? (
+              <p className="text-sm md:text-base font-medium tracking-[0.18em] uppercase text-white/80 mb-4">
                 {config.ctaBadge}
-              </span>
-            )}
-            <h1 id="tldr" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              {config.heroHeadline}
+              </p>
+            ) : null}
+            <h1
+              id="tldr"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold mb-3 leading-[1.05] tracking-tight"
+            >
+              {isIMR ? siteConfig.name : config.heroHeadline}
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto">
-              {config.heroSubheadline}
+            <p
+              className={`text-xl md:text-2xl text-white/90 font-medium ${
+                isIMR ? "mb-4" : "mb-10"
+              }`}
+            >
+              {isIMR ? siteConfig.byline : config.heroSubheadline}
             </p>
+            {isIMR ? (
+              <p className="text-lg md:text-xl text-white/75 mb-10 max-w-2xl mx-auto">
+                {config.heroSubheadline}
+              </p>
+            ) : null}
 
             {/* RealScout Search Widget */}
             <div className="mb-8 flex justify-center">

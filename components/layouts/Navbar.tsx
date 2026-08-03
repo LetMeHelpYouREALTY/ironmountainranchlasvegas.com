@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site-config";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,13 +46,14 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Brand Logo */}
-          <Link href="/" className="flex flex-col">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
-              Berkshire Hathaway
-              <span className="text-blue-600"> HomeServices</span>
+          {/* Brand Logo — site name + agent byline */}
+          <Link href="/" className="flex flex-col group">
+            <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-tight tracking-tight">
+              {siteConfig.name}
             </span>
-            <span className="text-xs text-slate-500 hidden sm:block">Nevada Properties</span>
+            <span className="text-xs md:text-sm text-slate-500 leading-snug">
+              {siteConfig.byline}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

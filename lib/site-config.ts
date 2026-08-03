@@ -1,18 +1,20 @@
-// Site Configuration - HeyBerkshire.com
-// Berkshire Hathaway HomeServices Nevada Properties
+// Site Configuration — Iron Mountain Ranch
+// Homes by Dr. Jan Duffy | Berkshire Hathaway HomeServices Nevada Properties
 
 export const siteConfig = {
-  name: "HeyBerkshire",
+  /** Primary site brand (hero-level, nav, titles) */
+  name: "Iron Mountain Ranch",
+  /** Agent byline under the site name */
+  byline: "Homes by Dr. Jan Duffy",
   fullName: "Berkshire Hathaway HomeServices Nevada Properties",
-  tagline: "Iron Mountain Ranch Real Estate | Northwest Las Vegas",
-  /** Full brand line for titles and OG: Berkshire Hathaway HomeServices Nevada Properties | Iron Mountain Ranch Real Estate */
-  brandLine:
-    "Berkshire Hathaway HomeServices Nevada Properties | Iron Mountain Ranch Real Estate",
-  brandName: "Berkshire Hathaway HomeServices",
-  shortName: "BHHS",
+  tagline: "Homes by Dr. Jan Duffy | Northwest Las Vegas",
+  /** Full brand line for titles and OG */
+  brandLine: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
+  brandName: "Iron Mountain Ranch",
+  shortName: "IMR",
   url: "https://www.ironmountainranchlasvegas.com",
   description:
-    "Iron Mountain Ranch real estate expert in northwest Las Vegas (89131 & 89143). Buy, sell, or invest in Iron Mountain Ranch with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
+    "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). Buy, sell, or invest with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
   /** Primary hyperlocal service area */
   primaryArea: "Iron Mountain Ranch",
   primaryAreaFull: "Iron Mountain Ranch, Las Vegas, NV 89131",

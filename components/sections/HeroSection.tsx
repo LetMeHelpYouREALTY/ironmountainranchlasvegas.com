@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { REALSCOUT_AGENT_ENCODED_ID } from "@/lib/realscout-config";
+import { siteConfig } from "@/lib/site-config";
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -66,14 +67,15 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Find Your Home in
-          <br />
-          <span className="text-blue-400">Iron Mountain Ranch, Las Vegas</span>
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 leading-[1.05] tracking-tight">
+          {siteConfig.name}
         </h1>
-        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-          Hyperlocal REALTOR® services for Iron Mountain Ranch and northwest Las Vegas — buying,
-          selling, and investing with village-by-village expertise.
+        <p className="text-xl md:text-2xl text-white/90 mb-4 font-medium">
+          {siteConfig.byline}
+        </p>
+        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
+          Northwest Las Vegas gated villages, large lots, and Gass Peak views — buying and selling
+          with village-by-village expertise.
         </p>
 
         {/* RealScout Search Widget */}
