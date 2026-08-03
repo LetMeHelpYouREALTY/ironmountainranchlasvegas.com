@@ -13,6 +13,7 @@ import { agentInfo, agentStats, marketStats, officeInfo, siteConfig } from "@/li
 import { generateFAQSchema } from "@/lib/schema";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import { HOME_HERO } from "@/lib/page-images";
+import HeroBrandPortrait from "@/components/sections/HeroBrandPortrait";
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -137,6 +138,14 @@ export default async function Home() {
             aria-hidden
           />
           <div className="relative z-10 container mx-auto px-4 text-center">
+            {/* Agent portrait — brand awareness for Homes by Dr. Jan Duffy */}
+            <HeroBrandPortrait
+              size="lg"
+              showByline={false}
+              onDark
+              priority
+              className="mb-6"
+            />
             {/* Brand-first hero: site name is the hero signal; byline sits under it */}
             {!isIMR && config.ctaBadge ? (
               <p className="text-sm md:text-base font-medium tracking-[0.18em] uppercase text-white/80 mb-4">

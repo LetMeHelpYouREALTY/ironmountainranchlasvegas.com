@@ -235,13 +235,15 @@ export default function AboutPage() {
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                <div className="relative aspect-square overflow-hidden bg-slate-100">
+                <div className="relative aspect-square overflow-hidden bg-slate-100 flex items-center justify-center p-8">
                   <Image
-                    src="/images/agent/dr-jan-duffy.jpg"
-                    alt="Real estate consultation desk for Dr. Jan Duffy, Iron Mountain Ranch REALTOR®"
-                    fill
-                    className="object-cover"
+                    src="/images/agent/dr-jan-duffy.png"
+                    alt="Dr. Jan Duffy, REALTOR® — Homes by Dr. Jan Duffy, Iron Mountain Ranch"
+                    width={480}
+                    height={480}
+                    className="object-contain w-full h-full"
                     sizes="(max-width: 768px) 100vw, 480px"
+                    priority
                   />
                 </div>
 

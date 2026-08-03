@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { REALSCOUT_AGENT_ENCODED_ID } from "@/lib/realscout-config";
 import { siteConfig } from "@/lib/site-config";
+import HeroBrandPortrait from "@/components/sections/HeroBrandPortrait";
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -67,6 +68,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+        <HeroBrandPortrait size="lg" showByline={false} onDark priority className="mb-6" />
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 leading-[1.05] tracking-tight">
           {siteConfig.name}
         </h1>
