@@ -6,6 +6,7 @@ import { getDomainConfig } from "@/lib/domain-config";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import SchemaScript from "@/components/SchemaScript";
+import PageBreadcrumbSchema from "@/components/PageBreadcrumbSchema";
 import {
   generateRealEstateAgentSchema,
   generateWebSiteSchema,
@@ -93,6 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <SchemaScript schema={sitewideSchema} id="sitewide-entity-schema" />
+        <PageBreadcrumbSchema />
         {/* RealScout web components — load once for all page widgets */}
         <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="afterInteractive" />
         {children}
