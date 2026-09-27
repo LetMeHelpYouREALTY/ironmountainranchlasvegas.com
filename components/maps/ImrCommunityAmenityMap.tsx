@@ -7,7 +7,6 @@ import {
   CURATED_AMENITIES,
   DEFAULT_AMENITY_CATEGORY,
   IMR_COMMUNITY_CENTER,
-  MAP_SEARCH_RADIUS_METERS,
   type AmenityCategoryId,
   type CuratedAmenity,
   curatedAddress,
@@ -15,9 +14,11 @@ import {
   mapsDirectionsUrl,
   mapsEmbedUrl,
 } from "@/lib/imr-amenity-map";
+import { imrSearchCenter, searchCategory } from "@/lib/imr-amenity-places";
+import { loadGoogleMaps, mapsAuthFailed } from "@/lib/google-maps-loader";
 
 const MAP_HEIGHT_PX = 420;
-const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+const MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 const MAP_ID = process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID;
 
 type MapPlace = {
@@ -26,7 +27,6 @@ type MapPlace = {
   address: string;
   lat: number;
   lng: number;
-  rating?: number;
   isCommunity?: boolean;
   directionsUrl: string;
 };
@@ -44,43 +44,11 @@ const COMMUNITY_MAP_PLACE: MapPlace = {
 };
 
 type ImrCommunityAmenityMapProps = {
-  /** Taller map on the dedicated amenities page */
   variant?: "default" | "large";
-  /** Initial filter */
   initialCategory?: AmenityCategoryId;
-  /** Hide category chips (homepage teaser) */
   showFilters?: boolean;
   className?: string;
 };
-
-function loadGoogleMapsScript(): Promise<void> {
-  if (typeof window === "undefined") {
-    return Promise.reject(new Error("no window"));
-  }
-  if (window.google?.maps) {
-    return Promise.resolve();
-  }
-  return new Promise((resolve, reject) => {
-    const existing = document.getElementById("google-maps-js");
-    if (existing) {
-      existing.addEventListener("load", () => resolve());
-      existing.addEventListener("error", () => reject(new Error("maps script error")));
-      return;
-    }
-    if (!API_KEY) {
-      reject(new Error("missing api key"));
-      return;
-    }
-    const script = document.createElement("script");
-    script.id = "google-maps-js";
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&libraries=places&loading=async`;
-    script.async = true;
-    script.defer = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("maps script error"));
-    document.head.appendChild(script);
-  });
-}
 
 function curatedToMapPlace(place: CuratedAmenity): MapPlace | null {
   if (place.latitude == null || place.longitude == null) {
@@ -97,17 +65,52 @@ function curatedToMapPlace(place: CuratedAmenity): MapPlace | null {
   };
 }
 
-function infoWindowHtml(place: MapPlace): string {
-  const rating =
-    place.rating != null
-      ? `<p style="margin:4px 0;font-size:13px">Rating: ${place.rating.toFixed(1)}</p>`
-      : "";
-  return `<div style="max-width:240px;font-family:system-ui,sans-serif">
-    <strong>${place.name}</strong>
-    ${rating}
-    <p style="margin:6px 0 8px;font-size:13px;color:#475569">${place.address}</p>
-    <a href="${place.directionsUrl}" target="_blank" rel="noopener noreferrer" style="color:#2563eb;font-weight:600;font-size:13px">Directions</a>
-  </div>`;
+function buildInfoWindowContent(place: MapPlace): HTMLElement {
+  const root = document.createElement("div");
+  root.style.maxWidth = "240px";
+  root.style.fontFamily = "system-ui, sans-serif";
+
+  const title = document.createElement("strong");
+  title.textContent = place.name;
+  root.appendChild(title);
+
+  const addr = document.createElement("p");
+  addr.style.margin = "6px 0 8px";
+  addr.style.fontSize = "13px";
+  addr.style.color = "#475569";
+  addr.textContent = place.address;
+  root.appendChild(addr);
+
+  const link = document.createElement("a");
+  link.href = place.directionsUrl;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.style.color = "#2563eb";
+  link.style.fontWeight = "600";
+  link.style.fontSize = "13px";
+  link.textContent = "Directions";
+  root.appendChild(link);
+
+  return root;
+}
+
+function placeFromGoogleResult(
+  place: google.maps.places.Place,
+  index: number
+): MapPlace | null {
+  const loc = place.location;
+  if (!loc) return null;
+  const { lat, lng } = loc.toJSON();
+  const address = place.formattedAddress ?? "";
+  const name = place.displayName ?? "Place";
+  return {
+    id: place.id ?? `places-new-${index}`,
+    name,
+    address,
+    lat,
+    lng,
+    directionsUrl: place.googleMapsURI ?? mapsDirectionsUrl(address || `${lat},${lng}`),
+  };
 }
 
 export default function ImrCommunityAmenityMap({
@@ -127,12 +130,28 @@ export default function ImrCommunityAmenityMap({
   const [category, setCategory] = useState<AmenityCategoryId>(initialCategory);
   const [shouldLoad, setShouldLoad] = useState(false);
   const [mapReady, setMapReady] = useState(false);
-  const [apiFailed, setApiFailed] = useState(!API_KEY);
+  const [useFallback, setUseFallback] = useState(!MAPS_API_KEY || mapsAuthFailed);
   const [loadingPlaces, setLoadingPlaces] = useState(false);
 
   const height = variant === "large" ? 520 : MAP_HEIGHT_PX;
   const curatedForCategory = getCuratedForCategory(category);
-  const staticList = curatedForCategory.length > 0 ? curatedForCategory : CURATED_AMENITIES;
+  const staticList =
+    curatedForCategory.length > 0 ? curatedForCategory : CURATED_AMENITIES;
+  const categoryLabel =
+    AMENITY_CATEGORIES.find((c) => c.id === category)?.label ?? "Amenities";
+
+  useEffect(() => {
+    const onAuthFailure = () => {
+      mapRef.current = null;
+      setMapReady(false);
+      setUseFallback(true);
+    };
+    if (mapsAuthFailed) {
+      onAuthFailure();
+    }
+    window.addEventListener("gmaps:auth-failure", onAuthFailure);
+    return () => window.removeEventListener("gmaps:auth-failure", onAuthFailure);
+  }, []);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -160,7 +179,7 @@ export default function ImrCommunityAmenityMap({
   const renderMarkers = useCallback(
     (places: MapPlace[]) => {
       const map = mapRef.current;
-      if (!map || !window.google?.maps) return;
+      if (!map) return;
       clearMarkers();
       const bounds = new google.maps.LatLngBounds();
       const info = infoRef.current ?? new google.maps.InfoWindow();
@@ -169,7 +188,7 @@ export default function ImrCommunityAmenityMap({
       const all = [COMMUNITY_MAP_PLACE, ...places.filter((p) => !p.isCommunity)];
 
       all.forEach((place) => {
-        const position = new google.maps.LatLng(place.lat, place.lng);
+        const position = { lat: place.lat, lng: place.lng };
         bounds.extend(position);
         const marker = new google.maps.Marker({
           map,
@@ -178,7 +197,7 @@ export default function ImrCommunityAmenityMap({
           ...(place.isCommunity && { zIndex: 1000 }),
         });
         marker.addListener("click", () => {
-          info.setContent(infoWindowHtml(place));
+          info.setContent(buildInfoWindowContent(place));
           info.open({ map, anchor: marker });
         });
         markersRef.current.push(marker);
@@ -189,97 +208,28 @@ export default function ImrCommunityAmenityMap({
     [clearMarkers]
   );
 
+  const fallbackCuratedMarkers = useCallback(
+    (cat: AmenityCategoryId) =>
+      getCuratedForCategory(cat)
+        .map(curatedToMapPlace)
+        .filter((p): p is MapPlace => p != null),
+    []
+  );
+
   const fetchPlaces = useCallback(
     async (cat: AmenityCategoryId) => {
-      const map = mapRef.current;
-      if (!map || !window.google?.maps) return;
+      if (!mapRef.current || useFallback) return;
 
       const categoryDef = AMENITY_CATEGORIES.find((c) => c.id === cat);
-      const fallbackCurated = getCuratedForCategory(cat)
-        .map(curatedToMapPlace)
-        .filter((p): p is MapPlace => p != null);
-
-      if (!API_KEY || apiFailed) {
-        renderMarkers(fallbackCurated);
-        return;
-      }
+      const fallbackCurated = fallbackCuratedMarkers(cat);
+      const types = categoryDef?.primaryTypes ?? ["restaurant"];
 
       setLoadingPlaces(true);
       try {
-        const center = new google.maps.LatLng(
-          IMR_COMMUNITY_CENTER.latitude,
-          IMR_COMMUNITY_CENTER.longitude
-        );
-        const types = categoryDef?.primaryTypes ?? ["restaurant"];
-        let results: MapPlace[] = [];
-
-        try {
-          const placesLib = await google.maps.importLibrary("places");
-          const PlaceCtor = placesLib.Place as typeof google.maps.places.Place;
-          if (PlaceCtor?.searchNearby) {
-            const { places } = await PlaceCtor.searchNearby({
-              fields: ["displayName", "location", "formattedAddress", "rating", "googleMapsURI"],
-              locationRestriction: {
-                center,
-                radius: MAP_SEARCH_RADIUS_METERS,
-              },
-              includedPrimaryTypes: types,
-              maxResultCount: 18,
-            });
-            results = (places ?? []).map((p, i) => {
-              const loc = p.location;
-              const lat = loc?.lat?.() ?? IMR_COMMUNITY_CENTER.latitude;
-              const lng = loc?.lng?.() ?? IMR_COMMUNITY_CENTER.longitude;
-              const address = p.formattedAddress ?? "";
-              return {
-                id: `places-new-${i}`,
-                name: p.displayName ?? "Place",
-                address,
-                lat,
-                lng,
-                rating: p.rating,
-                directionsUrl: p.googleMapsURI ?? mapsDirectionsUrl(address || `${lat},${lng}`),
-              };
-            });
-          }
-        } catch {
-          // Fall through to legacy Nearby Search
-        }
-
-        if (results.length === 0) {
-          await new Promise<void>((resolve) => {
-            const service = new google.maps.PlacesService(map);
-            service.nearbySearch(
-              {
-                location: center,
-                radius: MAP_SEARCH_RADIUS_METERS,
-                type: types[0],
-              },
-              (raw, status) => {
-                if (status === "OK" && raw) {
-                  results = raw.slice(0, 18).map((r, i) => {
-                    const loc = r.geometry?.location;
-                    const lat = loc?.lat() ?? IMR_COMMUNITY_CENTER.latitude;
-                    const lng = loc?.lng() ?? IMR_COMMUNITY_CENTER.longitude;
-                    const address = r.vicinity ?? r.formatted_address ?? "";
-                    const name = r.name ?? "Place";
-                    return {
-                      id: r.place_id ?? `legacy-${i}`,
-                      name,
-                      address,
-                      lat,
-                      lng,
-                      rating: r.rating,
-                      directionsUrl: mapsDirectionsUrl(`${name} ${address}`),
-                    };
-                  });
-                }
-                resolve();
-              }
-            );
-          });
-        }
-
+        const places = await searchCategory(imrSearchCenter(), cat, types);
+        const results = places
+          .map((p, i) => placeFromGoogleResult(p, i))
+          .filter((p): p is MapPlace => p != null);
         if (results.length === 0) {
           renderMarkers(fallbackCurated);
         } else {
@@ -291,22 +241,24 @@ export default function ImrCommunityAmenityMap({
         setLoadingPlaces(false);
       }
     },
-    [apiFailed, renderMarkers]
+    [fallbackCuratedMarkers, renderMarkers, useFallback]
   );
 
   useEffect(() => {
-    if (!shouldLoad || apiFailed || !mapDivRef.current) return;
+    if (!shouldLoad || useFallback || !mapDivRef.current || !MAPS_API_KEY) return;
+
+    if (mapsAuthFailed) {
+      setUseFallback(true);
+      return;
+    }
 
     let cancelled = false;
 
-    loadGoogleMapsScript()
-      .then(() => {
-        if (cancelled || !mapDivRef.current || !window.google?.maps) return;
+    loadGoogleMaps(MAPS_API_KEY)
+      .then(async () => {
+        if (cancelled || !mapDivRef.current) return;
         const map = new google.maps.Map(mapDivRef.current, {
-          center: {
-            lat: IMR_COMMUNITY_CENTER.latitude,
-            lng: IMR_COMMUNITY_CENTER.longitude,
-          },
+          center: imrSearchCenter(),
           zoom: 13,
           mapTypeControl: false,
           streetViewControl: false,
@@ -317,20 +269,22 @@ export default function ImrCommunityAmenityMap({
         setMapReady(true);
       })
       .catch(() => {
-        setApiFailed(true);
+        if (!cancelled) {
+          mapRef.current = null;
+          setMapReady(false);
+          setUseFallback(true);
+        }
       });
 
     return () => {
       cancelled = true;
     };
-  }, [shouldLoad, apiFailed]);
+  }, [shouldLoad, useFallback]);
 
   useEffect(() => {
-    if (!mapReady) return;
+    if (!mapReady || useFallback) return;
     void fetchPlaces(category);
-  }, [mapReady, category, fetchPlaces]);
-
-  const useFallback = apiFailed || !API_KEY;
+  }, [mapReady, category, fetchPlaces, useFallback]);
 
   return (
     <div ref={containerRef} className={className}>
@@ -379,7 +333,12 @@ export default function ImrCommunityAmenityMap({
             allowFullScreen
           />
         ) : (
-          <div ref={mapDivRef} className="absolute inset-0 h-full w-full" role="application" aria-label="Interactive Google Map of nearby amenities" />
+          <div
+            ref={mapDivRef}
+            className="absolute inset-0 h-full w-full"
+            role="application"
+            aria-label="Interactive Google Map of nearby amenities"
+          />
         )}
         {loadingPlaces && !useFallback && (
           <div className="absolute inset-x-0 top-0 bg-slate-900/70 text-white text-xs text-center py-1">
@@ -395,8 +354,8 @@ export default function ImrCommunityAmenityMap({
         className="mt-6"
       >
         <h3 className="text-lg font-semibold text-slate-900 mb-3">
-          {useFallback ? "Featured nearby places" : "Curated picks & fallback list"}
-          <span className="sr-only"> for {AMENITY_CATEGORIES.find((c) => c.id === category)?.label}</span>
+          Featured places near {IMR_COMMUNITY_CENTER.name}
+          <span className="sr-only"> — {categoryLabel}</span>
         </h3>
         <ul className="grid sm:grid-cols-2 gap-4">
           {staticList.map((place) => {
@@ -431,12 +390,6 @@ export default function ImrCommunityAmenityMap({
             );
           })}
         </ul>
-        {useFallback && (
-          <p className="text-slate-500 text-xs mt-4">
-            Set <code className="text-slate-700">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> in Vercel for
-            the full interactive map with live Places results.
-          </p>
-        )}
       </div>
     </div>
   );

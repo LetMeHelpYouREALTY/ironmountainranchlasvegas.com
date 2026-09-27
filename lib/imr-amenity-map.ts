@@ -42,7 +42,7 @@ export type AmenityCategory = {
   ariaLabel: string;
 };
 
-/** Family master-planned community — schools included; grocery & parks near top */
+/** Master-planned community — schools included; grocery & parks near top */
 export const AMENITY_CATEGORIES: AmenityCategory[] = [
   {
     id: "grocery",
@@ -129,13 +129,15 @@ export type CuratedAmenity = {
   city: string;
   state: "NV";
   zip: string;
+  /** Official page used to verify name and mailing address */
+  sourceUrl: string;
   latitude?: number;
   longitude?: number;
   driveMinutesApprox?: number;
   note?: string;
 };
 
-/** Verified names & mailing addresses; coordinates only when sourced from OSM geocoding */
+/** Names and mailing addresses verified against each sourceUrl (Sept 2026). */
 export const CURATED_AMENITIES: CuratedAmenity[] = [
   {
     id: "floyd-lamb-park",
@@ -146,20 +148,22 @@ export const CURATED_AMENITIES: CuratedAmenity[] = [
     city: "Las Vegas",
     state: "NV",
     zip: "89131",
+    sourceUrl: "https://www.lasvegasnevada.gov/Residents/Parks-Facilities/Floyd-Lamb-Park",
     latitude: 36.3189985,
     longitude: -115.2716459,
     driveMinutesApprox: 10,
-    note: "City park with ponds, picnic areas, and trails — a northwest Las Vegas staple minutes from IMR.",
+    note: "680-acre city park with ponds, picnic areas, and trails — a northwest Las Vegas staple minutes from IMR.",
   },
   {
     id: "centennial-hills-library",
     name: "Centennial Hills Library",
     schemaType: "Library",
-    categories: ["parks", "shopping"],
+    categories: ["parks"],
     streetAddress: "6711 N Buffalo Dr",
     city: "Las Vegas",
     state: "NV",
     zip: "89131",
+    sourceUrl: "https://thelibrarydistrict.org/locations/ch/",
     latitude: 36.2833522,
     longitude: -115.2620074,
     driveMinutesApprox: 12,
@@ -173,8 +177,10 @@ export const CURATED_AMENITIES: CuratedAmenity[] = [
     city: "Las Vegas",
     state: "NV",
     zip: "89149",
+    sourceUrl:
+      "https://www.smithsfoodanddrug.com/stores/grocery/nv/las-vegas/montecito-marketplace/706/00332",
     latitude: 36.2906659,
-    longitude: -115.2856790,
+    longitude: -115.285679,
     driveMinutesApprox: 12,
   },
   {
@@ -182,24 +188,26 @@ export const CURATED_AMENITIES: CuratedAmenity[] = [
     name: "Centennial Hills Hospital Medical Center",
     schemaType: "Hospital",
     categories: ["healthcare"],
-    streetAddress: "6570 N Decatur Blvd",
+    streetAddress: "6900 N Durango Dr",
     city: "Las Vegas",
     state: "NV",
-    zip: "89131",
+    zip: "89149",
+    sourceUrl: "https://www.centennialhillshospital.com/about/contact-us",
     driveMinutesApprox: 12,
-    note: "Full-service hospital south of IMR in the Centennial Hills medical corridor.",
+    note: "Full-service hospital in the Centennial Hills medical corridor, south of IMR.",
   },
   {
     id: "arbor-view-high",
     name: "Arbor View High School",
     schemaType: "School",
     categories: ["schools"],
-    streetAddress: "7465 W Washington Ave",
+    streetAddress: "7500 Whispering Sands Dr",
     city: "Las Vegas",
     state: "NV",
-    zip: "89128",
-    latitude: 36.3025289,
-    longitude: -115.2574062,
+    zip: "89131",
+    sourceUrl: "https://www.arborviewhs.org/apps/contact/",
+    latitude: 36.3029,
+    longitude: -115.2578,
     driveMinutesApprox: 10,
   },
   {
@@ -211,6 +219,7 @@ export const CURATED_AMENITIES: CuratedAmenity[] = [
     city: "Las Vegas",
     state: "NV",
     zip: "89130",
+    sourceUrl: "https://www.stationcasinos.com/property-map/",
     latitude: 36.2498865,
     longitude: -115.2448221,
     driveMinutesApprox: 15,
@@ -225,6 +234,7 @@ export const CURATED_AMENITIES: CuratedAmenity[] = [
     city: "North Las Vegas",
     state: "NV",
     zip: "89085",
+    sourceUrl: `${siteConfig.url}/contact`,
     latitude: officeInfo.coordinates.lat,
     longitude: officeInfo.coordinates.lng,
     driveMinutesApprox: 8,
@@ -234,7 +244,7 @@ export const CURATED_AMENITIES: CuratedAmenity[] = [
 
 export const DEFAULT_AMENITY_CATEGORY: AmenityCategoryId = "grocery";
 
-export const MAP_SEARCH_RADIUS_METERS = 8000;
+export const MAP_SEARCH_RADIUS_METERS = 5000;
 
 export function curatedAddress(place: CuratedAmenity): string {
   return `${place.streetAddress}, ${place.city}, ${place.state} ${place.zip}`;
@@ -266,7 +276,7 @@ export const AMENITIES_FAQ: FAQItem[] = [
   {
     question: "Are there hospitals near Iron Mountain Ranch?",
     answer:
-      "Centennial Hills Hospital Medical Center on N Decatur Boulevard is the closest full-service hospital south of IMR — commonly about 10–15 minutes by car.",
+      "Centennial Hills Hospital Medical Center on N Durango Drive is the closest full-service hospital south of IMR — commonly about 10–15 minutes by car.",
   },
   {
     question: "What parks are close to Iron Mountain Ranch?",

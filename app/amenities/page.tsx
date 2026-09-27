@@ -83,7 +83,7 @@ export default function AmenitiesPage() {
               Parks &amp; recreation
             </h2>
             <p>
-              Inside Iron Mountain Ranch, landscaped parks, ponds, and walking paths connect the nine
+              Inside Iron Mountain Ranch, landscaped parks, ponds, and walking paths connect the
               villages. Floyd Lamb Park at Tule Springs (9200 Tule Springs Rd) is the signature
               regional park — ponds, picnic areas, and trails about 10 minutes north for many IMR
               addresses. Red Rock Canyon and Mount Charleston are popular weekend drives for hiking
@@ -109,11 +109,10 @@ export default function AmenitiesPage() {
               Healthcare &amp; pharmacies
             </h2>
             <p>
-              Centennial Hills Hospital Medical Center (6570 N Decatur Blvd) anchors the southbound
+              Centennial Hills Hospital Medical Center (6900 N Durango Dr) anchors the southbound
               medical corridor — typically 10–15 minutes from Iron Mountain Ranch. Urgent care,
-              primary care, and pharmacy chains cluster along Decatur, Buffalo, and Ann Road; filter
-              Healthcare or Pharmacies on the map for live results when your Google Maps API key is
-              configured.
+              primary care, and pharmacy chains cluster along Decatur, Buffalo, and Ann Road; use
+              the Healthcare or Pharmacies filters on the map for nearby listings.
             </p>
           </section>
 
@@ -146,7 +145,7 @@ export default function AmenitiesPage() {
             </h2>
             <p>
               Iron Mountain Ranch is served by Clark County School District campuses in the northwest
-              attendance zone, including Arbor View High School on W Washington Avenue. Assigned
+              attendance zone, including Arbor View High School on Whispering Sands Drive. Assigned
               elementary and middle schools depend on the village address — verify zoning on CCSD&apos;s
               site or with Dr. Jan before you write an offer.
             </p>
