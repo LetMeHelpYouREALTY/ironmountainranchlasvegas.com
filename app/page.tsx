@@ -12,6 +12,7 @@ import { getFaqsForDomain } from "@/lib/faq-config";
 import { agentInfo, agentStats, marketStats, officeInfo, siteConfig } from "@/lib/site-config";
 import { generateFAQSchema } from "@/lib/schema";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
+import ImrLifeNearbySection from "@/components/sections/ImrLifeNearbySection";
 import { HOME_HERO } from "@/lib/page-images";
 import HeroBrandPortrait from "@/components/sections/HeroBrandPortrait";
 
@@ -272,6 +273,7 @@ export default async function Home() {
         </section>
 
         <WhyChooseUs />
+        <ImrLifeNearbySection />
         <ReviewsSection />
 
         <div id="faq">
