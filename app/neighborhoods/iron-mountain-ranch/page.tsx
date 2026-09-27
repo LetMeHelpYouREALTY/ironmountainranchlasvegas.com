@@ -15,6 +15,7 @@ import {
 } from "@/lib/schema";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 import ImrNearbyAmenities from "@/components/sections/ImrNearbyAmenities";
+import ImrLifeNearbySection from "@/components/sections/ImrLifeNearbySection";
 import { DECATUR_RETAIL_CORRIDOR } from "@/lib/imr-nearby";
 
 export const metadata: Metadata = {
@@ -418,6 +419,8 @@ export default function IronMountainRanchPage() {
               </p>
             </div>
           </section>
+
+          <ImrLifeNearbySection compact />
 
           {/* Nearby amenity map pin — retail corridor (not office NAP) */}
           <ImrNearbyAmenities />
