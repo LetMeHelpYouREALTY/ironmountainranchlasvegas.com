@@ -6,7 +6,6 @@ import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateWebPageSchema,
   combineSchemas,
@@ -26,12 +25,6 @@ export const metadata: Metadata = {
     "local agent questions",
   ],
 };
-
-// Breadcrumb items
-const breadcrumbs = [
-  { name: "Home", url: "/" },
-  { name: "FAQ", url: "/faq" },
-];
 
 const faqCategories = [
   {
@@ -189,7 +182,6 @@ const allFaqs = faqCategories.flatMap((category) =>
 
 // Combined page schemas including all FAQs
 const pageSchemas = combineSchemas(
-  generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
     name: "Iron Mountain Ranch & Las Vegas Real Estate FAQ | Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     description:

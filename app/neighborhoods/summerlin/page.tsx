@@ -6,7 +6,6 @@ import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import {
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateNeighborhoodSchema,
   combineSchemas,
@@ -25,13 +24,6 @@ export const metadata: Metadata = {
     "luxury homes Summerlin",
   ],
 };
-
-// Breadcrumb items for this page
-const breadcrumbs = [
-  { name: "Home", url: "/" },
-  { name: "Neighborhoods", url: "/neighborhoods" },
-  { name: "Summerlin", url: "/neighborhoods/summerlin" },
-];
 
 // FAQ data for schema
 const summerlinFaqs = [
@@ -59,7 +51,6 @@ const summerlinFaqs = [
 
 // Combined page schemas
 const pageSchemas = combineSchemas(
-  generateBreadcrumbSchema(breadcrumbs),
   generateNeighborhoodSchema({
     name: "Summerlin",
     slug: "summerlin",

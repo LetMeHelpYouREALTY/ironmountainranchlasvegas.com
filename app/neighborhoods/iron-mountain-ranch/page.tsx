@@ -6,7 +6,6 @@ import { Phone, Mountain, Shield, Home as HomeIcon, TrendingUp, Calculator, Sear
 import type { Metadata } from "next";
 import { agentInfo, officeInfo, marketStats, siteConfig } from "@/lib/site-config";
 import {
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateNeighborhoodSchema,
   generateWebPageSchema,
@@ -93,11 +92,6 @@ const imrGeoSchema = combineSchemas(
     dateModified: "2026-08-03",
     speakableCssSelectors: ["#tldr", "#faq"],
   }),
-  generateBreadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "Neighborhoods", url: "/neighborhoods" },
-    { name: "Iron Mountain Ranch", url: "/neighborhoods/iron-mountain-ranch" },
-  ]),
   generateNeighborhoodSchema({
     name: "Iron Mountain Ranch",
     slug: "iron-mountain-ranch",
