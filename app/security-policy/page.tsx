@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import ImrHyperlocalBand from '@/components/sections/ImrHyperlocalBand'
 import RealScoutListings from '@/components/realscout/RealScoutListings'
+import Footer from '@/components/layouts/Footer'
 
 export const metadata: Metadata = {
   title: 'Security Policy',
@@ -267,17 +268,18 @@ export default function SecurityPolicyPage() {
           </section>
 
           {/* Last Updated */}
-          <footer className="border-t pt-6 mt-12">
+          <div className="border-t pt-6 mt-12">
             <p className="text-sm text-gray-500">
               Last updated: February 14, 2026
             </p>
             <p className="text-sm text-gray-500">
               This policy is reviewed and updated regularly.
             </p>
-          </footer>
+          </div>
         </div>
       </div>
       <ImrHyperlocalBand topic="general" showFaq={false} />
+      <Footer />
     </div>
   )
 }

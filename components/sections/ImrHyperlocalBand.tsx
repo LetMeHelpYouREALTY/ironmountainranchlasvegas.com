@@ -80,8 +80,6 @@ export default function ImrHyperlocalBand({
             <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-blue-600" aria-hidden />
             <span>
               {IMR_NAP.addressFull}
-              <br />
-              License {IMR_NAP.license}
             </span>
           </p>
         </div>

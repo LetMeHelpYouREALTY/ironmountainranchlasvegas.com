@@ -4,7 +4,7 @@ const features = [
   {
     icon: Shield,
     title: "Trusted Expertise",
-    description: "Hyperlocal Iron Mountain Ranch expertise, serving Las Vegas since 2008 with proven results.",
+    description: "Hyperlocal Iron Mountain Ranch expertise, in real estate since 1983 with proven results.",
   },
   {
     icon: TrendingUp,

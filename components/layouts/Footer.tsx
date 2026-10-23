@@ -226,7 +226,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-slate-500 text-xs mt-4 text-center">
-            {agentInfo.name}, REALTOR® | License {agentInfo.license} | {agentInfo.brokerage}
+            {agentInfo.name}, REALTOR® | {agentInfo.brokerage} since September 2008 · License {agentInfo.license}
           </p>
           <p className="text-slate-600 text-xs mt-2 text-center max-w-3xl mx-auto">
             {officeInfo.address.full} · {agentInfo.phoneFormatted}

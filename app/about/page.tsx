@@ -23,7 +23,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | local Las Vegas",
   description:
-    "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Serving Las Vegas since 2008, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. In real estate since 1983, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy",
     "Iron Mountain Ranch realtor",
@@ -41,7 +41,7 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Licensed real estate agent — Homes by Dr. Jan Duffy, specializing in Iron Mountain Ranch and northwest Las Vegas, serving the Las Vegas Valley since 2008.",
+    "Licensed real estate agent — Homes by Dr. Jan Duffy, specializing in Iron Mountain Ranch and northwest Las Vegas, in real estate since 1983.",
   telephone: "+17025001942",
   email: "DrDuffy@IronMountainRanchLasVegas.com",
   url: "https://www.ironmountainranchlasvegas.com/about",
@@ -141,7 +141,7 @@ export default function AboutPage() {
               Your Iron Mountain Ranch REALTOR® — Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-600">
-              Dr. Jan Duffy has been serving Las Vegas since 2008—backed by the most
+              Dr. Jan Duffy has been in real estate since 1983—backed by the most
               trusted name in real estate. Whether you're buying, selling, investing, or 
               relocating, you'll receive expert guidance with integrity and professionalism.
             </p>
@@ -155,7 +155,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Dr. Jan Duffy</h2>
                 <p className="text-lg text-blue-600 mb-6">
-                  REALTOR® | License S.0197614.LLC
+                  Top 1% Las Vegas REALTOR® | In real estate since 1983
                 </p>
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
@@ -166,7 +166,7 @@ export default function AboutPage() {
                     world-class resources and local expertise to every client I serve.
                   </p>
                   <p>
-                    Since 2008, I've closed $127 million in transactions and
+                    I've closed $127 million in transactions and
                     helped hundreds of families find their perfect home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
@@ -257,8 +257,8 @@ export default function AboutPage() {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 2008</div>
-                    <div className="text-sm text-slate-600">Serving Las Vegas</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 1983</div>
+                    <div className="text-sm text-slate-600">In Real Estate</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">$127M+</div>

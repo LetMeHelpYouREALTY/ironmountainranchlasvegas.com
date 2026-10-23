@@ -494,7 +494,7 @@ export default function IronMountainRanchPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Iron Mountain Ranch | Homes by Dr. Jan Duffy | License S.0197614.LLC
+              Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
           </section>
         </div>

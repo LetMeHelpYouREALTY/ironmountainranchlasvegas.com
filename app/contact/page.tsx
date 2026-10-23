@@ -81,7 +81,7 @@ export default function ContactPage() {
                 Whether you're buying or selling in Iron Mountain Ranch, exploring the northwest
                 Las Vegas corridor, or considering an investment property, I'm here to provide
                 expert guidance backed by the trusted{" "}
-                <strong>Homes by Dr. Jan Duffy</strong> brand. Serving Las Vegas since 2008
+                <strong>Homes by Dr. Jan Duffy</strong> brand. In real estate since 1983
                 with $127M+ in closed transactions — with hyperlocal focus on Iron Mountain Ranch
                 (89131 &amp; 89143).
               </p>
@@ -196,7 +196,7 @@ export default function ContactPage() {
               <div className="p-4 bg-blue-50 rounded-lg">
                 <p className="text-sm text-slate-700">
                   <strong>Dr. Jan Duffy, REALTOR®</strong><br />
-                  License S.0197614.LLC<br />
+                  In real estate since 1983<br />
                   Iron Mountain Ranch | Homes by Dr. Jan Duffy
                 </p>
               </div>
@@ -229,7 +229,7 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <Star className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions serving Las Vegas since 2008.
+                      <strong className="text-white">Proven Results:</strong> $127M+ in closed transactions; in real estate since 1983.
                     </p>
                   </div>
                   <div className="flex items-start">

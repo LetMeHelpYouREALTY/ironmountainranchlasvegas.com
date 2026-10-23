@@ -34,7 +34,7 @@ const FAQ_SECTION_COPY: Record<
   },
   search: {
     title: "Las Vegas Home Search FAQ",
-    subtitle: "Straight answers from a Las Vegas market expert since 2008",
+    subtitle: "Straight answers from a Las Vegas market expert in real estate since 1983",
   },
   lifestyle: {
     title: "Moving to Las Vegas FAQ",
@@ -216,7 +216,7 @@ export default async function Home() {
               {[
                 { icon: Shield, title: "IMR Specialist", desc: "Hyperlocal Iron Mountain Ranch expertise — village by village" },
                 { icon: Users, title: "Direct Access", desc: "Call or text Dr. Jan — she answers her own phone" },
-                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood since 2008" },
+                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood" },
                 { icon: HomeIcon, title: "Full Service", desc: "Buying, selling, 55+, luxury, investment — one expert handles it all" },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center p-6">
@@ -307,7 +307,7 @@ export default async function Home() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy | License {agentInfo.license} | Iron Mountain Ranch | Homes by Dr. Jan Duffy
+              Dr. Jan Duffy | Iron Mountain Ranch | Homes by Dr. Jan Duffy
             </p>
             <p className="mt-2 text-blue-200/80 text-xs">
               {officeInfo.address.full} · {agentInfo.phone}
