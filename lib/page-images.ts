@@ -136,6 +136,10 @@ export function getPageHeroImage(pathname: string): PageImage {
       src: "/images/neighborhoods/iron-mountain-ranch-gate.jpg",
       alt: "Iron Mountain Ranch and Las Vegas homes for sale",
     },
+    "/amenities": {
+      src: "/images/neighborhoods/centennial-hills.jpg",
+      alt: "Northwest Las Vegas amenities near Iron Mountain Ranch",
+    },
     "/faq": {
       src: "/images/neighborhoods/iron-mountain-ranch-home.jpg",
       alt: "Iron Mountain Ranch real estate FAQ",
