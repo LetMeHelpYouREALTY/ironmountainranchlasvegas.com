@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "sell large home 89131",
     "downsizing Las Vegas",
     "55 plus communities Las Vegas",
-    "downsizing Las Vegas",
+    "single-story homes Las Vegas",
     "Homes by Dr. Jan Duffy downsizing",
   ],
 };
