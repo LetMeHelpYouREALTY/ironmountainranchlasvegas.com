@@ -118,7 +118,7 @@ const specializedServices = [
     title: "Home Valuation Services",
     slug: "home-valuation",
     description:
-      "Free, no-obligation home valuations using current MLS data, recent comparable sales, and deep local market knowledge from a career in real estate since 1983.",
+      "Free, no-obligation home valuations using current MLS data, recent comparable sales, and deep local market knowledge from a license held since 2008 and 35 years in Las Vegas.",
     highlights: ["Accurate pricing", "No obligation", "Detailed analysis", "Market trends"],
   },
 ];
@@ -192,15 +192,15 @@ export default function ServicesPage() {
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>In Real Estate Since 1983</span>
+                <span>Licensed Since 2008 · 35 Years in Las Vegas</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>$127M+ in Transactions</span>
+                <span>$127M+ in Team Career Sales</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>500+ Satisfied Clients</span>
+                <span>500+ Team Sales</span>
               </div>
             </div>
           </div>
@@ -376,7 +376,7 @@ export default function ServicesPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-8">
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">Since 1983</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">Licensed Since 2008</div>
                 <div className="text-slate-300 text-sm">In Real Estate</div>
               </div>
               <div>

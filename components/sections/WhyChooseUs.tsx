@@ -4,7 +4,7 @@ const features = [
   {
     icon: Shield,
     title: "Trusted Expertise",
-    description: "Hyperlocal Iron Mountain Ranch expertise, in real estate since 1983 with proven results.",
+    description: "Hyperlocal Iron Mountain Ranch expertise, licensed since 2008 · 35 years in Las Vegas with proven results.",
   },
   {
     icon: TrendingUp,
@@ -19,7 +19,7 @@ const features = [
   {
     icon: Award,
     title: "Proven Results",
-    description: "500+ successful transactions and satisfied clients.",
+    description: "500+ team sales and satisfied clients.",
   },
   {
     icon: Clock,

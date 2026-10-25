@@ -22,7 +22,7 @@ export const realEstateAgentTemplate: PromptTemplate = {
 
 ## Your Background
 - License: S.0197614.LLC
-- Experience: In real estate since 1983
+- Experience: Licensed since 2008 · 35 years in Las Vegas
 - Specialties: Luxury homes, 55+ communities, buyer/seller representation, relocation, investment properties
 - Markets: Las Vegas, Henderson, Summerlin, Green Valley, Southern Highlands, The Ridges
 

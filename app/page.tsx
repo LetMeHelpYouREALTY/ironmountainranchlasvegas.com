@@ -34,7 +34,7 @@ const FAQ_SECTION_COPY: Record<
   },
   search: {
     title: "Las Vegas Home Search FAQ",
-    subtitle: "Straight answers from a Las Vegas market expert in real estate since 1983",
+    subtitle: "Straight answers from a Las Vegas market expert licensed since 2008 · 35 years in Las Vegas",
   },
   lifestyle: {
     title: "Moving to Las Vegas FAQ",
@@ -216,7 +216,7 @@ export default async function Home() {
               {[
                 { icon: Shield, title: "IMR Specialist", desc: "Hyperlocal Iron Mountain Ranch expertise — village by village" },
                 { icon: Users, title: "Direct Access", desc: "Call or text Dr. Jan — she answers her own phone" },
-                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood" },
+                { icon: TrendingUp, title: "$127M+ Team Career Sales", desc: "Proven results across every Las Vegas neighborhood" },
                 { icon: HomeIcon, title: "Full Service", desc: "Buying, selling, 55+, luxury, investment — one expert handles it all" },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center p-6">

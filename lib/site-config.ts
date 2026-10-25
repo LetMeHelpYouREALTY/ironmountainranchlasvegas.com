@@ -108,7 +108,7 @@ export const marketStats = {
 
 // Agent Stats
 export const agentStats = {
-  servingSince: 1983,
+  servingSince: 2008,
   transactionsClosed: 500,
   volumeClosed: "$127M+",
   averageRating: 4.9,
@@ -121,7 +121,7 @@ export const valuePropositions = {
   trust:
     "Dr. Jan Duffy focuses on Iron Mountain Ranch and northwest Las Vegas — gated villages, large lots, and live MLS comps by village.",
   expertise:
-    "In real estate since 1983 with $127M+ in closed transactions, Dr. Jan Duffy combines deep Iron Mountain Ranch knowledge with direct, personal service.",
+    "Licensed since 2008 · 35 years in Las Vegas with $127M+ in Dr. Duffy Group career sales, Dr. Jan Duffy combines deep Iron Mountain Ranch knowledge with direct, personal service.",
 };
 
 // Neighborhoods served — Iron Mountain Ranch is the primary hyperlocal focus
@@ -292,7 +292,7 @@ export const commonFAQs = {
     {
       question: "What is Dr. Jan Duffy's experience in Las Vegas real estate?",
       answer:
-        "Dr. Jan Duffy has been in real estate since 1983, with $127M+ in closed transactions and 500+ satisfied clients. Her hyperlocal specialty is Iron Mountain Ranch in northwest Las Vegas, where she tracks every sale across the community's 9 villages.",
+        "Dr. Jan Duffy has been licensed since 2008 (35 years in Las Vegas), with $127M+ in Dr. Duffy Group career sales and 500+ team sales. Her hyperlocal specialty is Iron Mountain Ranch in northwest Las Vegas, where she tracks every sale across the community's 9 villages.",
     },
     {
       question: "Why work with an Iron Mountain Ranch specialist instead of a general Las Vegas agent?",
