@@ -28,7 +28,7 @@ export const defaultFaqs: FAQ[] = [
   {
     question: "What makes you different from other real estate agents?",
     answer:
-      "In real estate since 1983 with 500+ successful transactions, Dr. Jan Duffy combines Iron Mountain Ranch village-level knowledge with direct, personalized service—so you always know who is representing you.",
+      "Licensed since 2008 · 35 years in Las Vegas with 500+ team sales, Dr. Jan Duffy combines Iron Mountain Ranch village-level knowledge with direct, personalized service—so you always know who is representing you.",
   },
   {
     question: "Can you help with investment properties?",
