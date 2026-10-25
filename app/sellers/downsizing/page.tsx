@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "sell large home 89131",
     "downsizing Las Vegas",
     "55 plus communities Las Vegas",
-    "empty nester Las Vegas",
+    "single-story homes Las Vegas",
     "Homes by Dr. Jan Duffy downsizing",
   ],
 };
@@ -183,7 +183,7 @@ export default function DownsizingPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Professional staging that showcases family-friendly features</span>
+                    <span>Professional staging that showcases open floor plans and outdoor space</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
