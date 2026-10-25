@@ -145,7 +145,7 @@ export default function SouthernHighlandsPage() {
                 <strong>Homes by Dr. Jan Duffy</strong> represents buyers
                 and sellers in Southern Highlands. Dr. Jan Duffy has been in real estate since 1983. Dr. Jan Duffy understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
-                course to the family-friendly neighborhoods in the community's newer phases. Whether
+                course to the park-rich neighborhoods in the community's newer phases. Whether
                 you're seeking a golf course lot with Strip views or a spacious family home with top-rated
                 schools, Dr. Jan has the local expertise to guide your search.
               </p>

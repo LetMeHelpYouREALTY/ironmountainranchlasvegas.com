@@ -210,7 +210,7 @@ export default function ListingsPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Each Las Vegas neighborhood offers a unique lifestyle, from the resort-style living 
-              of Summerlin to the family-friendly communities of Henderson. Understanding these 
+              of Summerlin to the master-planned communities of Henderson. Understanding these 
               differences is crucial to finding a home that fits your needs. As a Homes by Dr. Jan Duffy agent in real estate since 1983, Dr. Jan Duffy provides 
               expert guidance on which neighborhoods match your priorities—whether that's schools, 
               commute times, amenities, or investment potential.
