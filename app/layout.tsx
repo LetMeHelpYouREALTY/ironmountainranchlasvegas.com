@@ -19,7 +19,7 @@ import { cfOgImageUrl } from "@/lib/cf-images";
 import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout-config";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const config = getDomainConfig(domain);
   const canonicalHost =
     config.domain !== "default" ? `https://www.${config.domain}` : siteConfig.url;

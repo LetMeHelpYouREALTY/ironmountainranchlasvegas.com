@@ -6,8 +6,8 @@ import { generateBreadcrumbSchema } from "@/lib/schema";
 /**
  * Emits BreadcrumbList JSON-LD for inner pages based on the request pathname.
  */
-export default function PageBreadcrumbSchema() {
-  const pathname = headers().get("x-pathname") ?? "/";
+export default async function PageBreadcrumbSchema() {
+  const pathname = (await headers()).get("x-pathname") ?? "/";
   const items = resolvePageBreadcrumbs(pathname);
 
   if (!items) {
