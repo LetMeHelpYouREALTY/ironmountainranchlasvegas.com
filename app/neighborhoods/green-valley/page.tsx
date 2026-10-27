@@ -52,7 +52,7 @@ const faqSchema = {
       name: "Is Green Valley a good investment?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand from families seeking top schools and safety. experienced agents can provide detailed market analysis.",
+        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand for its mature landscaping and central Henderson location. experienced agents can provide detailed market analysis.",
       },
     },
   ],
@@ -183,8 +183,8 @@ export default function GreenValleyPage() {
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Green Valley School Districts</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  Green Valley is home to some of Henderson's most sought-after schools with 35+ years
-                  of proven excellence:
+                  Green Valley is served by Clark County School District schools, including Green Valley High
+                  School and Coronado High School, depending on the address:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
@@ -338,8 +338,8 @@ export default function GreenValleyPage() {
                 </h3>
                 <p className="text-slate-600">
                   Green Valley has shown consistent appreciation due to its prime Henderson location,
-                  established infrastructure, and ongoing demand from families seeking top schools and
-                  safety. experienced agents can provide detailed market analysis.
+                  established infrastructure, and ongoing demand for its mature landscaping and central
+                  Henderson location. experienced agents can provide detailed market analysis.
                 </p>
               </div>
             </div>
