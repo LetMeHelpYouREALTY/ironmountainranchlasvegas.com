@@ -211,7 +211,7 @@ export default function ListingsPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Each Las Vegas neighborhood offers a unique lifestyle, from the resort-style living 
               of Summerlin to the communities of Henderson. Understanding these 
-              differences is crucial to finding a home that fits your needs. As a Homes by Dr. Jan Duffy agent in real estate since 1983, Dr. Jan Duffy provides 
+              differences is crucial to finding a home that fits your needs. As a Homes by Dr. Jan Duffy agent licensed since 2008 · 35 years in Las Vegas, Dr. Jan Duffy provides 
               expert guidance on which neighborhoods match your priorities—whether that's schools, 
               commute times, amenities, or investment potential.
             </p>
@@ -248,7 +248,7 @@ export default function ListingsPage() {
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
               In today&apos;s competitive Las Vegas market, expert representation can mean the
               difference between winning your dream home and losing out. Dr. Jan Duffy brings
-              Iron Mountain Ranch village-level knowledge from a career in real estate since 1983.
+              Iron Mountain Ranch village-level knowledge from a career licensed since 2008 · 35 years in Las Vegas.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
