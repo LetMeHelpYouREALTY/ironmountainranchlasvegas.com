@@ -454,7 +454,7 @@ export default function IronMountainRanchPage() {
             <div className="grid md:grid-cols-3 gap-4">
               <Link href="/neighborhoods/centennial-hills" className="bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg hover:border-blue-300 transition-all">
                 <h3 className="font-bold text-slate-900 mb-1">Centennial Hills</h3>
-                <p className="text-slate-600 text-sm">The surrounding northwest district — retail, hospital, and established neighborhoods.</p>
+                <p className="text-slate-600 text-sm">The surrounding northwest district — retail, hospital, and older neighborhoods.</p>
               </Link>
               <Link href="/neighborhoods/skye-canyon" className="bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg hover:border-blue-300 transition-all">
                 <h3 className="font-bold text-slate-900 mb-1">Skye Canyon</h3>
