@@ -174,13 +174,6 @@ export function generateRealEstateAgentSchema() {
       "@type": "RealEstateAgent",
       name: agentInfo.brokerage,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: agentStats.averageRating.toString(),
-      reviewCount: agentStats.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
     knowsAbout: [
       "Iron Mountain Ranch real estate",
       "Northwest Las Vegas gated communities",
@@ -307,10 +300,6 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
     name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
-    aggregateRating: generateAggregateRatingSchema(
-      agentStats.averageRating,
-      agentStats.reviewCount
-    ),
     review: reviews.map((review) => ({
       "@type": "Review",
       author: {

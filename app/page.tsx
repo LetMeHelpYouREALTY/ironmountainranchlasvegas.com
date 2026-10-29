@@ -102,11 +102,6 @@ export default async function Home() {
       "@type": "Place",
       name: `${config.neighborhood}, Las Vegas, NV`,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: String(agentStats.averageRating),
-      reviewCount: String(agentStats.reviewCount),
-    },
   };
 
   const faqSchema = generateFAQSchema(faqs);
@@ -191,7 +186,7 @@ export default async function Home() {
                 <span>Las Vegas Experience</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">{agentStats.averageRating}★</span>
+                <span className="font-semibold text-white">{agentStats.averageRating.toFixed(1)}★</span>
                 <span>Client Rating</span>
               </div>
             </div>
