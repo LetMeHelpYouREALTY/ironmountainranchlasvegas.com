@@ -12,8 +12,8 @@ export const businessInfo = {
     addressCountry: "US",
   },
   phone: {
-    display: "(702) 500-1942",
-    tel: "+17025001942",
+    display: "(702) 500-1955",
+    tel: "+17025001955",
   },
   email: "DrDuffy@IronMountainRanchLasVegas.com",
   url: "https://www.ironmountainranchlasvegas.com", // Canonical IMR host for GEO / NAP
@@ -165,7 +165,7 @@ Dr. Jan's approach is simple: treat every client like family, know the market in
 
 55+ active adult community specialization covers Sun City Summerlin (Nevada's largest 55+ community), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Investment property expertise spans single-family rentals, multi-family opportunities, and short-term rental analysis across the Las Vegas metro area.
 
-Office located at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Call (702) 500-1942 for a free consultation or visit ironmountainranchlasvegas.com for Iron Mountain Ranch homes and REALTOR® services.`,
+Office located at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Call (702) 500-1955 for a free consultation or visit ironmountainranchlasvegas.com for Iron Mountain Ranch homes and REALTOR® services.`,
 };
 
 // FAQ Schema for GBP Q&A section
@@ -176,11 +176,11 @@ export const gbpFAQs = [
   },
   {
     question: "Is Dr. Jan Duffy an Iron Mountain Ranch specialist?",
-    answer: "Yes. Dr. Jan tracks every listing and sale across Iron Mountain Ranch's 9 villages — gated access details, LMA dues, lot premiums, and floor plans. Iron Mountain Ranch currently lists at a median of about $535,000 with roughly 28 active listings. Call (702) 500-1942 for a live comp pull.",
+    answer: "Yes. Dr. Jan tracks every listing and sale across Iron Mountain Ranch's 9 villages — gated access details, LMA dues, lot premiums, and floor plans. Iron Mountain Ranch currently lists at a median of about $535,000 with roughly 28 active listings. Call (702) 500-1955 for a live comp pull.",
   },
   {
     question: "Does Dr. Jan help buyers relocating from California?",
-    answer: "Yes! California relocation is a specialty. Dr. Jan helps CA buyers understand Nevada's 0% state income tax advantage, compare home values (40-60% lower than comparable CA properties), and find the perfect Las Vegas neighborhood. Call (702) 500-1942 for California relocation assistance.",
+    answer: "Yes! California relocation is a specialty. Dr. Jan helps CA buyers understand Nevada's 0% state income tax advantage, compare home values (40-60% lower than comparable CA properties), and find the perfect Las Vegas neighborhood. Call (702) 500-1955 for California relocation assistance.",
   },
   {
     question: "What 55+ communities does Dr. Jan specialize in?",
@@ -192,7 +192,7 @@ export const gbpFAQs = [
   },
   {
     question: "How does Dr. Jan help with probate or divorce real estate sales?",
-    answer: "Dr. Jan handles sensitive transactions with discretion and professionalism. For probate sales, she coordinates with estate attorneys and ensures court compliance. For divorce sales, she provides neutral representation and works with both parties' attorneys. Call (702) 500-1942 for a confidential consultation.",
+    answer: "Dr. Jan handles sensitive transactions with discretion and professionalism. For probate sales, she coordinates with estate attorneys and ensures court compliance. For divorce sales, she provides neutral representation and works with both parties' attorneys. Call (702) 500-1955 for a confidential consultation.",
   },
   {
     question: "What is the average home price in Las Vegas in 2026?",
@@ -204,15 +204,15 @@ export const gbpFAQs = [
   },
   {
     question: "Why work with an Iron Mountain Ranch specialist?",
-    answer: "You get a hyperlocal Iron Mountain Ranch specialist who tracks every listing across all 9 villages — call (702) 500-1942.",
+    answer: "You get a hyperlocal Iron Mountain Ranch specialist who tracks every listing across all 9 villages — call (702) 500-1955.",
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",
-    answer: "Call or text (702) 500-1942 for immediate assistance, or email DrDuffy@IronMountainRanchLasVegas.com (general) or DrDuffySells@IronMountainRanchLasVegas.com (selling). Office visits available at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
+    answer: "Call or text (702) 500-1955 for immediate assistance, or email DrDuffy@IronMountainRanchLasVegas.com (general) or DrDuffySells@IronMountainRanchLasVegas.com (selling). Office visits available at 7960 N Decatur Blvd, Suite B, North Las Vegas, NV 89085. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
   },
   {
     question: "Does Dr. Jan help with investment properties in Las Vegas?",
-    answer: "Yes! Dr. Jan provides investment property consulting including rental property analysis, cap rate calculations, short-term rental regulations, and multi-family opportunities across the Las Vegas Valley. Contact (702) 500-1942 for investment property guidance.",
+    answer: "Yes! Dr. Jan provides investment property consulting including rental property analysis, cap rate calculations, short-term rental regulations, and multi-family opportunities across the Las Vegas Valley. Contact (702) 500-1955 for investment property guidance.",
   },
 ];
 

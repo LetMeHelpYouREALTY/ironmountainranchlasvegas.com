@@ -19,7 +19,7 @@ import { DECATUR_RETAIL_CORRIDOR } from "@/lib/imr-nearby";
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch Homes for Sale | REALTOR® Services | Las Vegas 89131",
   description:
-    "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). 9 gated villages, 2,000–4,500 sq ft homes, median $535K. Dr. Jan Duffy, your Iron Mountain Ranch REALTOR®. Call (702) 500-1942.",
+    "Iron Mountain Ranch homes for sale in northwest Las Vegas (89131 & 89143). 9 gated villages, 2,000–4,500 sq ft homes, median $535K. Dr. Jan Duffy, your Iron Mountain Ranch REALTOR®. Call (702) 500-1955.",
   keywords: [
     "Iron Mountain Ranch homes for sale",
     "Iron Mountain Ranch Las Vegas",
@@ -76,7 +76,7 @@ const imrFaqs = [
   {
     question: "Why hire an Iron Mountain Ranch specialist REALTOR®?",
     answer:
-      "With only about 28 active listings across 9 villages, hyperlocal knowledge matters: which villages are gated, what the LMA covers, how lot sizes vary, and what identical floor plans closed for last month. Dr. Jan Duffy tracks every Iron Mountain Ranch sale and provides free village-specific valuations. Call (702) 500-1942.",
+      "With only about 28 active listings across 9 villages, hyperlocal knowledge matters: which villages are gated, what the LMA covers, how lot sizes vary, and what identical floor plans closed for last month. Dr. Jan Duffy tracks every Iron Mountain Ranch sale and provides free village-specific valuations. Call (702) 500-1955.",
   },
 ];
 
@@ -115,7 +115,7 @@ const imrGeoSchema = combineSchemas(
       },
       {
         name: "Get village-specific comps",
-        text: "Ask Dr. Jan Duffy for a live MLS comp pull by village — not a zip-code average. Call (702) 500-1942.",
+        text: "Ask Dr. Jan Duffy for a live MLS comp pull by village — not a zip-code average. Call (702) 500-1955.",
       },
       {
         name: "Set listing alerts",
@@ -137,7 +137,7 @@ const imrGeoSchema = combineSchemas(
     "@id": `${pageUrl}#agent`,
     name: "Dr. Jan Duffy - Iron Mountain Ranch Real Estate",
     url: pageUrl,
-    telephone: "+17025001942",
+    telephone: "+17025001955",
     email: agentInfo.email,
     address: {
       "@type": "PostalAddress",
@@ -290,11 +290,11 @@ export default function IronMountainRanchPage() {
             </div>
             <div className="text-center mt-8">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942 for Iron Mountain Ranch Service
+                Call (702) 500-1955 for Iron Mountain Ranch Service
               </a>
             </div>
           </section>
@@ -368,7 +368,7 @@ export default function IronMountainRanchPage() {
                   with several charter and private options in the surrounding Centennial Hills area.
                   School zoning is address-specific and can differ between villages — Dr. Jan
                   provides exact school assignments for any home you are considering before you
-                  write an offer. Call (702) 500-1942 for zoning on a specific address.
+                  write an offer. Call (702) 500-1955 for zoning on a specific address.
                 </p>
               </div>
 
@@ -479,11 +479,11 @@ export default function IronMountainRanchPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <Link
                 href="/home-valuation"

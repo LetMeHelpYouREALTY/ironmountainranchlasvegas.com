@@ -9,7 +9,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Investment Properties Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
-    "Invest in Iron Mountain Ranch and Las Vegas real estate with Dr. Jan Duffy. Rental analysis for 89131 (median rent ~$2,160/mo), ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1942.",
+    "Invest in Iron Mountain Ranch and Las Vegas real estate with Dr. Jan Duffy. Rental analysis for 89131 (median rent ~$2,160/mo), ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1955.",
   keywords: [
     "Iron Mountain Ranch investment property",
     "89131 rental property",
@@ -446,11 +446,11 @@ export default function InvestmentPropertiesPage() {
               Homes by Dr. Jan Duffy.
             </p>
             <a
-              href="tel:+17025001942"
+              href="tel:+17025001955"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call (702) 500-1942
+              Call (702) 500-1955
             </a>
             <p className="mt-4 text-slate-400 text-sm">
               Iron Mountain Ranch | Homes by Dr. Jan Duffy

@@ -96,7 +96,7 @@ export function generateRealEstateAgentSchema() {
     logo: `${BASE_URL}/images/dr-jan-duffy.jpg`,
     image: `${BASE_URL}/images/dr-jan-duffy.jpg`,
     description: siteConfig.description,
-    telephone: "+1-702-500-1942",
+    telephone: "+1-702-500-1955",
     email: agentInfo.email,
     priceRange: "$385K - $10M+",
     address: {
@@ -589,7 +589,7 @@ export function generatePersonSchema() {
     description:
       "REALTOR® specializing in Iron Mountain Ranch and northwest Las Vegas gated communities. License S.0197614.LLC.",
     url: BASE_URL,
-    telephone: "+1-702-500-1942",
+    telephone: "+1-702-500-1955",
     email: agentInfo.email,
     image: `${BASE_URL}/images/dr-jan-duffy.jpg`,
     worksFor: {

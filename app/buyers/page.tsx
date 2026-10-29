@@ -24,7 +24,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Buy a Home in Iron Mountain Ranch Las Vegas | Homes by Dr. Jan Duffy",
   description:
-    "Buying in Iron Mountain Ranch or northwest Las Vegas (89131)? Dr. Jan Duffy delivers village-by-village guidance, real-time listing alerts, and free buyer representation. Call (702) 500-1942.",
+    "Buying in Iron Mountain Ranch or northwest Las Vegas (89131)? Dr. Jan Duffy delivers village-by-village guidance, real-time listing alerts, and free buyer representation. Call (702) 500-1955.",
   keywords: [
     "buy home Iron Mountain Ranch",
     "Iron Mountain Ranch buyer agent",
@@ -43,7 +43,7 @@ const buyerSchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
   },
   areaServed: "Iron Mountain Ranch, Centennial Hills, Las Vegas, Henderson, Clark County NV",
   serviceType: "Buyer Representation",
@@ -326,7 +326,7 @@ export default function BuyersPage() {
                 </div>
                 <h3 className="font-bold text-slate-900 mb-2">Direct Access</h3>
                 <p className="text-slate-600 text-sm">
-                  Call or text (702) 500-1942 — Dr. Jan answers her own phone
+                  Call or text (702) 500-1955 — Dr. Jan answers her own phone
                 </p>
               </div>
               <div className="text-center">
@@ -402,7 +402,7 @@ export default function BuyersPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Get answers to the most common questions from Las Vegas home buyers. If you don't 
-              see your question here, call Dr. Jan Duffy at (702) 500-1942 for a free consultation.
+              see your question here, call Dr. Jan Duffy at (702) 500-1955 for a free consultation.
             </p>
             <div className="space-y-4">
               {[
@@ -449,11 +449,11 @@ export default function BuyersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <Link
                 href="/contact"
