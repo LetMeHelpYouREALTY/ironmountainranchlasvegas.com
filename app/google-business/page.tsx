@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
     description:
-      "Trusted Las Vegas REALTOR® in real estate since 1983. Hyperlocal to Iron Mountain Ranch and northwest Las Vegas.",
+      "Trusted Las Vegas REALTOR® licensed since 2008 · 35 years in Las Vegas. Hyperlocal to Iron Mountain Ranch and northwest Las Vegas.",
     url: "https://www.ironmountainranchlasvegas.com/google-business",
     type: "profile",
   },
@@ -81,7 +81,7 @@ export default function GoogleBusinessPage() {
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy — Iron Mountain Ranch REALTOR®
                   </h1>
-                  <p className="text-xl text-blue-200 mb-2">REALTOR® | In real estate since 1983</p>
+                  <p className="text-xl text-blue-200 mb-2">REALTOR® | Licensed since 2008 · 35 years in Las Vegas</p>
                   <p className="text-slate-300 mb-6">Iron Mountain Ranch | Homes by Dr. Jan Duffy</p>
                   
                   {/* NAP - Exact match to GBP */}

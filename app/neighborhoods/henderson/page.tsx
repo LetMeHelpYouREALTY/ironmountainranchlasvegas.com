@@ -64,7 +64,7 @@ const faqSchema = {
       name: "Why choose Homes by Dr. Jan Duffy for Henderson real estate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Homes by Dr. Jan Duffy serves Henderson, in real estate since 1983. Our agents like Dr. Jan Duffy know every community, school district, and HOA. Local market expertise provides trust and resources that benefit both buyers and sellers.",
+        text: "Homes by Dr. Jan Duffy serves Henderson, licensed since 2008 · 35 years in Las Vegas. Our agents like Dr. Jan Duffy know every community, school district, and HOA. Local market expertise provides trust and resources that benefit both buyers and sellers.",
       },
     },
   ],
@@ -144,7 +144,7 @@ export default function HendersonPage() {
               <p>
                 <strong>Henderson</strong> has quietly become one of the most desirable cities in the American
                 Southwest. As Nevada's second-largest city with over 320,000 residents, Henderson offers the
-                perfect balance of suburban tranquility and urban convenience. Dr. Jan Duffy has been helping families find their Henderson dream homes as a REALTOR® in real estate since 1983,
+                perfect balance of suburban tranquility and urban convenience. Dr. Jan Duffy has been helping families find their Henderson dream homes as a REALTOR® licensed since 2008 · 35 years in Las Vegas,
                 and Dr. Jan Duffy brings unmatched expertise to every transaction.
               </p>
               <p>
@@ -373,7 +373,7 @@ export default function HendersonPage() {
                   Why choose Homes by Dr. Jan Duffy for Henderson real estate?
                 </h3>
                 <p className="text-slate-600">
-                  Homes by Dr. Jan Duffy serves Henderson, in real estate since 1983. Our agents like Dr. Jan Duffy
+                  Homes by Dr. Jan Duffy serves Henderson, licensed since 2008 · 35 years in Las Vegas. Our agents like Dr. Jan Duffy
                   know every community, school district, and HOA. Local market expertise provides
                   trust and resources that benefit both buyers and sellers.
                 </p>

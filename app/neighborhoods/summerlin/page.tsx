@@ -280,7 +280,7 @@ export default function SummerlinPage() {
               <p>
                 Working with a <strong>Homes by Dr. Jan Duffy</strong> agent gives you access to listings
                 before they hit the market, expert negotiation skills, and the backing of a globally trusted brand.
-                Dr. Jan Duffy has been in real estate since 1983, which means you'll have insights that online 
+                Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
                 offer the best construction quality.
               </p>
@@ -291,8 +291,7 @@ export default function SummerlinPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Summerlin isn't just a neighborhood—it's a lifestyle. I've been in real estate since
-                1983, and I can tell you exactly which villages have the floor plans you want, which offer the
+                "Summerlin isn't just a neighborhood—it's a lifestyle. I've been licensed since 2008 · 35 years in Las Vegas, and I can tell you exactly which villages have the floor plans you want, which offer the
                 best investment potential, and where you'll find the hidden gems. That local knowledge is
                 what sets Homes by Dr. Jan Duffy apart."
               </blockquote>

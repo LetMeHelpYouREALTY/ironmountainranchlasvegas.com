@@ -236,7 +236,7 @@ export default function LuxuryHomesPage() {
                 transaction receives my full attention and white-glove service."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Homes by Dr. Jan Duffy | In Real Estate Since 1983
+                — Dr. Jan Duffy, Homes by Dr. Jan Duffy | Licensed Since 2008
               </cite>
             </div>
           </section>

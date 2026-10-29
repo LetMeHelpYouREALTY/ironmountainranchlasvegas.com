@@ -96,8 +96,8 @@ export default function HeroSection() {
             <span>Properties Sold</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">Since 1983</span>
-            <span>In Real Estate</span>
+            <span className="font-semibold">Since 2008</span>
+            <span>Licensed</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="font-semibold">4.9★</span>

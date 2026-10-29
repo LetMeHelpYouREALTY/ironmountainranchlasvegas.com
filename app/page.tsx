@@ -34,7 +34,7 @@ const FAQ_SECTION_COPY: Record<
   },
   search: {
     title: "Las Vegas Home Search FAQ",
-    subtitle: "Straight answers from a Las Vegas market expert in real estate since 1983",
+    subtitle: "Straight answers from a Las Vegas market expert licensed since 2008 · 35 years in Las Vegas",
   },
   lifestyle: {
     title: "Moving to Las Vegas FAQ",
