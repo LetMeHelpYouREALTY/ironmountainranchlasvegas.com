@@ -71,7 +71,7 @@ const DEMO_PROPERTIES: Record<
     squareFeet: 4500,
     yearBuilt: 2015,
     description:
-      "Elegant Green Valley estate with formal living spaces, chef’s kitchen, and a resort-style backyard. Premium finishes throughout in one of Henderson’s most established communities.",
+      "Elegant Green Valley estate with formal living spaces, chef’s kitchen, and a resort-style backyard. Premium finishes throughout in one of Henderson’s older communities.",
   },
 };
 
