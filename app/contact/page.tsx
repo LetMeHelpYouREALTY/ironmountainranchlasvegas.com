@@ -11,7 +11,7 @@ import { agentInfo } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Contact Your Iron Mountain Ranch REALTOR® | Dr. Jan Duffy | Las Vegas",
   description:
-    "Contact Your Iron Mountain Ranch REALTOR®, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Schedule an appointment or call (702) 500-1942. Serving 89131, 89143 & all Las Vegas.",
+    "Contact Your Iron Mountain Ranch REALTOR®, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Schedule an appointment or call (702) 500-1955. Serving 89131, 89143 & all Las Vegas.",
   keywords: [
     "Iron Mountain Ranch realtor contact",
     "contact real estate agent Las Vegas",
@@ -28,7 +28,7 @@ const contactSchema = {
   mainEntity: {
     "@type": "RealEstateAgent",
     name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
     email: "DrDuffy@IronMountainRanchLasVegas.com",
     address: {
       "@type": "PostalAddress",
@@ -93,10 +93,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Phone (Call or Text)</h3>
                     <a
-                      href="tel:+17025001942"
+                      href="tel:+17025001955"
                       className="text-2xl font-bold text-blue-600 hover:text-blue-700"
                     >
-                      (702) 500-1942
+                      (702) 500-1955
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
                       Available 7 days a week, 9am-6pm
@@ -235,7 +235,7 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <Users className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-300 text-sm">
-                      <strong className="text-white">Direct Access:</strong> Call or text (702) 500-1942 — Dr. Jan answers her own phone.
+                      <strong className="text-white">Direct Access:</strong> Call or text (702) 500-1955 — Dr. Jan answers her own phone.
                     </p>
                   </div>
                 </div>
@@ -282,13 +282,13 @@ export default function ContactPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl transition-colors"
               >
                 <Phone className="h-8 w-8 mr-4" />
                 <div className="text-left">
                   <div className="font-bold text-lg">Call Now</div>
-                  <div className="text-blue-100">(702) 500-1942</div>
+                  <div className="text-blue-100">(702) 500-1955</div>
                 </div>
               </a>
               <a
@@ -321,7 +321,7 @@ export default function ContactPage() {
                 },
                 {
                   q: "How quickly can you respond to inquiries?",
-                  a: "I typically respond to calls, texts, and emails within 2 hours during business hours (9am-6pm daily). For urgent matters, calling or texting (702) 500-1942 is the fastest way to reach me.",
+                  a: "I typically respond to calls, texts, and emails within 2 hours during business hours (9am-6pm daily). For urgent matters, calling or texting (702) 500-1955 is the fastest way to reach me.",
                 },
                 {
                   q: "Do you charge for consultations?",

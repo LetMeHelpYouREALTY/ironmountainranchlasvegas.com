@@ -23,7 +23,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | local Las Vegas",
   description:
-    "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. In real estate since 1983, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. In real estate since 1983, $127M+ in transactions, hyperlocal to northwest Las Vegas. Call (702) 500-1955.",
   keywords: [
     "Dr. Jan Duffy",
     "Iron Mountain Ranch realtor",
@@ -42,7 +42,7 @@ const personSchema = {
   jobTitle: "REALTOR®",
   description:
     "Licensed real estate agent — Homes by Dr. Jan Duffy, specializing in Iron Mountain Ranch and northwest Las Vegas, in real estate since 1983.",
-  telephone: "+17025001942",
+  telephone: "+17025001955",
   email: "DrDuffy@IronMountainRanchLasVegas.com",
   url: "https://www.ironmountainranchlasvegas.com/about",
   worksFor: {
@@ -194,11 +194,11 @@ export default function AboutPage() {
                   <h3 className="font-bold text-slate-900 mb-4">Contact Dr. Jan Duffy</h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:+17025001942"
+                      href="tel:+17025001955"
                       className="flex items-center text-slate-700 hover:text-blue-600"
                     >
                       <Phone className="h-5 w-5 mr-3 text-blue-600" />
-                      <span className="font-semibold">(702) 500-1942</span>
+                      <span className="font-semibold">(702) 500-1955</span>
                     </a>
                     <a
                       href="mailto:DrDuffy@IronMountainRanchLasVegas.com"
@@ -349,7 +349,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="font-bold text-xl mb-2">Direct Access</h3>
                 <p className="text-slate-300 text-sm">
-                  Call or text Dr. Jan at (702) 500-1942 — she answers her own phone for Iron
+                  Call or text Dr. Jan at (702) 500-1955 — she answers her own phone for Iron
                   Mountain Ranch buyers and sellers.
                 </p>
               </div>
@@ -456,11 +456,11 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <Link
                 href="/contact"

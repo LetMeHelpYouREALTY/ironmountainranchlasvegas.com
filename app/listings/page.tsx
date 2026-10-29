@@ -24,7 +24,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Iron Mountain Ranch Homes for Sale | MLS Property Search | Las Vegas 89131",
   description:
-    "Browse Iron Mountain Ranch and northwest Las Vegas homes for sale with live MLS listings. Search 9 gated villages by price and features. Dr. Jan Duffy. Call (702) 500-1942.",
+    "Browse Iron Mountain Ranch and northwest Las Vegas homes for sale with live MLS listings. Search 9 gated villages by price and features. Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "Iron Mountain Ranch homes for sale",
     "Iron Mountain Ranch MLS listings",
@@ -44,7 +44,7 @@ const listingsSchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
   },
   areaServed: [
     { "@type": "Place", name: "Iron Mountain Ranch, Las Vegas, NV 89131" },
@@ -466,11 +466,11 @@ export default function ListingsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <Link
                 href="/contact"

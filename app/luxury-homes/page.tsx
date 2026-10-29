@@ -23,7 +23,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Luxury Homes Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
-    "Luxury real estate with Dr. Jan Duffy at Homes by Dr. Jan Duffy — Iron Mountain Ranch estates over $1M, plus The Ridges, MacDonald Highlands, and Summerlin. Call (702) 500-1942.",
+    "Luxury real estate with Dr. Jan Duffy at Homes by Dr. Jan Duffy — Iron Mountain Ranch estates over $1M, plus The Ridges, MacDonald Highlands, and Summerlin. Call (702) 500-1955.",
   keywords: [
     "Iron Mountain Ranch luxury homes",
     "Iron Mountain Ranch estates",
@@ -43,7 +43,7 @@ const luxurySchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Iron Mountain Ranch | Homes by Dr. Jan Duffy",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
   },
   areaServed: "Las Vegas, Henderson, Summerlin luxury communities",
   serviceType: "Luxury Real Estate",
@@ -427,11 +427,11 @@ export default function LuxuryHomesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <Link
                 href="/contact"

@@ -225,7 +225,7 @@ export function getImrServiceSchema(serviceName: string, serviceType: string) {
     provider: {
       "@type": "RealEstateAgent",
       name: IMR_NAP.name,
-      telephone: "+17025001942",
+      telephone: "+17025001955",
       email: IMR_NAP.email,
       address: {
         "@type": "PostalAddress",

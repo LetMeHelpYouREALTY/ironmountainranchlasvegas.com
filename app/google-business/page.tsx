@@ -31,7 +31,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® | Iron Mountain Ranch Las Vegas | Homes by Dr. Jan Duffy",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® — Homes by Dr. Jan Duffy, hyperlocal to Iron Mountain Ranch and northwest Las Vegas (89131). Also serving Summerlin, Henderson, and 55+ communities. Call (702) 500-1942.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® — Homes by Dr. Jan Duffy, hyperlocal to Iron Mountain Ranch and northwest Las Vegas (89131). Also serving Summerlin, Henderson, and 55+ communities. Call (702) 500-1955.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Iron Mountain Ranch realtor",
