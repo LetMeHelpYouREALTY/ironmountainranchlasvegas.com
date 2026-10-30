@@ -157,11 +157,6 @@ const imrGeoSchema = combineSchemas(
       "Iron Mountain Ranch home valuations",
       "Northwest Las Vegas gated communities",
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
-    },
   }
 );
 
