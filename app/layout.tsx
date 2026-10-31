@@ -17,6 +17,7 @@ import { siteConfig, agentInfo } from "@/lib/site-config";
 import { DEFAULT_OG_IMAGE } from "@/lib/page-images";
 import { cfOgImageUrl } from "@/lib/cf-images";
 import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout-config";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = (await headers()).get("x-domain") || "";
@@ -111,6 +112,7 @@ export default function RootLayout({
         <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="afterInteractive" />
         {children}
         <Analytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
