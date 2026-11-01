@@ -21,6 +21,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sellers" },
   title: "Sell Your Iron Mountain Ranch Home | Homes by Dr. Jan Duffy Las Vegas",
   description:
     "Sell your Iron Mountain Ranch or northwest Las Vegas home for top dollar with Dr. Jan Duffy. Village-specific pricing, free valuation, world-class local marketing. Call (702) 500-1955.",

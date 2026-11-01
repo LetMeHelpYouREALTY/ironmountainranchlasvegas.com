@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/investment-properties" },
   title: "Investment Properties Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Invest in Iron Mountain Ranch and Las Vegas real estate with Dr. Jan Duffy. Rental analysis for 89131 (median rent ~$2,160/mo), ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1955.",

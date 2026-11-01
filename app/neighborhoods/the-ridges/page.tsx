@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/the-ridges" },
   title: "The Ridges Homes | Las Vegas Luxury Real Estate",
   description:
     "Find luxury homes in The Ridges — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in Summerlin's most exclusive guard-gated community. Median price $2.5M. Call (702) 500-1955.",

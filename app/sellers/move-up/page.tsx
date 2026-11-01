@@ -16,6 +16,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sellers/move-up" },
   title: "Move-Up Sellers Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Ready for your next chapter? Dr. Jan Duffy helps Iron Mountain Ranch and Las Vegas homeowners leverage equity into their dream home — including larger estates within the community's 9 villages. Call (702) 500-1955.",

@@ -20,6 +20,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/buyers/california-relocator" },
   title: "California to Las Vegas Relocation | Iron Mountain Ranch & Northwest Las Vegas",
   description:
     "Moving from California to Las Vegas? Zero state income tax and 40-60% lower home prices. Dr. Jan Duffy helps CA relocators discover Iron Mountain Ranch — gated villages at ~$235/sq ft in northwest Las Vegas. Call (702) 500-1955.",

@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/mountains-edge" },
   title: "Mountains Edge Homes | Southwest Las Vegas",
   description:
     "Find Mountains Edge homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-1955.",

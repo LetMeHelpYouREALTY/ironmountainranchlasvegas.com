@@ -20,6 +20,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/buyers/first-time-buyers" },
   title: "First-Time Home Buyers Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "First-time buyer in Las Vegas? Explore Iron Mountain Ranch townhomes and northwest Las Vegas starter options with down payment assistance and expert guidance from Dr. Jan Duffy. Call (702) 500-1955.",

@@ -22,6 +22,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/listings" },
   title: "Iron Mountain Ranch Homes for Sale | MLS Property Search | Las Vegas 89131",
   description:
     "Browse Iron Mountain Ranch and northwest Las Vegas homes for sale with live MLS listings. Search 9 gated villages by price and features. Dr. Jan Duffy. Call (702) 500-1955.",

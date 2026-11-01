@@ -22,6 +22,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/buyers" },
   title: "Buy a Home in Iron Mountain Ranch Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Buying in Iron Mountain Ranch or northwest Las Vegas (89131)? Dr. Jan Duffy delivers village-by-village guidance, real-time listing alerts, and free buyer representation. Call (702) 500-1955.",

@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/north-las-vegas" },
   title: "North Las Vegas Homes | Affordable Homes",
   description:
     "Find affordable North Las Vegas homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 500-1955.",

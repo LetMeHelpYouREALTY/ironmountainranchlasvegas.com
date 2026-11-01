@@ -18,6 +18,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/market-insights" },
   title: "Iron Mountain Ranch & Las Vegas Market Insights 2026 | Homes by Dr. Jan Duffy",
   description:
     "Market analysis shaping Iron Mountain Ranch and Las Vegas real estate in 2026 — economic forecasts, California migration, and what it means for northwest Las Vegas buyers and sellers. Call (702) 500-1955.",

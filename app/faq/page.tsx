@@ -13,6 +13,7 @@ import {
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faq" },
   title: "FAQ | Iron Mountain Ranch & Las Vegas Real Estate | Homes by Dr. Jan Duffy",
   description:
     "Frequently asked questions about Iron Mountain Ranch and Las Vegas real estate — buying, selling, LMA dues, gated villages, and working with Dr. Jan Duffy at Homes by Dr. Jan Duffy.",

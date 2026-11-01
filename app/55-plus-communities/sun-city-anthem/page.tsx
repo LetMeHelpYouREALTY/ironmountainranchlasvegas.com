@@ -22,6 +22,7 @@ import {
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/55-plus-communities/sun-city-anthem" },
   title: "Sun City Anthem Homes for Sale | Homes by Dr. Jan Duffy",
   description:
     "Henderson's premier 55+ community. Sun City Anthem homes from $350K-$1.2M. 2 championship golf courses, stunning mountain views. Dr. Jan Duffy. Call (702) 500-1955.",

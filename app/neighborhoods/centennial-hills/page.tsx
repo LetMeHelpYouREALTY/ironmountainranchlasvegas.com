@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/centennial-hills" },
   title: "Centennial Hills Homes | Las Vegas Homes",
   description:
     "Find Centennial Hills homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 500-1955.",

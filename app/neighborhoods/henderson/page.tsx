@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/henderson" },
   title: "Henderson Homes | Nevada Real Estate",
   description:
     "Find Henderson homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in Henderson's master-planned communities. Median price $485K. Call (702) 500-1955.",

@@ -23,6 +23,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services" },
   title: "REALTOR® Services Iron Mountain Ranch Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Full REALTOR® services for Iron Mountain Ranch and northwest Las Vegas (89131) from Dr. Jan Duffy — Homes by Dr. Jan Duffy. Buying, selling, valuations, investment, and relocation. Call (702) 500-1955.",

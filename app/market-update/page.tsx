@@ -17,6 +17,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/market-update" },
   title: "Iron Mountain Ranch & Las Vegas Market Update | Homes by Dr. Jan Duffy",
   description:
     "Weekly Iron Mountain Ranch and Las Vegas real estate market update — Homes by Dr. Jan Duffy. Latest stats, notable 89131 sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1955.",

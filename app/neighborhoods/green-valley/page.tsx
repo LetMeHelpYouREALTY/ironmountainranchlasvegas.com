@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/green-valley" },
   title: "Green Valley Homes | Henderson Real Estate",
   description:
     "Find Green Valley homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in one of Henderson's older communities. Median price $520K. Call (702) 500-1955.",

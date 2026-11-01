@@ -17,6 +17,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sellers/relocation" },
   title: "Relocation Home Sales | Iron Mountain Ranch & Las Vegas | local",
   description:
     "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps Iron Mountain Ranch and Las Vegas homeowners sell fast — well-priced 89131 homes go under contract in about 27 days — and coordinates with referral partners nationwide. Call (702) 500-1955.",

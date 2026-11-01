@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods" },
   title: "Iron Mountain Ranch & Las Vegas Neighborhoods | Homes by Dr. Jan Duffy",
   description:
     "Explore Iron Mountain Ranch — our hyperlocal northwest Las Vegas specialty — plus Centennial Hills, Skye Canyon, Summerlin, Henderson, and more with Dr. Jan Duffy at Homes by Dr. Jan Duffy.",

@@ -8,6 +8,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/home-valuation" },
   title: "Free Iron Mountain Ranch Home Valuation | What's Your Home Worth? | Las Vegas 89131",
   description:
     "What's your Iron Mountain Ranch home worth? Free village-specific CMA from Dr. Jan Duffy at Homes by Dr. Jan Duffy — live comps from all 9 villages, 89131 & 89143. Call (702) 500-1955.",

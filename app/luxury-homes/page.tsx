@@ -21,6 +21,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/luxury-homes" },
   title: "Luxury Homes Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Luxury real estate with Dr. Jan Duffy at Homes by Dr. Jan Duffy — Iron Mountain Ranch estates over $1M, plus The Ridges, MacDonald Highlands, and Summerlin. Call (702) 500-1955.",

@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/southern-highlands" },
   title: "Southern Highlands Homes | Las Vegas Golf Community",
   description:
     "Find Southern Highlands homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 500-1955.",

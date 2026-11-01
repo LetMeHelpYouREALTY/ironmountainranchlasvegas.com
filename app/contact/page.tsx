@@ -9,6 +9,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 import { agentInfo } from "@/lib/site-config";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact Your Iron Mountain Ranch REALTOR® | Dr. Jan Duffy | Las Vegas",
   description:
     "Contact Your Iron Mountain Ranch REALTOR®, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Schedule an appointment or call (702) 500-1955. Serving 89131, 89143 & all Las Vegas.",

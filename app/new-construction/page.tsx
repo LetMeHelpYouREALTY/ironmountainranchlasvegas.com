@@ -21,6 +21,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/new-construction" },
   title: "New Construction Near Iron Mountain Ranch | Northwest Las Vegas Buyer's Guide",
   description:
     "Free buyer representation on new construction in northwest Las Vegas — Skye Canyon, Centennial Hills, and communities near Iron Mountain Ranch. Dr. Jan Duffy negotiates builder contracts and upgrades. Call (702) 500-1955.",

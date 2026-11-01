@@ -4,6 +4,7 @@ import RealScoutListings from '@/components/realscout/RealScoutListings'
 import Footer from '@/components/layouts/Footer'
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/security-policy" },
   title: 'Security Policy',
   description: 'Security policy and responsible disclosure for ironmountainranchlasvegas.com — Dr. Jan Duffy, Iron Mountain Ranch REALTOR®.',
   robots: {

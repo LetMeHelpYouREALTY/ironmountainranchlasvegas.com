@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/inspirada" },
   title: "Inspirada Homes | Henderson Resort Living",
   description:
     "Find Inspirada homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 500-1955.",

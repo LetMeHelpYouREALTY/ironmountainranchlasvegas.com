@@ -22,6 +22,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/relocation" },
   title: "Relocating to Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Moving to Las Vegas? Dr. Jan Duffy provides comprehensive relocation services with hyperlocal expertise in Iron Mountain Ranch and northwest Las Vegas — schools, neighborhoods, cost of living. Call (702) 500-1955.",

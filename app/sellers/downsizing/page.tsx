@@ -17,6 +17,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sellers/downsizing" },
   title: "Downsizing from Iron Mountain Ranch & Las Vegas | Homes by Dr. Jan Duffy",
   description:
     "Ready to simplify? Dr. Jan Duffy helps Iron Mountain Ranch and Las Vegas homeowners extract equity from larger homes (2,000–4,500 sq ft) and transition to low-maintenance living. Call (702) 500-1955.",

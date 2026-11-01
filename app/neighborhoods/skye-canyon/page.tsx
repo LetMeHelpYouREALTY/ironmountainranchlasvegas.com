@@ -7,6 +7,7 @@ import ImrHyperlocalBand from "@/components/sections/ImrHyperlocalBand";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/skye-canyon" },
   title: "Skye Canyon Homes | Northwest Las Vegas",
   description:
     "Find Skye Canyon homes — Homes by Dr. Jan Duffy. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 500-1955.",

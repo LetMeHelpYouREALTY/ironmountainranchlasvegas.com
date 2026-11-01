@@ -21,6 +21,7 @@ import PageHeroImage from "@/components/sections/PageHeroImage";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Dr. Jan Duffy | Iron Mountain Ranch REALTOR® | local Las Vegas",
   description:
     "Meet Dr. Jan Duffy, Iron Mountain Ranch real estate specialist — Homes by Dr. Jan Duffy. Licensed since 2008 · 35 years in Las Vegas, $127M+ in Dr. Duffy Group career sales, hyperlocal to northwest Las Vegas. Call (702) 500-1955.",

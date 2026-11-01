@@ -17,6 +17,7 @@ import type { Metadata } from "next";
 import PageHeroImage from "@/components/sections/PageHeroImage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sellers/divorce-probate" },
   title: "Divorce & Probate Home Sales | Iron Mountain Ranch & Las Vegas",
   description:
     "Sensitive real estate situations handled with discretion in Iron Mountain Ranch and across Las Vegas. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-1955.",
